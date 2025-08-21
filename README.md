@@ -11,6 +11,11 @@ Repositorio oficial del **Grupo 7 – “Dino Nuggets”** para el curso **ISB 2
 Incluye laboratorios, entregables, certificados y el proyecto final.
 
 > 📄 Sílabo del curso: <https://intranet.upch.edu.pe/esilabo/esilabo/overview/generarPDF/id/4717>
+
+<p align="center">
+  <img src="Imágenes/Portada.gif" alt="Portada Dino Nuggets" width="400"/>
+</p>
+
 <!-- separador horizontal grueso -->
 ---
 
