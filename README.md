@@ -34,7 +34,7 @@ Incluye laboratorios, entregables, certificados y el proyecto final.
 <!-- Sube las fotos a `assets/members/` con formato `nombre-apellido.jpg` y reemplaza las rutas en la tabla. Tamaño sugerido: 320×320 px. -->
 | Foto | Nombre | Rol en el equipo | Contacto |
 |---|---|---|---|
-| <img src="assets/members/katherine-navarro.jpg" width="100" /> | **NAVARRO LUYO, Katherine Rossana** | <em> Coordinación general </em> | ✉️ `<a20212914@pucp.edu.pe>` |
+| <img src="assets/members/katherine-navarro.jpg" width="100" /> | **NAVARRO LUYO, Katherine Rossana** | <em> Coordinación general </em> | ✉️ `a20212914@pucp.edu.pe` |
 | <img src="assets/members/brenda-cardenas.jpg" width="100" /> | **CÁRDENAS INFANTES, Brenda Adriana** | <em> Coordinación general </em> | ✉️ `brenda.cardenas@upch.pe`|
 | <img src="assets/members/diego-carrascal.jpg" width="100" /> | **CARRASCAL CASTILLO, Diego Aaron** | <em> Coordinación general </em> | ✉️ `<correo>`|
 
