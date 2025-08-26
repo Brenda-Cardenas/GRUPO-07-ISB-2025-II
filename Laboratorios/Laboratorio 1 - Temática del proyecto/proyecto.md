@@ -5,6 +5,22 @@
 
 ---
 
+## Índice
+
+1. [Título tentativo del proyecto](#título-tentativo-del-proyecto)  
+2. [Problemática](#problemática)  
+3. [Justificación](#justificación)  
+4. [Objetivos](#objetivos)  
+5. [Herramientas a utilizar](#herramientas-a-utilizar)  
+6. [Resumen del proyecto](#resumen-del-proyecto)  
+7. [Artículos académicos](#artículos-académicos)  
+8. [Productos comerciales](#productos-comerciales)  
+9. [Patentes](#patentes)  
+10. [Referencias](#-referencias)  
+11. [Aporte de los Integrantes](#aporte-de-los-integrantes)  
+
+---
+
 ## Problemática
 La fatiga muscular en trabajadores de sectores con alta exigencia física y movimientos repetitivos es una problemática crítica en Perú y Latinoamérica, afectando no solo el bienestar, sino la seguridad y productividad laboral. Actualmente, la detección se basa en evaluaciones subjetivas como el dolor o el cansancio, que son poco fiables y a menudo no reflejan el estado fisiológico real del músculo. Esto resulta en diagnósticos tardíos, aumento de lesiones musculoesqueléticas y pérdidas económicas para las empresas debido a ausentismo y menor rendimiento. 
 
