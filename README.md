@@ -35,7 +35,7 @@ Incluye laboratorios, entregables, certificados y el proyecto final.
 | Foto | Nombre | Rol en el equipo | Contacto |
 |---|---|---|---|
 | <img src="Imágenes/Katherine-foto.png" width="100" /> | **NAVARRO LUYO, Katherine Rossana** | <em> Coordinación general </em> | ✉️ `a20212914@pucp.edu.pe` |
-| <img src="Imágenes/Brenda-foto.png" width="100" /> | **CÁRDENAS INFANTES, Brenda Adriana** | <em> Coordinación general </em> | ✉️ `brenda.cardenas@upch.pe`|
+| <img src="Imágenes/Brenda-foto.jpg" width="100" /> | **CÁRDENAS INFANTES, Brenda Adriana** | <em> Coordinación general </em> | ✉️ `brenda.cardenas@upch.pe`|
 | <img src="Imágenes/Diego-foto.png" width="100" /> | **CARRASCAL CASTILLO, Diego Aaron** | <em> Coordinación general </em> | ✉️ `diego.carrascal@upch.pe`|
 
 <!-- 🖼️ **Cómo agregar fotos:** crea la carpeta `assets/members/`, sube las imágenes y confirma con un _commit_. GitHub mostrará la imagen automáticamente.  -->
