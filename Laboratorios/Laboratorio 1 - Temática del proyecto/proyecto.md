@@ -42,7 +42,15 @@ La relevancia de este proyecto radica en su impacto social y económico, ya que 
 </p>
 
 ---
+## Aporte de los Integrantes
+
+| Integrante | Aporte |
+|------------|--------|
+| NAVARRO LUYO, Katherine Rossana  | 33.33% |
+| CÁRDENAS INFANTES, Brenda Adriana  | 33.33% |
+| 	CARRASCAL CASTILLO, Diego Aaron | 33.33% |
+
+---
 
 ## Link del repositorio
 [Enlace al repositorio en GitHub](https://github.com/usuario/GRUPO-XX-ISB-2025)  
-
