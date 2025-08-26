@@ -14,14 +14,13 @@ Este fenómeno de fatiga no solo impacta el bienestar de los trabajadores, sino 
 
 ## Herramientas a utilizar
 - Electromiografo con electrodos de superficie
-- Herramienta 2  
+- Se utilizará herramientas de Python en el entorno de desarrollo Visual Studio Code para el procesamiento digital de señales. Se planea implementar filtros digitales tipo Butterworth, los cuales permitirán aislar la actividad eléctrica muscular de interés y reducir el impacto de ruidos o artefactos presentes en la señal de electromiografía (EMG).  
 - Herramienta 3  
 
 ---
 
 ### Resumen de la temática
-*(Escribe aquí un párrafo corto con la idea principal del proyecto. Este mismo resumen servirá para el documento de “REPOSITORIOS” que pide el curso.)*
-
+El proyecto se centra en la adquisición y procesamiento de señales de electromiografía (EMG) para evaluar la actividad eléctrica de músculos de la región lumbar los cuales desempeñan un papel clave en la estabilidad postural y en la prevención de lesiones de espalda baja. La señal captada con electrodos de superficie será filtrada y procesada para eliminar ruidos e interferencias, con el fin de analizar su comportamiento . El objetivo principal es identificar patrones de activación muscular durante tareas de postura o esfuerzo físico, aportando información que puede ser útil para evitar daños musculares.
 ### Link del repositorio
 [Enlace al repositorio en GitHub](https://github.com/usuario/GRUPO-XX-ISB-2025)  
 
