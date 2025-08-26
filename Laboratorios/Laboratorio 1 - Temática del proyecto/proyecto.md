@@ -67,6 +67,16 @@ La relevancia de este proyecto radica en su impacto social y económico, ya que 
 | **K-Myo — Kinvent [9]** | Sensor EMG no invasivo con Bluetooth; análisis en tiempo real de activación muscular, desequilibrios y evolución del usuario. | Fisioterapia laboral, rehabilitación postural y prevención de lesiones en tareas repetitivas. | Frecuencia de adquisición 1000–2000 Hz;<br>Precisión ±0.1%;<br>Alcance inalámbrico 50 m;<br>Compatible con Android/iOS. | 
 
 ---
+## Patentes
+
+| Título | Contexto | Métodos Empleados | Resultados | Relevancia Ocupacional |
+|----|----|----|----|----|
+| **KR102485242B1 - Dispositivo y método para predecir lesiones musculares durante la actividad laboral repetitiva del trabajador [10]** | Aborda la falta de manejo de datos en PYMES y cómo los movimientos repetitivos generan fatiga muscular y enfermedades musculoesqueléticas. | Un sensor EMG recolecta datos musculares; la señal se filtra y se ingresa a un modelo de *machine learning* que evalúa variabilidad y fuerza para determinar riesgo de lesión. | Predice lesiones de forma temprana y brinda un plan preventivo con alertas y ejercicios de rehabilitación, reduciendo riesgos y pérdidas económicas. | Altamente relevante: se ajusta al contexto laboral de manufactura y tareas repetitivas. |
+| **KR101938241B1 - Aparato y método para generar un modelo de prevención de lesiones basado en aprendizaje automático [11]** | Se centra en lesiones de atletas por entrenamientos intensos y la dificultad de predecirlas, ya que el dolor reportado no siempre coincide con la lesión real. | Un modelo de *machine learning* analiza condición física antes y después del entrenamiento, considerando intensidad, área de dolor y características individuales. | Permite predecir lesiones de manera objetiva relacionando estado físico y riesgo de lesión, con base en datos recolectados. | Aunque está enfocado en atletas, puede aplicarse en trabajadores manuales con alta exigencia física. |
+| **US20200015700A1 - Dispositivo sensor de electromiografía biométrica para monitorización de la fatiga y prevención de lesiones [12]** | Propone un dispositivo vestible con EMG y acelerómetro para monitorear fatiga y prevenir lesiones por sobreuso en atletas y usuarios comunes. | El EMG detecta contracciones y el acelerómetro elimina artefactos de movimiento. Los datos se envían a una app que usa un algoritmo de *machine learning* para medir fatiga. | Determina niveles de fatiga a partir de parámetros como frecuencia media y potencia de salida, ofreciendo retroalimentación útil al usuario. | Directamente aplicable en entornos laborales con movimientos repetitivos o esfuerzo constante. |
+
+
+---
 ## 📚 Referencias
 
 [1] F. J. Sánchez Fu, *Fatiga laboral y lesiones músculo esqueléticas en trabajadores de una empresa de seguridad y vigilancia Lima – Perú 2018*,  
@@ -102,6 +112,14 @@ en *IFMBE Proceedings*, vol. 96, Springer, 2025, pp. 445–452.
 [8] Ideal Biomechanics, “EMG One: sensor portátil de electromiografía,” Ideal Biomechanics. [En línea]. Disponible en: https://www.idealbiomechanics.com/product-page/emg-one. [Accedido: 25-ago-2025].
 
 [9] Rocfit, “K-Myo: sensor de electromiografía portátil,” Rocfit. [En línea]. Disponible en: https://www.rocfit.com/profesionales/tecnologia/kmyo-sensor-de-electromiografia-portatil. [Accedido: 25-ago-2025].
+
+[10] KR 102485242 B1 – Device and method to predict muscle injury during repetitive work activities of a worker. Google Patents. 
+Google Patents
+
+[11] KR 101938241 B1 – Apparatus and method for generating injury prevention model based on machine learning. Google Patents. 
+Google Patents
+
+[12] US 2020/0015700 A1 – Biometric electromyography sensor device for fatigue monitoring and injury prevention and methods for using same. Google Patents.
 
 ---
 ## Aporte de los Integrantes
