@@ -1,4 +1,4 @@
-# Proyecto – Temática
+<h1 align="center">Proyecto – Temática</h1>
 
 ## Título tentativo del proyecto
 **Extracción de características de señales EMG para la detección temprana de fatiga muscular en el ámbito ocupacional**
