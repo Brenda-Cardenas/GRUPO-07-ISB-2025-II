@@ -15,20 +15,21 @@ Por ejemplo, en Lima, más del 10% de los agentes de seguridad han reportado fat
 
 ## Objetivos a alcanzar
 
-| **Objetivo General** | **Objetivos Específicos** |
-|-----------------------|----------------------------|
-| <p align="justify">Desarrollar un modelo de clasificación capaz de identificar el estado de fatiga muscular en tareas de alta repetición. Para ello, se usarán señales electromiográficas (EMG) como la principal fuente de datos, con el fin de prevenir lesiones en trabajadores manuales.</p> | <p align="justify">1. Recopilar y preprocesar datos de señales EMG de bases de datos públicas, eliminando ruidos para obtener una señal limpia.<br><br>2. Extraer características relevantes de las señales EMG que indiquen el inicio y el progreso de la fatiga muscular.<br><br>3. Entrenar y validar un modelo de clasificación para predecir el estado de fatiga con alta precisión.<br><br>4. Evaluar el rendimiento del modelo clasificador comparándolo con los resultados de otros estudios o métodos existentes para asegurar que nuestra solución sea efectiva.</p> |
+| **Objetivos** |
+|---------------|
+| **Objetivo General**<br><p align="justify">Desarrollar un modelo de clasificación capaz de identificar el estado de fatiga muscular en tareas de alta repetición. Para ello usaremos señales electromiográficas (EMG) como la principal fuente de datos, con el fin de prevenir lesiones en trabajadores manuales.</p> |
+| **Objetivos Específicos**<br><p align="justify">1. Recopilar y preprocesar datos de señales EMG de bases de datos públicas, eliminando ruidos para obtener una señal limpia.<br><br>2. Extraer características relevantes de las señales EMG que indiquen el inicio y el progreso de la fatiga muscular.<br><br>3. Entrenar y validar un modelo de clasificación para predecir el estado de fatiga con alta precisión.<br><br>4. Evaluar el rendimiento del modelo clasificador comparándolo con los resultados de otros estudios o métodos existentes para asegurar que nuestra solución sea efectiva.</p> |
 
 ---
 
 ## Herramientas a utilizar
 - **Hardware:** Un electromiógrafo con electrodos de superficie para captar la actividad eléctrica de los músculos de forma no invasiva.  
-- **Software y Entorno de Desarrollo:** Python en el entorno de desarrollo *Visual Studio Code*. Estas herramientas ofrecen un ecosistema robusto para la programación, el análisis de datos y el desarrollo de modelos de aprendizaje automático.  
-- **Procesamiento de Señales:** Se aplicarán técnicas de filtrado digital para limpiar la señal EMG y asegurar datos confiables para el análisis posterior.  
+- **Software y Entorno de Desarrollo:** Se utilizará Python en el entorno de desarrollo *Visual Studio Code*. Pues, estas herramientas ofrecen un ecosistema robusto para la programación, el análisis de datos y el desarrollo de modelos de aprendizaje automático.  
+- **Procesamiento de Señales:** Se aplicarán técnicas de filtrado digital. Esto es esencial para limpiar la señal de EMG y asegurar que los datos sean confiables para el análisis posterior.  
 - **Librerías de Python:**  
-  - NumPy: Para la manipulación y procesamiento numérico de señales.  
+  - NumPy: Para la manipulación y el procesamiento numérico de las señales.  
   - Scikit-learn: Para la implementación de modelos de clasificación.  
-  - TensorFlow/Keras o PyTorch: Para redes neuronales avanzadas, como CNN.  
+  - TensorFlow/Keras o PyTorch: También podríamos optar por desarrollar redes neuronales, lo cual nos permitiría explorar modelos más avanzados, como las Redes Neuronales Convolucionales (CNN).  
 - **Bases de Datos:** Se emplearán bases de datos de EMG de acceso público, como las de *PhysioNet* o *The Ninapro Database*, para entrenar y validar el modelo de clasificación.  
 
 ---
@@ -36,7 +37,7 @@ Por ejemplo, en Lima, más del 10% de los agentes de seguridad han reportado fat
 ## Resumen del proyecto
 <p align="justify">
 La propuesta de nuestro proyecto se centra en la detección de la fatiga muscular, un fenómeno que no siempre es perceptible y que afecta a trabajadores expuestos a labores repetitivas o de esfuerzo físico en sectores laborales. A diferencia de las evaluaciones subjetivas actuales, que se basan en la percepción del cansancio u otros malestares, este proyecto plantea una solución objetiva y no invasiva.  
-Al analizar las señales EMG, las cuales reflejan la actividad eléctrica del músculo, se podrán reconocer cambios distintivos a medida que la fatiga se desarrolla. Se realizará el procesamiento digital de señales para filtrar y limpiar los datos EMG. Posteriormente, un modelo de clasificación será entrenado utilizando bases de datos públicas para reconocer los patrones de la señal asociados a la fatiga. El objetivo final es que este modelo sea capaz de predecir el estado de fatiga de un músculo, sirviendo como una herramienta preventiva contra lesiones laborales.  
+Al analizar las señales EMG, las cuales reflejan la actividad eléctrica del músculo, se podrá reconocer cambios distintivos a medida que la fatiga se desarrolla.  Se realizará el procesamiento digital de señales para filtrar y limpiar los datos EMG. Posteriormente, un modelo de clasificación será entrenado utilizando bases de datos públicas para reconocer los patrones de la señal asociados a la fatiga. El objetivo final es que este modelo sea capaz de predecir el estado de fatiga de un músculo, sirviendo como una herramienta preventiva contra lesiones laborales.  
 La relevancia de este proyecto radica en su impacto social y económico, ya que su aplicación en el contexto laboral permitiría mejorar la seguridad, reducir la cantidad de trabajadores que sufren lesiones y optimizar su rendimiento.
 </p>
 
