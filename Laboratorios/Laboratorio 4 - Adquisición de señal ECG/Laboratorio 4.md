@@ -23,8 +23,11 @@ En este contexto, el dispositivo **BiTalino (r)evolution** se ha consolidado com
 | **Detalles técnicos** | Entradas: ECG, EMG, EEG, EDA | Tipo tripolar | Recargable, portátil | Sensores desechables | Software *OpenSignals* + Python |
 | **Cantidad** | 1 | 1 | 1 | 3 | 1 |
 
-![Configuración BiTalino EMG](Multimedia/Configuración%20Bitalino%20EMG.png)  
-**Figura 1.** Configuración del BiTalino utilizada durante el registro de la señal.
+<p align="center">
+  <img src="Multimedia/Configuración%20Bitalino%20EMG.png" alt="Configuración del BiTalino para EMG" width="500"/>
+</p>  
+
+**Figura 1.** Configuración del BiTalino para el registro de EMG.  
 
 ---
 
@@ -51,7 +54,14 @@ La práctica se desarrolló siguiendo una secuencia de pasos que garantizan la c
   - **Primera derivación:**  
     El electrodo positivo se colocó en la muñeca izquierda, el electrodo negativo en la muñeca derecha y el electrodo de referencia en la cresta ilíaca derecha. Esta configuración permite obtener una señal clara de la actividad eléctrica general del corazón en reposo.  
 
-   - **Segunda derivación:** se modificó la configuración pasando uno de los electrodos activos a la cresta ilíaca, el otro se mantuvo en la muñeca opuesta y la referencia (tierra) se reubicó en la muñeca restante.  
+   - **Segunda derivación:** se modificó la configuración pasando uno de los electrodos activos a la cresta ilíaca, el otro se mantuvo en la muñeca opuesta y la referencia (tierra) se reubicó en la muñeca restante.
+ 
+<p align="center">
+  <img src="Multimedia/Configuracion%20ECG.png" alt="Configuración de derivaciones ECG" width="500"/>
+</p>  
+
+**Figura 2.** Configuración de electrodos en la primera (a) y segunda (b) derivación para la adquisición de señal ECG.  
+
 
 
 2. **Condiciones de apnea y recuperación:**  
@@ -76,6 +86,14 @@ La práctica se desarrolló siguiendo una secuencia de pasos que garantizan la c
 
 ---
 
+## 📊 Resultados  
+### Videos
+En la siguiente sección se incluyen los registros audiovisuales obtenidos durante la práctica:  
+
+- [▶️ Prueba 1 – Apnea (30 s + recuperación)](Multimedia/Prueba%201%20apnea%20video.mp4)  
+- [▶️ Prueba 1 – Ejercicio (post-actividad aeróbica)](Multimedia/Prueba%201%20video.mp4)  
+
+---
 ### 📚 Referencias 
 
 [1] Mayo Clinic, “Electrocardiogram (ECG or EKG),” *Mayo Clinic*, 2023. [Online]. Available: https://www.mayoclinic.org/tests-procedures/ekg/about/pac-20384983  
