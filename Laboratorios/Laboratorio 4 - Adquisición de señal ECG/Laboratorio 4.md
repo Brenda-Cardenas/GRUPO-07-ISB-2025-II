@@ -193,11 +193,17 @@ Figura 4. Señal ECG en reposo y durante apnea respiratoria en derivada I.
 </p>  
 Figura 5. Señal ECG en reposo y durante apnea respiratoria en derivada II.  
 
+### Datos obtenidos de las mediciones
+<p align="center">
+  <img src="Multimedia/datos%20adicionales.png" alt="Señal ECG post ejercicio" width="1000"/>
+</p>  
+Figura 6. Datos para analisis luego de apneas
+
 ### Señal ECG posterior a ejercicio
 <p align="center">
   <img src="Multimedia/Se%C3%B1al%20ECG%20Post%20ejercicio.png" alt="Señal ECG post ejercicio" width="1000"/>
 </p>  
-Figura 6. Señal ECG post-ejercicio aeróbico.  
+Figura 7. Señal ECG post-ejercicio aeróbico.  
 
 
 ### 📂 Códigos
