@@ -23,6 +23,8 @@ En este contexto, el dispositivo **BiTalino (r)evolution** se ha consolidado com
 | **Detalles técnicos** | Entradas: ECG, EMG, EEG, EDA | Tipo tripolar | Recargable, portátil | Sensores desechables | Software *OpenSignals* + Python |
 | **Cantidad** | 1 | 1 | 1 | 3 | 1 |
 
+![Configuración BiTalino EMG](Multimedia/Configuración%20Bitalino%20EMG.png)  
+**Figura 1.** Configuración del BiTalino utilizada durante el registro de la señal.
 
 ---
 
@@ -49,8 +51,8 @@ La práctica se desarrolló siguiendo una secuencia de pasos que garantizan la c
   - **Primera derivación:**  
     El electrodo positivo se colocó en la muñeca izquierda, el electrodo negativo en la muñeca derecha y el electrodo de referencia en la cresta ilíaca derecha. Esta configuración permite obtener una señal clara de la actividad eléctrica general del corazón en reposo.  
 
-  - **Segunda derivación:**  
-    El electrodo positivo se colocó en la pierna izquierda (región de la cresta ilíaca), el electrodo negativo en la muñeca derecha y el electrodo de referencia en la muñeca izquierda. Esta disposición facilita la observación de la onda P y del complejo QRS con mayor amplitud y estabilidad.  
+   - **Segunda derivación:** se modificó la configuración pasando uno de los electrodos activos a la cresta ilíaca, el otro se mantuvo en la muñeca opuesta y la referencia (tierra) se reubicó en la muñeca restante.  
+
 
 2. **Condiciones de apnea y recuperación:**  
    - El sujeto realizó apnea voluntaria durante 30 segundos, seguida de 1 minuto de recuperación en reposo.  
