@@ -1,6 +1,6 @@
 # Laboratorio N° 4 – Uso de BiTalino para ECG 🫀
 ---
-# 📑 Índice  
+# Índice  
 
 1. [Introducción](#-introducción)  
 2. [Objetivos](#-objetivos)  
@@ -24,14 +24,14 @@
    - [Señal ECG posterior a ejercicio: derivadas 1 y 2](#señal-ecg-posterior-a-ejercicio-derivadas-1-y-2)  
 7. [Referencias](#-referencias)  
 
-## 🫀 Introducción  
+## Introducción  
 
 El electrocardiograma (ECG) es una técnica diagnóstica no invasiva que registra la actividad eléctrica del corazón mediante electrodos colocados en la superficie de la piel. La señal está conformada por componentes como la onda P, el complejo QRS y la onda T, que reflejan la despolarización y repolarización de aurículas y ventrículos. Su interpretación es fundamental para la detección de arritmias, bloqueos, isquemias y otras alteraciones cardiovasculares [1]. Además, el ECG continúa siendo la herramienta de referencia en electrofisiología cardíaca, ya que proporciona una resolución temporal inigualable para estudiar los eventos eléctricos del corazón [2]. En el ámbito educativo, el análisis de esta señal permite a los estudiantes aplicar los principios de la bioinstrumentación y del procesamiento digital de señales biomédicas en escenarios prácticos.  
 
 En este contexto, el dispositivo BiTalino (r)evolution se ha consolidado como una plataforma modular, de bajo costo y gran portabilidad, diseñada para la adquisición de biosenales como ECG, EMG o EDA en tiempo real. Diversos estudios han validado su desempeño en comparación con equipos de referencia, demostrando que BITalino puede registrar señales ECG con una precisión suficiente para entornos de docencia e investigación [3], [4]. Su arquitectura abierta, la comunicación inalámbrica vía Bluetooth y la compatibilidad con software como *OpenSignals* facilitan la adquisición y análisis de señales fisiológicas, ofreciendo a los estudiantes la posibilidad de trabajar desde la correcta colocación de electrodos hasta la aplicación de técnicas de filtrado, segmentación y análisis de variabilidad cardíaca, consolidando así su aprendizaje en instrumentación biomédica moderna [5].  
 
 ---
-## 🎯 Objetivos  
+## Objetivos  
 
 - **Adquirir señales biomédicas de ECG**, comprendiendo el proceso de registro de la actividad eléctrica del corazón mediante el uso de electrodos y el dispositivo BiTalino.  
 - **Configurar adecuadamente el sistema BiTalino**, asegurando la correcta conexión de sus componentes y la vinculación con el software *OpenSignals (r)evolution* para la captura de datos.  
@@ -39,7 +39,7 @@ En este contexto, el dispositivo BiTalino (r)evolution se ha consolidado como un
 
 ---
 
-## 🛠️ Descripción de materiales  
+## Descripción de materiales  
 
 | **Ítem** | BiTalino (r)evolution | Cable para 3 electrodos | Batería LiPo 3.7V 500mA | Electrodos de superficie | Laptop |
 |:---------|:-------------------------|:---------------------------|:-----------------------------|:----------------------------|:---------|
@@ -55,27 +55,27 @@ En este contexto, el dispositivo BiTalino (r)evolution se ha consolidado como un
 
 ---
 
-## 📝 Metodología  
+## Metodología  
 
-La práctica se desarrolló siguiendo una secuencia de pasos que garantizan la correcta adquisición de la señal ECG mediante el sistema **BiTalino (r)evolution** y el software *OpenSignals (r)evolution*. A continuación, se detallan las fases principales del procedimiento:  
+La práctica se desarrolló siguiendo una secuencia de pasos que garantizan la correcta adquisición de la señal ECG mediante el sistema BiTalino (r)evolution y el software OpenSignals (r)evolution. A continuación, se detallan las fases principales del procedimiento:  
 
 
-### ⚡ Preparación del equipo  
+### Preparación del equipo  
 1. Se verificó el estado físico del módulo BiTalino, cables y electrodos, asegurando la ausencia de daños visibles en conectores o recubrimientos.  
 2. Se conectó la batería LiPo 3.7V–500mA al BiTalino y se activó la comunicación Bluetooth entre el dispositivo y la laptop, según las recomendaciones de la guía de laboratorio.  
-3. En la computadora, se instaló y configuró el software *OpenSignals (r)evolution*, necesario para la visualización y almacenamiento de la señal adquirida.  
+3. En la computadora, se instaló y configuró el software OpenSignals (r)evolution, necesario para la visualización y almacenamiento de la señal adquirida.  
 
 
 
-### 👤 Preparación del sujeto  
+### Preparación del sujeto  
 1. Se seleccionó un voluntario sano, sin antecedentes de patologías cardiovasculares.  
-2. Antes de colocar los electrodos, se realizó la **limpieza de la piel** en los puntos de contacto, con el fin de reducir la impedancia cutánea y mejorar la calidad de la señal.  
+2. Antes de colocar los electrodos, se realizó la limpieza de la piel en los puntos de contacto, con el fin de reducir la impedancia cutánea y mejorar la calidad de la señal.  
 3. Se dispusieron los electrodos de superficie siguiendo las derivaciones estándar de Einthoven, adaptadas al BiTalino.  
 
 
 
-### 📌 Configuración de electrodos  
-- Se emplearon **tres electrodos externos** (positivo, negativo y referencia) conectados al canal analógico **A2** del BiTalino.  
+### Configuración de electrodos  
+- Se emplearon tres electrodos externos (positivo, negativo y referencia) conectados al canal analógico A2 del BiTalino.  
 - El sistema requiere dos electrodos activos (IN+ e IN–) y un electrodo de referencia (REF) que estabiliza la señal.  
 - La colocación se basó en las derivadas de Einthoven:  
 
@@ -96,38 +96,38 @@ La práctica se desarrolló siguiendo una secuencia de pasos que garantizan la c
 **Figura 2.** Configuración de electrodos en la primera (a) y segunda (b) derivación para la adquisición de señal ECG.  
 
 
-### 📈 Registro de la señal ECG  
+### Registro de la señal ECG  
 
 1. **Condiciones de reposo y apnea:**  
    - El sujeto permaneció en reposo durante 30 s de registro.  
-   - Posteriormente realizó **apnea voluntaria de 30 s**, seguida de **1 minuto de recuperación**.  
-   - Este procedimiento se repitió **tres veces consecutivas** para la primera derivación y luego nuevamente con la segunda derivación.  
+   - Posteriormente realizó apnea voluntaria de 30 s, seguida de 1 minuto de recuperación.  
+   - Este procedimiento se repitió tres veces consecutivas para la primera derivación y luego nuevamente con la segunda derivación.  
 
 2. **Condición post-ejercicio:**  
-   - El voluntario realizó **actividad aeróbica (correr) durante 15 minutos**.  
+   - El voluntario realizó actividad aeróbica (correr) durante 15 minutos.  
    - Se registró la señal ECG en dos configuraciones:  
      - 1 minuto con la primera derivación.  
      - 1 minuto con la segunda derivación.  
 
 3. **Documentación:**  
-   - Cada adquisición se acompañó de la visualización en tiempo real de la señal en *OpenSignals*.  
+   - Cada adquisición se acompañó de la visualización en tiempo real de la señal en OpenSignals.  
    - Se grabaron fotografías y videos como respaldo de la práctica experimental.  
 
-### 🔬 Procesamiento inicial  
+### Procesamiento inicial  
 
-1. Los datos fueron exportados desde *OpenSignals (r)evolution* en dos formatos:  
+1. Los datos fueron exportados desde OpenSignals (r)evolution en dos formatos:  
    - **.h5 (HDF5):** compatible con Python y librerías como `h5py` o `pandas`.  
    - **.txt:** archivo delimitado en texto plano, útil para carga rápida y visualización simple.  
 
-2. En los archivos, la señal de ECG se encuentra en el canal **A2**, mientras que las demás columnas incluyen:  
+2. En los archivos, la señal de ECG se encuentra en el canal A2, mientras que las demás columnas incluyen:  
    - `nSeq` → número de secuencia (contador interno).  
    - `I1`, `I2` → entradas digitales.  
    - `O1`, `O2` → salidas digitales.  
    - `A2` → canal analógico de ECG.  
 
-3. Se cargaron los datos en **Python** utilizando `h5py`, `numpy` y `pandas`.  
+3. Se cargaron los datos en Python utilizando `h5py`, `numpy` y `pandas`.  
 
-4. Se realizó la **conversión de los valores del ADC a voltios**, aplicando la fórmula:  
+4. Se realizó la conversión de los valores del ADC a voltios, aplicando la fórmula:  
 
    `V = (ADC / (2^n - 1)) * Vref`  
 
@@ -139,11 +139,11 @@ La práctica se desarrolló siguiendo una secuencia de pasos que garantizan la c
 
    `V = (ADC / 1023) * 3.3`  
 
-5. Se consideró el **offset ≈ 512**, correspondiente a ~1.65 V (la mitad de 3.3 V). Este valor centra la señal en el rango del ADC, permitiendo representar tanto potenciales positivos como negativos. Para el análisis, se restó este offset, lo que permitió visualizar la señal ECG alrededor de 0 V.  
+5. Se consideró el offset ≈ 512, correspondiente a ~1.65 V (la mitad de 3.3 V). Este valor centra la señal en el rango del ADC, permitiendo representar tanto potenciales positivos como negativos. Para el análisis, se restó este offset, lo que permitió visualizar la señal ECG alrededor de 0 V.  
 
-6. La señal fue procesada con un **filtro pasa-banda Butterworth (0.5–40 Hz)** para eliminar ruido de baja frecuencia y artefactos de alta frecuencia.  
+6. La señal fue procesada con un filtro pasa-banda Butterworth (0.5–40 Hz) para eliminar ruido de baja frecuencia y artefactos de alta frecuencia.  
 
-7. Se implementó la **detección de picos R** usando la función `find_peaks` de `scipy.signal`, con:  
+7. Se implementó la detección de picos R usando la función `find_peaks` de `scipy.signal`, con:  
    - Un **umbral dinámico** adaptado a la amplitud de la señal.  
    - Una **distancia mínima entre picos** que evita falsos positivos.  
 
@@ -163,7 +163,7 @@ La práctica se desarrolló siguiendo una secuencia de pasos que garantizan la c
 
 ---
 
-## 📊 Resultados  
+## Resultados  
 
 ### Videos  
 En esta sección se presentan los registros audiovisuales obtenidos durante la práctica experimental:  
@@ -208,7 +208,7 @@ El desarrollo completo del procesamiento y análisis de señales se encuentra do
 
 ---
 
-## 📊 Discusión de resultados
+## Discusión de resultados
 
 En esta sección se analizan e interpretan las señales ECG obtenidas en diferentes condiciones fisiológicas (reposo, apnea y post-ejercicio), registradas con el sistema BiTalino en derivaciones I y II. El objetivo es comparar amplitudes, frecuencias y morfología de las ondas para comprender los efectos de cada situación sobre la actividad eléctrica del corazón.
 
@@ -231,7 +231,7 @@ El análisis de los registros post-ejercicio en derivaciones I y II muestra un i
 Por otro lado, la señal muestra mayor variabilidad en la línea de base, en especial en la derivación I, fenómeno que puede atribuirse tanto al aumento del tono simpático como a artefactos de movimiento y respiración posteriores al esfuerzo [13].
 
 ---
-### 📚 Referencias 
+### Referencias 
 [1] Mayo Clinic, “Electrocardiogram (ECG or EKG),” *Mayo Clinic*, 2023. [En línea]. Disponible en: https://www.mayoclinic.org/tests-procedures/ekg/about/pac-20384983  
 [2] L. Sörnmo y P. Laguna, *Bioelectrical Signal Processing in Cardiac and Neurological Applications*, 2.ª ed. Academic Press, 2020.  
 [3] A. Guerreiro, A. Lourenço, F. Canento, R. P. P. Lopes, H. Silva y A. Fred, “BITalino: A Multimodal Platform for Physiological Computing,” en *Proc. Int. Conf. Physiological Computing Systems (PhyCS)*, 2013, pp. 246–253.  
