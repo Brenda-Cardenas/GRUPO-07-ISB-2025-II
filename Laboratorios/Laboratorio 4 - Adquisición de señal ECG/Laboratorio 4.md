@@ -175,27 +175,27 @@ En esta sección se presentan los registros audiovisuales obtenidos durante la p
 ### Señal ECG no filtrada
 
 <p align="center">
-  <img src="Multimedia/Se%C3%B1al%20ECG%20sin%20filtrar%20en%20reposo%20y%20Apnea%20respiratoria.png" alt="Señal ECG sin filtrar" width="600"/>
+  <img src="Multimedia/Se%C3%B1al%20ECG%20sin%20filtrar%20en%20reposo%20y%20Apnea%20respiratoria.png" alt="Señal ECG sin filtrar" width="3000"/>
 </p>  
 Figura 3. Señal ECG sin filtrar en reposo y apnea respiratoria.  
 
 ### Señal ECG derivada 1
 
 <p align="center">
-  <img src="Multimedia/Se%C3%B1al%20ECG%20en%20Reposo%20y%20en%20Apnea%20respiratoria_%20Derivada%201.png" alt="Señal ECG en reposo y apnea - derivada I" width="600"/>
+  <img src="Multimedia/Se%C3%B1al%20ECG%20en%20Reposo%20y%20en%20Apnea%20respiratoria_%20Derivada%201.png" alt="Señal ECG en reposo y apnea - derivada I" width="3000"/>
 </p>  
 Figura 4. Señal ECG en reposo y durante apnea respiratoria en derivada I.  
 
 ### Señal ECG derivada 2
 
 <p align="center">
-  <img src="Multimedia/Se%C3%B1al%20ECG%20en%20Reposo%20y%20en%20Apnea%20respiratoria_%20Derivada%202.png" alt="Señal ECG en reposo y apnea - derivada II" width="600"/>
+  <img src="Multimedia/Se%C3%B1al%20ECG%20en%20Reposo%20y%20en%20Apnea%20respiratoria_%20Derivada%202.png" alt="Señal ECG en reposo y apnea - derivada II" width="3000"/>
 </p>  
 Figura 5. Señal ECG en reposo y durante apnea respiratoria en derivada II.  
 
 ### Señal ECG posterior a ejercicio
 <p align="center">
-  <img src="Multimedia/Se%C3%B1al%20ECG%20Post%20ejercicio.png" alt="Señal ECG post ejercicio" width="600"/>
+  <img src="Multimedia/Se%C3%B1al%20ECG%20Post%20ejercicio.png" alt="Señal ECG post ejercicio" width="1000"/>
 </p>  
 Figura 6. Señal ECG post-ejercicio aeróbico.  
 
