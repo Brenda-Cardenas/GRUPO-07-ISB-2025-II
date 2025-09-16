@@ -202,8 +202,8 @@ Figura 6. Señal ECG post-ejercicio aeróbico.
 
 ### 📂 Códigos
 
-El desarrollo completo del procesamiento y análisis de señales se encuentra documentado en el cuaderno de Jupyter:  
-- [📓 Ver Laboratorio_4_Codes.ipynb](Laboratorio_4_Codes.ipynb)
+El desarrollo completo del procesamiento y análisis de señales se encuentra documentado en:  
+- [📓 Laboratorio_4_Codes.ipynb](Laboratorio_4_Codes.ipynb)
 
 
 ---
