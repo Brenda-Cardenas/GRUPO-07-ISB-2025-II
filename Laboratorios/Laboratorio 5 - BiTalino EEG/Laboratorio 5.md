@@ -43,7 +43,25 @@ La electroencefalografía (EEG) registra la actividad cerebral eléctrica usando
 
 1.1 Generación de la señal EEG
 
-La corteza cerebral es la capa más externa del encéfalo, formada por sustancia gris con un grosor de 2 a 4 mm. Está organizada en seis capas histológicas que contienen diferentes tipos de neuronas y conexiones, siendo que en las capas III y V dónde se encuentran las neuronas de interés para el EEG, que son las piramidales. El EEG refleja principalmente la actividad dendrítica de las neuronas piramidales orientadas perpendicularmente a la superficie cortical. Al activarse en modo sincrónico, que producen dipolos eléctricos capaces de transmitirse hasta el cuero cabelludo [1]. Estas señales están de muy baja amplitud (10–100 µV) y requieren la activación simultánea de enormes poblaciones neuronales para que sean trasmisibles [1]. Además, no solo factor del estado fisiológico (estado de alerta, edad) sino del entorno (ruido eléctrico) incidirán en la calidad de la señal. En años ulteriores, reinterpretaciones han relevado cómo el modelado informático y la utilización de redes neuronales ayudan a entender mejor la dinámica de las señales del cortex en aplicaciones de BCI.
+La corteza cerebral es la capa más externa del encéfalo, formada por sustancia gris con un grosor de 2 a 4 mm. Está organizada en seis capas histológicas que contienen diferentes tipos de neuronas y conexiones, siendo que en las capas III y V dónde se encuentran las neuronas de interés para el EEG, que son las piramidales. 
+
+<p align="center">
+  <img src="Multimedia/Neuronas.png" alt="Neuronas" width="400"/><br>
+  <em>Figura 1. Ubicación de neuronas piramidales en corteza cerebral. Adaptado de: 
+  <a href="https://www.kenhub.com/en/library/anatomy/cortical-cytoarchitecture">Kenhub (2025)</a>
+  </em>
+</p>
+
+El EEG refleja principalmente la actividad dendrítica de las neuronas piramidales orientadas perpendicularmente a la superficie cortical. Al activarse en modo sincrónico, que producen dipolos eléctricos capaces de transmitirse hasta el cuero cabelludo [1]. 
+
+<p align="center">
+  <img src="Multimedia/location%20of%20neurons.jpg" alt="Location of neurons" width="400"/><br>
+  <em>Figura 2. Localización de neuronas en la corteza cerebral. Recuperado de: 
+  <a href="https://www.researchgate.net/publication/317390321_Single-axon_level_morphological_analysis_of_corticofugal_projection_neurons_in_mouse_barrel_field/figures?lo=1">ResearchGate</a>
+  </em>
+</p>
+
+Estas señales están de muy baja amplitud (10–100 µV) y requieren la activación simultánea de enormes poblaciones neuronales para que sean trasmisibles [1]. Además, no solo factor del estado fisiológico (estado de alerta, edad) sino del entorno (ruido eléctrico) incidirán en la calidad de la señal. En años ulteriores, reinterpretaciones han relevado cómo el modelado informático y la utilización de redes neuronales ayudan a entender mejor la dinámica de las señales del cortex en aplicaciones de BCI.
 
 
 1.2 Bandas y reactividad alfa (EO vs EC)
