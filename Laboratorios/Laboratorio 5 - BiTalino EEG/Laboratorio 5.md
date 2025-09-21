@@ -128,23 +128,42 @@ Registrar, procesar y analizar señales EEG mediante el uso del sistema BITalino
 ---
 
 ## 🛠️ 3. Materiales e Instrumentos
-*(Tabla con ítems, descripción y cantidad.)*
+## 🧰 Descripción de materiales
+
+| Ítem                                   | BITalino (r)evolution Board Kit BLE/BT | Laptop con Bluetooth 4.0+          | Software OpenSignals (r)evolution | Electrodos Ag/AgCl desechables (gel) | Ultracortex Mark IV (headset seco) |
+|----------------------------------------|-----------------------------------------|------------------------------------|-----------------------------------|---------------------------------------|------------------------------------|
+| **Función principal**                  | Módulo de adquisición de biosenales     | Procesamiento y visualización      | Registro y análisis de señales    | Registro de señal EEG                 | Registro con electrodos secos       |
+| **Detalles técnicos**                  | Entradas: ECG, EMG, EEG, EDA            | Software *OpenSignals* + Python    | Compatible con BITalino           | Sensores de un solo uso               | Electrodos activos, portátil        |
+| **Cantidad por grupo**                 | 1                                       | 1                                  | -                                 | 3                                     | Rotativo (demo)                     |
 
 ---
 
 ## 🔍 4. Metodología
 
 ### 4.1 Preparación del software
-*(Pasos de instalación y configuración.)*
+- Se instaló el programa **OpenSignals (r)evolution**, compatible con el sistema BITalino, en la laptop 
+- Se emparejó el **BITalino (r)evolution Board Kit BLE/BT** mediante Bluetooth
+- Se configuró el canal **A4 como EEG** y se definió una **frecuencia de muestreo de 1000 Hz**, lo que asegura cubrir la banda de interés (0.5–48 Hz).  
+- Se verificó que el nivel de batería del dispositivo fuera superior al 30 % antes de iniciar la sesión.
 
 ### 4.2 Montaje de electrodos
-*(Ubicación y conexiones según sistema 10–20.)*
+- Se seleccionaron las posiciones **Fp1, Fp2 y mastoide derecha**, siguiendo el sistema internacional **10–20**.  
+- Conexión realizada:  
+  - **Canal EEG → Fp1**  
+  - **GND → Fp2**  
+  - **Referencia → mastoide derecha**  
+- Previa colocación, se limpió la piel con una papel y alcohol para limpiarla.  
 
 ### 4.3 Secuencia experimental
-*(Tabla con condiciones y tiempos.)*
+El registro de señales se llevó a cabo siguiendo diferentes condiciones, cada una con una duración aproximada de 1–2 minutos:
 
-### 4.4 Ejercicios de análisis
-*(Lista de análisis solicitados: PSD, comparación α/β, parpadeos, etc.)*
+| Condición            | Descripción                                                                 |
+|----------------------|-----------------------------------------------------------------------------|
+| **Basal – ojos abiertos**  | Participante fijó la vista en un punto frente a él, evitando movimientos bruscos. |
+| **Basal – ojos cerrados**  | Participante mantuvo los ojos cerrados en reposo.                     |
+| **Tarea cognitiva**        | Ejecución de restas sucesivas desde 100 en intervalos de 7 (100, 93, 86, …). |
+| **Artefactos controlados** | Se realizaron parpadeos voluntarios cada ~2 segundos y luego masticando. |
+| **Condición libre**        | El participante escuchó música clásica, luego rock y por último ondas alfa. |
 
 ---
 
