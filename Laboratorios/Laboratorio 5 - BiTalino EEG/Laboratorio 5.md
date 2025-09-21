@@ -157,6 +157,8 @@ Registrar, procesar y analizar señales EEG mediante el uso del sistema BITalino
   - **GND → Fp2**  
   - **Referencia → mastoide derecha**  
 - Previa colocación, se limpió la piel con una papel y alcohol para limpiarla.
+- Se usaron audífonos para evitar interferencias con sonidos, se posicionó al voluntario mirando hacia dónde no recibiera luz directa, debido a el espacio del laboratorio el área más próxima fue cercana a la puerta.
+- Cuando la tarea solicitaba tener los ojos cerrados, se le solicitó al voluntario que los cierre, debido a que no se contaba con ningún dispositivo adicional no se lo pudo tapar de mejor manera los ojos.
 
 <p align="center">
   <img src="Multimedia/posicion%20de%20electrodos.png" alt="Posición de electrodos EEG" width="400"/><br>
@@ -249,11 +251,18 @@ El registro de señales se llevó a cabo siguiendo diferentes condiciones, cada 
 
 ---
 
-## 👥 9. Aporte de los integrantes
+## 9. Referencias
 
-| Integrante | Contribución (%) |
-|------------|:----------------:|
-| Nombre 1   | 33.3% |
-| Nombre 2   | 33.3% |
-| Nombre 3   | 33.3% |
+1. U. Salahuddin y P.-X. Gao, “Signal Generation, Acquisition, and Processing in Brain Machine Interfaces: A Unified Review,” *Frontiers in Neuroscience*, vol. 15, 2021. [En línea]. Disponible en: [https://www.frontiersin.org/articles/10.3389/fnins.2021.728178/full](https://www.frontiersin.org/articles/10.3389/fnins.2021.728178/full)  
+
+2. O. M. Bazanova y D. Vernon, “Interpreting EEG alpha activity,” *Frontiers in Human Neuroscience*, vol. 14, p. 594, 2020. [En línea]. Disponible en: [https://www.frontiersin.org/articles/10.3389/fnhum.2020.594/full](https://www.frontiersin.org/articles/10.3389/fnhum.2020.594/full)  
+
+3. A. Delorme *et al.*, “Enhanced ICA-based artifact removal for EEG,” *NeuroImage*, vol. 209, p. 116506, 2020. [En línea]. Disponible en: [https://www.sciencedirect.com/science/article/pii/S1053811920302418](https://www.sciencedirect.com/science/article/pii/S1053811920302418)  
+
+4. Y. M. Chi *et al.*, “Dry EEG electrodes for mobile and wireless systems,” *IEEE Transactions on Biomedical Engineering*, vol. 67, no. 5, pp. 1398–1405, mayo 2020. [En línea]. Disponible en: [https://ieeexplore.ieee.org/document/8953212](https://ieeexplore.ieee.org/document/8953212)  
+
+5. A. Mahajan *et al.*, “Flexible Dry Electrodes for Long-Term EEG Monitoring,” *Sensors*, vol. 21, no. 3, p. 987, 2021. [En línea]. Disponible en: [https://www.mdpi.com/1424-8220/21/3/987](https://www.mdpi.com/1424-8220/21/3/987)  
+
+6. R. Jiang *et al.*, “A novel EEG artifact removal algorithm based on an advanced attention mechanism,” *Scientific Reports*, vol. 15, art. 19419, 2025. [En línea]. Disponible en: [https://www.nature.com/articles/s41598-025-98653-1](https://www.nature.com/articles/s41598-025-98653-1)  
+
 
