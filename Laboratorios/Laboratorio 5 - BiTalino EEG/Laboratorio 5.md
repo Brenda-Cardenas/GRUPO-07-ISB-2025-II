@@ -136,6 +136,10 @@ Registrar, procesar y analizar señales EEG mediante el uso del sistema BITalino
 | **Detalles técnicos**                  | Entradas: ECG, EMG, EEG, EDA            | Software *OpenSignals* + Python    | Compatible con BITalino           | Sensores de un solo uso               | Electrodos activos, portátil        |
 | **Cantidad por grupo**                 | 1                                       | 1                                  | -                                 | 3                                     | Rotativo (demo)                     |
 
+<p align="center">
+  <img src="Multimedia/bitalino.png" alt="BITalino Board" width="400"/><br>
+  <em>Figura 5. Setup para la adquisición de señales EEG.</em>
+</p>
 ---
 
 ## 🔍 4. Metodología
@@ -152,7 +156,12 @@ Registrar, procesar y analizar señales EEG mediante el uso del sistema BITalino
   - **Canal EEG → Fp1**  
   - **GND → Fp2**  
   - **Referencia → mastoide derecha**  
-- Previa colocación, se limpió la piel con una papel y alcohol para limpiarla.  
+- Previa colocación, se limpió la piel con una papel y alcohol para limpiarla.
+
+<p align="center">
+  <img src="Multimedia/posicion%20de%20electrodos.png" alt="Posición de electrodos EEG" width="400"/><br>
+  <em>Figura 6. Colocación de electrodos en posiciones Fp1, Fp2 y mastoide.</em>
+</p>
 
 ### 4.3 Secuencia experimental
 El registro de señales se llevó a cabo siguiendo diferentes condiciones, cada una con una duración aproximada de 1–2 minutos:
