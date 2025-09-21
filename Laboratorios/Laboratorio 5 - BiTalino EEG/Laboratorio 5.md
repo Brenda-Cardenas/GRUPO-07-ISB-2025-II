@@ -1,4 +1,4 @@
-# 🧠📉 LABORATORIO 4: Uso de BiTalino para adquisición de señales EEG
+# 🧠 LABORATORIO 5: Uso de BiTalino para adquisición de señales EEG
 
 ---
 
@@ -41,12 +41,12 @@
 ## 1. Introducción
 La electroencefalografía (EEG) registra la actividad cerebral eléctrica usando electrodos en el cuero cabelludo. Posee un alta resolución temporal, debido a que su frecuencia se encuentra en el rango de milisegundos, lo que la ha llevado a convertirse en el instrumento principal del diagnóstico clínico, del desarrollo de interfaces de crecimiento del cerebro-computer (BCI) y del uso en investigación en neurociencia cognitiva [1].
 
-1.1 Generación de la señal EEG
+### 1.1 Generación de la señal EEG
 
 La corteza cerebral es la capa más externa del encéfalo, formada por sustancia gris con un grosor de 2 a 4 mm. Está organizada en seis capas histológicas que contienen diferentes tipos de neuronas y conexiones, siendo que en las capas III y V dónde se encuentran las neuronas de interés para el EEG, que son las piramidales. 
 
 <p align="center">
-  <img src="Multimedia/Neuronas.png" alt="Neuronas" width="400"/><br>
+  <img src="Multimedia/Neuronas%20piramidales%20en%20corteza%20cerebral.png" alt="Neuronas" width="400"/><br>
   <em>Figura 1. Ubicación de neuronas piramidales en corteza cerebral. Adaptado de: 
   <a href="https://www.kenhub.com/en/library/anatomy/cortical-cytoarchitecture">Kenhub (2025)</a>
   </em>
@@ -63,10 +63,16 @@ El EEG refleja principalmente la actividad dendrítica de las neuronas piramidal
 
 Estas señales están de muy baja amplitud (10–100 µV) y requieren la activación simultánea de enormes poblaciones neuronales para que sean trasmisibles [1]. Además, no solo factor del estado fisiológico (estado de alerta, edad) sino del entorno (ruido eléctrico) incidirán en la calidad de la señal. En años ulteriores, reinterpretaciones han relevado cómo el modelado informático y la utilización de redes neuronales ayudan a entender mejor la dinámica de las señales del cortex en aplicaciones de BCI.
 
-
-1.2 Bandas y reactividad alfa (EO vs EC)
+### 1.2 Bandas y reactividad alfa (EO vs EC)
 
 Las oscilaciones EEG se agrupan en bandas de frecuencia asociadas a estados mentales:
+
+<p align="center">
+  <img src="Multimedia/waveforms.jpg" alt="EEG Waveforms" width="400"/><br>
+  <em>Figura 3. Ondas cerebrales registradas en EEG. Recuperado de: 
+  <a href="https://www.sciencedirect.com/topics/agricultural-and-biological-sciences/brain-waves">ScienceDirect</a>
+  </em>
+</p>
 
 Delta (0.5–4 Hz): sueño profundo.
 
@@ -78,25 +84,30 @@ Beta (13–30 Hz): actividad cognitiva y alerta.
 
 Gamma (>30 Hz): integración sensorial y procesos de conciencia.
 
-La banda alfa muestra una marcada reactividad al estado ocular: aumenta con ojos cerrados (EC) y disminuye con ojos abiertos (EO), reflejando un bloqueo por procesamiento visual. Esta reactividad alfa se ha consolidado como un biomarcador de integridad funcional y de estados de relajación [2].
+La banda alfa mide el reflejo de reactividad al estado ocular: aumento con ojos cerrados (EC) y disminución con ojos abiertos (EO) como testimonio de bloqueo de procesamiento visual. Esta reactividad alfa se ha usado como biomarcador de integridad funcional y de estado del estado de la relajación [2].
 
-1.3 Sistema 10–20, Fp1/Fp2 y artefactos oculares
+### 1.3 Sistema 10–20, Fp1/Fp2 y artefactos oculares
 
-El sistema internacional 10–20 asegura estandarización en la colocación de electrodos, permitiendo comparabilidad entre estudios. Las posiciones Fp1 y Fp2, ubicadas en la región frontal, son sensibles a artefactos oculares, como parpadeos y movimientos sacádicos, que pueden superar en amplitud a la señal cerebral (hasta 200 µV). Para mitigar estos artefactos se aplican algoritmos de Independent Component Analysis (ICA) y, más recientemente, enfoques basados en atención profunda y redes neuronales que logran una supresión más efectiva conservando las señales neuronales [3], [4].
+El sistema internacional 10–20 asegura estandarización en la colocación de electrodos, permitiendo la comparabilidad entre estudios. Las posiciones Fp1 y Fp2, ubicadas en la región frontal, son sensibles a artefactos oculares, como parpadeos y movimientos sacádicos, que pueden superar en amplitud a la señal cerebral. Para mitigar estos artefactos se aplican algoritmos de Independent Component Analysis (ICA) y enfoques basados en atención profunda y redes neuronales que logran una supresión más efectiva conservando las señales neuronales [3], [4].
 
-1.4 Electrodos: húmedos vs secos
+<p align="center">
+  <img src="Multimedia/posicionamiento%2010%2020.jpg" alt="Sistema internacional 10-20" width="400"/><br>
+  <em>Figura 4. Sistema internacional 10-20 para posicionamiento de electrodos en EEG. Recuperado de: 
+  <a href="https://www.researchgate.net/publication/328629992_Desarrollo_de_una_BCI_utilizando_el_potencial_P300_y_la_diadema_MindwaveR/figures?lo=1">ResearchGate</a>
+  </em>
+</p>
 
-Los electrodos húmedos de Ag/AgCl con gel conductor continúan siendo el estándar clínico por su baja impedancia y fidelidad en la captura de señales, aunque requieren preparación y mantenimiento, lo que limita su portabilidad [4]. En contraste, los electrodos secos han evolucionado en los últimos años con el uso de materiales conductores flexibles y estructuras multipin, alcanzando un desempeño comparable al de los húmedos en muchos escenarios. Estas innovaciones permiten aplicaciones portátiles y de larga duración en EEG móvil y monitoreo continuo [4], [5].
+### 1.4 Electrodos: húmedos vs secos
 
-1.5 Muestreo, referencia y filtrado
+Los electrodos húmedos de Ag/AgCl con gel conductor continúan siendo el estándar clínico por su baja impedancia y fidelidad en la captura de señales, aunque requieren preparación y mantenimiento, lo que limita su portabilidad [4]. Los electrodos secos han evolucionado usando materiales conductores flexibles y estructuras multipin, alcanzando así un desempeño comparable al de los húmedos en muchos escenarios. Estas innovaciones permiten aplicaciones portátiles y de larga duración en EEG móvil y monitoreo continuo [4], [5].
 
-La frecuencia de muestreo debe respetar el teorema de Nyquist, siendo habituales 256, 512 o 1024 Hz para capturar adecuadamente bandas de hasta 40–50 Hz [1]. La elección del electrodo de referencia (mastoidales, Cz o promedio común) condiciona la topografía y amplitud de las señales. El filtrado digital constituye un paso crítico en el preprocesamiento:
+### 1.5 Muestreo, referencia y filtrado
 
-Pasabanda (0.5–45 Hz): elimina deriva y ruido de alta frecuencia.
+La frecuencia de muestreo debe respetar el teorema de Nyquist, siendo habituales 256, 512 o 1024 Hz para capturar adecuadamente bandas de hasta 40–50 Hz [1]. La elección del electrodo de referencia, pudiendo ser mastoidales, Cz o promedio común, va a condicionar la topografía y también la amplitud de las señales. El filtrado digital constituye un paso crítico en el preprocesamiento:
 
-Notch (50/60 Hz): suprime la interferencia eléctrica de la red.
-
-Filtros adaptativos: corrigen artefactos dinámicos (p. ej., EOG o ECG).
+- Pasabanda (0.5–45 Hz): elimina deriva y ruido de alta frecuencia.
+- Notch (50/60 Hz): suprime la interferencia eléctrica de la red.
+- Filtros adaptativos: corrigen artefactos dinámicos (p. ej., EOG o ECG).
 
 Recientemente se han desarrollado métodos de aprendizaje profundo para la eliminación de artefactos que mejoran la relación señal/ruido frente a los filtros clásicos [6].
 
@@ -105,10 +116,14 @@ Recientemente se han desarrollado métodos de aprendizaje profundo para la elimi
 ## 2. Objetivos
 
 ### 2.1 Objetivo general
-*(Texto del objetivo general.)*
+Registrar, procesar y analizar señales EEG mediante el uso del sistema BITalino (r)evolution y el software OpenSignals, con el fin de comprender la dinámica de las bandas cerebrales bajo diferentes condiciones (reposo, tarea cognitiva y artefactos controlados) y aplicar técnicas de filtrado y cuantificación espectral para su interpretación.
 
 ### 2.2 Objetivos específicos
-*(Lista de objetivos específicos.)*
+- Montar y configurar un BITalino (r)evolution Board Kit BLE/BT para registrar señales EEG.
+- Identificar las ubicaciones Fp1, Fp2 y O2 del sistema internacional 10‑20 y colocar electrodos correctamente.
+- Adquirir segmentos EEG en condiciones: basal (ojos abiertos/cerrados), tarea cognitiva y artefactos controlados.
+- Aplicar filtro band‑pass 0.8–48 Hz y reconocer los ritmos δ, θ, α, β.
+- Exportar los datos y generar un informe breve con hallazgos cuantitativos.
 
 ---
 
