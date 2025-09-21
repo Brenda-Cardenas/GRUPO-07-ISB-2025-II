@@ -166,20 +166,28 @@ Registrar, procesar y analizar señales EEG mediante el uso del sistema BITalino
 ### 4.3 Secuencia experimental
 El registro de señales se llevó a cabo siguiendo diferentes condiciones, cada una con una duración aproximada de 1–2 minutos:
 
-| Condición            | Descripción                                                                 |
-|----------------------|-----------------------------------------------------------------------------|
-| **Basal – ojos abiertos**  | Participante fijó la vista en un punto frente a él, evitando movimientos bruscos. |
-| **Basal – ojos cerrados**  | Participante mantuvo los ojos cerrados en reposo.                     |
-| **Tarea cognitiva**        | Ejecución de restas sucesivas desde 100 en intervalos de 7 (100, 93, 86, …). |
-| **Artefactos controlados** | Se realizaron parpadeos voluntarios cada ~2 segundos y luego masticando. |
-| **Condición libre**        | El participante escuchó música clásica, luego rock y por último ondas alfa. |
+| Condición                | Descripción                                                                 | Video                                     |
+|---------------------------|-----------------------------------------------------------------------------|-------------------------------------------|
+| **Basal – ojos abiertos** | Participante fijó la vista en un punto frente a él, evitando movimientos bruscos. | *(No disponible)*                          |
+| **Basal – ojos cerrados** | Participante mantuvo los ojos cerrados en reposo.                           | [🎥 Ver video](Multimedia/PRUEBA%202.mp4) |
+| **Tarea cognitiva**       | Ejecución de restas sucesivas desde 100 en intervalos de 7 (100, 93, 86, …). | [🎥 Ver video](Multimedia/PRUEBA%203.mp4) |
+| **Artefactos controlados**| Se realizaron parpadeos voluntarios cada ~2 segundos y luego masticando.    | [🎥 Ver video](Multimedia/PRUEBA%204.mp4) |
+| **Condición libre**       | El participante escuchó música clásica, luego rock y por último ondas alfa. | [🎥 Ver video](Multimedia/PRUEBA%205.mp4) |
+
 
 ---
 
 ## 📊 5. Resultados
 
 ### 5.1 Repositorio de vídeos
-*(Enlaces o referencias a videos del registro experimental.)*
+
+| Condición                | Archivo de vídeo     | Enlace                                                  |
+|---------------------------|----------------------|---------------------------------------------------------|
+| **Basal – ojos abiertos** | *(No disponible)*    | -                                                       |
+| **Basal – ojos cerrados** | PRUEBA 2.mp4         | [🎥 Ver video](Multimedia/PRUEBA%202.mp4)               |
+| **Tarea cognitiva**       | PRUEBA 3.mp4         | [🎥 Ver video](Multimedia/PRUEBA%203.mp4)               |
+| **Artefactos controlados**| PRUEBA 4.mp4         | [🎥 Ver video](Multimedia/PRUEBA%204.mp4)               |
+| **Condición libre**       | PRUEBA 5.mp4         | [🎥 Ver video](Multimedia/PRUEBA%205.mp4)               |
 
 ### 5.2 Gráficas obtenidas
 
