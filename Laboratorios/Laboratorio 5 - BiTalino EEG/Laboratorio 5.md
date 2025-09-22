@@ -250,7 +250,10 @@ El registro de señales se llevó a cabo siguiendo diferentes condiciones, cada 
   <img src="Multimedia/musica_comp.png">
 </p>
 
-
+### 5.3 Ultracortex
+<p align="center">
+  <img src="Multimedia/musica_comp.png">
+</p>
 ---
 
 ## 💭 6. Discusión e interpretación
