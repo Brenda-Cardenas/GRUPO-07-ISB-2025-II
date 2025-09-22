@@ -252,7 +252,7 @@ El registro de señales se llevó a cabo siguiendo diferentes condiciones, cada 
 
 ### 5.3 Ultracortex
 <p align="center">
-  <img src="Multimedia/musica_comp.png">
+  <img src="Multimedia/ultracortex1.png">
 </p>
 ---
 
