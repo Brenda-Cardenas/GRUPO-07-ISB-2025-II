@@ -277,12 +277,12 @@ Durante la actividad de masticación, la señal EEG presentó un incremento de a
 ---
 
 ## 🚫⚠️ 7. Limitaciones y mejoras
-*(Lista de limitaciones encontradas y propuestas de mejora.)*
+Entre las principales limitaciones del presente registro EEG se encuentra el uso de un número reducido de electrodos (tres), lo cual restringe la capacidad de localizar de manera precisa las fuentes corticales de la actividad observada. Asimismo, la señal puede estar contaminada por artefactos fisiológicos, como movimientos musculares o parpadeos, que afectan la interpretación. Para mejorar futuros análisis, sería recomendable implementar un mayor número de canales, aplicar técnicas más robustas de filtrado y artefacto-remoción, así como complementar el registro con tareas controladas y protocolos estandarizados.
 
 ---
 
 ## 📰 8. Conclusiones
-*(Síntesis de logros y hallazgos principales.)*
+Los resultados sugieren que las diferentes condiciones evaluadas (reposo, tareas cognitivas y estimulación musical) producen modulaciones características en las bandas de frecuencia del EEG, evidenciando que el tipo de actividad influye directamente en la dinámica cerebral. En particular, se observó un aumento de theta y beta en tareas cognitivas demandantes y bajo estímulos musicales más intensos, mientras que condiciones de reposo y música relajante se asociaron con mayor potencia en la banda alpha. Estos hallazgos, aunque preliminares, respaldan la utilidad del EEG como herramienta para estudiar la relación entre actividad cerebral y estímulos externos o cognitivos.
 
 ---
 
