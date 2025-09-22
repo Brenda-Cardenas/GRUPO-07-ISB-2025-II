@@ -191,27 +191,51 @@ El registro de señales se llevó a cabo siguiendo diferentes condiciones, cada 
 
 ### 5.2 Gráficas obtenidas
 
-#### 5.2.1 Señales EEG crudas y filtradas durante reposo (ojos cerrados) y fijación visual (ojos abiertos)
-*(Descripción + figuras)*
+#### 5.2.1 Ojos abiertos
+<p align="center">
+  <img src="Multimedia/ojos_abiertos.png">
+</p>
 
-#### 5.2.2 Densidad espectral de potencia (PSD) de EEG
-*(Descripción + figuras)*
 
-#### 5.2.3 Potencia relativa (%) por banda
-*(Descripción + gráficas comparativas)*
+#### 5.2.2 Ojos cerrados
+<p align="center">
+  <img src="Multimedia/ojos_cerrados.png">
+</p>
 
-#### 5.2.4 Comparación de potencia α: ojos cerrados vs ojos abiertos
-*(Descripción + gráficas)*
+#### 5.2.3 Tarea cognitiva
+<p align="center">
+  <img src="Multimedia/tarea_cognitiva.png">
+</p>
 
-#### 5.2.5 Tarea cognitiva: Resta 100-7
-*(Descripción + gráficas de la tarea)*
+#### 5.2.4 Parpadeo
+<p align="center">
+  <img src="Multimedia/parpadeo.png">
+</p>
 
-#### 5.2.6 Comparación de potencia β durante tarea cognitiva
-*(Descripción + resultados estadísticos)*
+#### 5.2.5 Masticación
+<p align="center">
+  <img src="Multimedia/masticar.png">
+</p>
 
-#### 5.2.7 Detección de parpadeos
-*(Conteo y gráficas de artefactos detectados)*
+#### 5.2.6 Sin música
+<p align="center">
+  <img src="Multimedia/sin%20musica.png">
+</p>
 
+#### 5.2.7 Musica clásica
+<p align="center">
+  <img src="Multimedia/musica_clasica.png">
+</p>
+
+#### 5.2.8 Ondas alfa
+<p align="center">
+  <img src="Multimedia/ondas_alfa.png">
+</p>
+
+#### 5.2.9 Musica metal
+<p align="center">
+  <img src="Multimedia/musica_metal.png">
+</p>
 ---
 
 ## 💭 6. Discusión e interpretación
