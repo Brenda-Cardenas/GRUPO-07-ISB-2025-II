@@ -236,6 +236,13 @@ El registro de señales se llevó a cabo siguiendo diferentes condiciones, cada 
 <p align="center">
   <img src="Multimedia/musica_metal.png">
 </p>
+
+#### 5.2.9 Potencia de bandas
+<p align="center">
+  <img src="Multimedia/musica_metal.png">
+</p>
+
+
 ---
 
 ## 💭 6. Discusión e interpretación
