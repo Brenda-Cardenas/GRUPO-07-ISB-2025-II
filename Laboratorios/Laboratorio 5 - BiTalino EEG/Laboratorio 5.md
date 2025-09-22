@@ -16,7 +16,8 @@
   - [4.4 Ejercicios de análisis](#44-ejercicios-de-análisis)  
 - [5. Resultados](#5-resultados)  
   - [5.1 Repositorio de vídeos](#51-repositorio-de-vídeos)  
-  - [5.2 Gráficas obtenidas](#52-gráficas-obtenidas)  
+  - [5.2 Gráficas obtenidas](#52-gráficas-obtenidas)
+  - [5.3 Ultracortex]
 - [6. Discusión e interpretación](#6-discusión-e-interpretación)  
   - [6.1 Ojos abiertos vs cerrados](#61-señales-crudas-vs-filtradas-08-48-hz--notch)  
   - [6.2 Tarea cognitiva (restas de 7 en 7)](#62-psd-por-grabación)  
