@@ -237,9 +237,24 @@ El registro de señales se llevó a cabo siguiendo diferentes condiciones, cada 
   <img src="Multimedia/musica_metal.png">
 </p>
 
-#### 5.2.9 Potencia de bandas
+#### 5.2.10 Potencia de bandas
 <p align="center">
-  <img src="Multimedia/musica_metal.png">
+  <img src="Multimedia/potenciaBandas.png">
+</p>
+
+#### 5.2.11 Ojos abiertos vs cerrados (PSD)
+<p align="center">
+  <img src="Multimedia/abierto_cerrado.png">
+</p>
+
+#### 5.2.12 Tarea cognitiva vs reposo (PSD)
+<p align="center">
+  <img src="Multimedia/cognitiva_reposo.png">
+</p>
+
+#### 5.2.12 Comparacion entre musicas (PSD)
+<p align="center">
+  <img src="Multimedia/musica_comp.png">
 </p>
 
 
