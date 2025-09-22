@@ -25,13 +25,11 @@
     - [5.2.6 Comparación de potencia β durante tarea cognitiva](#526-comparación-de-potencia-β-durante-tarea-cognitiva)  
     - [5.2.7 Detección de parpadeos](#527-detección-de-parpadeos)  
 - [6. Discusión e interpretación](#6-discusión-e-interpretación)  
-  - [6.1 Señales crudas vs. filtradas (0.8–48 Hz + notch)](#61-señales-crudas-vs-filtradas-08-48-hz--notch)  
-  - [6.2 PSD por grabación](#62-psd-por-grabación)  
-  - [6.3 Potencia relativa por banda (Δ, θ, α, β, γ)](#63-potencia-relativa-por-banda-δ-θ-α-β-γ)  
-  - [6.4 Comparación de α (8–13 Hz): Ojos cerrados (EC) vs. Ojos abiertos (EO)](#64-comparación-de-α-813-hz-ojos-cerrados-ec-vs-ojos-abiertos-eo)  
-  - [6.5 Tarea cognitiva (resta 100–7) y comparación en β (13–30 Hz)](#65-tarea-cognitiva-resta-100-7-y-comparación-en-β-1330-hz)  
-  - [6.6 Detección de parpadeos (EOG) en frontal](#66-detección-de-parpadeos-eog-en-frontal)  
-  - [6.7 Actividad cognitiva libre: Escuchar música](#67-actividad-cognitiva-libre-escuchar-música)  
+  - [6.1 Ojos abiertos vs cerrados](#61-señales-crudas-vs-filtradas-08-48-hz--notch)  
+  - [6.2 Tarea cognitiva (restas de 7 en 7)](#62-psd-por-grabación)  
+  - [6.3 Parpadeo cada 2 segundos](#63-potencia-relativa-por-banda-δ-θ-α-β-γ)  
+  - [6.4 Masticación cada 2 segundos](#64-comparación-de-α-813-hz-ojos-cerrados-ec-vs-ojos-abiertos-eo)  
+  - [6.5 Actividades que involucraron música](#65-tarea-cognitiva-resta-100-7-y-comparación-en-β-1330-hz)  
 - [7. Limitaciones y mejoras](#7-limitaciones-y-mejoras)  
 - [8. Conclusiones](#8-conclusiones)  
 - [9. Aporte de los integrantes](#9-aporte-de-los-integrantes)  
@@ -217,27 +215,25 @@ El registro de señales se llevó a cabo siguiendo diferentes condiciones, cada 
 ---
 
 ## 💭 6. Discusión e interpretación
+Cabe resaltar que en el registro PSD para las 5 ondas cerebrales, hay una predominancia de las ondas delta que normalmente se deberían dar durante el sueño. Se hizo enfasis en la aplicación de filtros para un buen procesamiento, pero de todos modos esas fueron las potencias obtenidas. Un artículo encontrado comenta de que las personas que tengan cierto grado de privación de sueño o duerman menos horas de las que requieren pueden tener una predominancia de las ondas delta [7]. Como el sujeto que realizó las pruebas recientemente no habia dormido más de 6 horas, es posible que se haya alguna relación de esa situación con la predominancia de ondas delta. Sin embargo, para el siguiente análisis se dará mayor importancia al resto de ondas según la actividad realizada.
 
-### 6.1 Señales crudas vs. filtradas (0.8–48 Hz + notch)
-*(Discusión breve)*
+Se analiza tanto el registro en voltaje como la potencia de ondas PSD.
+### 6.1 Ojos abiertos vs cerrados
+Ojos abiertos: Se espera una señal sin nigun patrón en particular, característico de un EEG, y es lo que se observa. Casi al final de la señal vemos que hay un ligero pico de voltaje debido a una masticación que el sujeto hizo sin percatarse.
+Ojos cerrados: Se puede apreciar que hay una mayor cantidad de picos de voltaje en ojos cerrados con respecto al abierto, esto posiblemente se deba a que el suejeto inconsientemente movió los ojos ligeramente más cuando tiene los parpados cerrados.
 
-### 6.2 PSD por grabación
-*(Discusión breve)*
+### 6.2 Tarea cognitiva (restas de 7 en 7)
+Durante una tarea cognitiva de resta mental, se observó en el EEG una aumentada actividad en la banda theta (≈4–7 Hz) en compaarcion con las demas actividades,acompañada de una disminución relativa de la potencia en la banda alpha (≈8–12 Hz), lo que indica un mayor esfuerzo cognitivo y enfoque de atención interna. Este patrón coincide con resultados reportados en trabajos recientes sobre carga cognitiva, donde la theta frontal se eleva al aumentar la demanda mental mientras que la alpha disminuye en tareas de atención sostenida [8].
 
-### 6.3 Potencia relativa por banda (Δ, θ, α, β, γ)
-*(Discusión breve)*
+### 6.3 Parpadeo cada 2 segundos
+Durante la actividad de parpadeo se evidenciaron variaciones transitorias en la potencia de la banda alpha (≈8–12 Hz), particularmente en regiones occipitales. Estos cambios reflejan la activación y desactivación cortical que ocurre al cerrar y abrir los ojos, donde la potencia alpha aumenta con los ojos cerrados y disminuye cuando se abren o durante el parpadeo. Dicho fenómeno es ampliamente reconocido como un marcador fisiológico confiable para validar la calidad de la señal EEG y el estado de alerta del sujeto [9].
 
-### 6.4 Comparación de α (8–13 Hz): Ojos cerrados (EC) vs. Ojos abiertos (EO)
-*(Discusión breve)*
+### 6.4 Masticación cada 2 segundos
+Durante la actividad de masticación, la señal EEG presentó un incremento de alta frecuencia (≥20 Hz), atribuible en gran medida a la contracción de los músculos faciales y mandibulares, lo que constituye un artefacto electromiográfico. No obstante, algunos estudios señalan que la masticación también involucra redes corticales relacionadas con la coordinación motora y la atención, lo que puede observarse en modulaciones de la banda theta y beta. Por ello, este tipo de actividad debe interpretarse con cautela, distinguiendo entre componentes neuronales y contaminaciones musculares [10].
 
-### 6.5 Tarea cognitiva (resta 100–7) y comparación en β (13–30 Hz)
-*(Discusión breve)*
+### 6.5 Actividades que involucraron música
+ Lo primero que notamos es que cuando no escucha musica, la señal tiene menos frecuencia en comparación con ecuchar musica clasica. Escuchar música genera modulaciones claras en la actividad cerebral registrada por EEG en comparación con el estado de reposo en silencio. Se ha descrito que la música folclórica e instrumental clásica aumenta la potencia relativa en ondas lentas (delta y theta), lo que refleja un estado más relajado, especialmente en regiones frontales y occipitales[11]. Asimismo, escuchar música familiar induce una supresión sostenida de las bandas alpha y low-beta, vinculada a procesos de atención y reconocimiento [12]. Por otro lado, se ha observado que la música preferida o relajante puede aumentar la conectividad funcional en bandas theta y alpha, al tiempo que reduce la beta, lo que sugiere una modulación del estado cognitivo y emocional frente al silencio. Al comparar los registros de EEG durante la condición de silencio y música clásica frente a la exposición a música de ondas alfa y heavy metal, se evidenció un incremento en la frecuencia y potencia de las oscilaciones registradas. En particular, las condiciones de ondas alfa y heavy metal mostraron un aumento de la actividad theta (4–7 Hz) y beta (13–30 Hz), lo que sugiere un mayor grado de activación cortical y compromiso cognitivo en comparación con estados de reposo o estimulación musical más relajante. Estos hallazgos son consistentes con investigaciones que han demostrado que ciertos estilos musicales pueden modular de forma diferencial la dinámica cerebral. La música relajante o clásica tiende a favorecer un predominio de ondas lentas y alpha, asociadas con relajación y estados de reposo, mientras que la música más estimulante, como el heavy metal, induce aumentos significativos en la actividad beta y theta, reflejando mayor excitación emocional, atención sostenida y activación motora [12].
 
-### 6.6 Detección de parpadeos (EOG) en frontal
-*(Discusión breve)*
-
-### 6.7 Actividad cognitiva libre: Escuchar música
-*(Discusión breve)*
 
 ---
 
@@ -265,4 +261,14 @@ El registro de señales se llevó a cabo siguiendo diferentes condiciones, cada 
 
 6. R. Jiang *et al.*, “A novel EEG artifact removal algorithm based on an advanced attention mechanism,” *Scientific Reports*, vol. 15, art. 19419, 2025. [En línea]. Disponible en: [https://www.nature.com/articles/s41598-025-98653-1](https://www.nature.com/articles/s41598-025-98653-1)  
 
+7. H. Helakari et al., “Effect of sleep deprivation and NREM sleep stage on physiological brain pulsations,” Front. Neurosci., vol. 17, p. 1275184, 2023.
 
+8. S. Chikhi, N. Matton, and S. Blanchet, “EEG power spectral measures of cognitive workload: A meta-analysis,” Psychophysiology, vol. 59, no. 6, p. e14009, 2022.
+
+9. C. C. Liu, S. Ghosh Hajra, G. Pawlowski, S. D. Fickling, X. Song, and R. C. N. D’Arcy, “Differential neural processing of spontaneous blinking under visual and auditory sensory environments: An EEG investigation of blink-related oscillations,” Neuroimage, vol. 218, no. 116879, p. 116879, 2020.
+
+10.  W. Y. Peh, Y. Yao, and J. Dauwels, “Transformer convolutional neural networks for automated artifact detection in scalp EEG,” Annu. Int. Conf. IEEE Eng. Med. Biol. Soc., vol. 2022, pp. 3599–3602, 2022.
+
+11. B. B. El Sayed, M. A. Basheer, M. S. Shalaby, H. R. El Habashy, and S. H. Elkholy, “The power of music: impact on EEG signals,” Psychol. Res., vol. 89, no. 1, p. 42, 2025.
+
+12. A. Malekmohammadi, S. K. Ehrlich, J. P. Rauschecker, and G. Cheng, “Listening to familiar music induces continuous inhibition of alpha and low-beta power,” J. Neurophysiol., vol. 129, no. 6, pp. 1344–1358, 2023.
