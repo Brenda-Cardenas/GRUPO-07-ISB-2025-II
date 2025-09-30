@@ -111,6 +111,9 @@ La SNR también se utiliza como parámetro comparativo entre filtros: un diseño
 #### Respuesta obtenida en PyFDA
 ![PyFDA2](https://github.com/Brenda-Cardenas/GRUPO-07-ISB-2025-II/blob/main/Laboratorios/Laboratorio%206%20-%20Filtros%20FIR%20e%20IIR/Im%C3%A1genes/pyfda2.png)
 
+### Resultados de filtrado EEG
+[**Aquí se puede observar el análisis de EEG**](https://github.com/Brenda-Cardenas/GRUPO-07-ISB-2025-II/blob/main/Laboratorios/Laboratorio%206%20-%20Filtros%20FIR%20e%20IIR/Laboratorio%206_c%C3%B3digos.ipynb)
+
 ## 7. Discusión de resultados  
 ### Comparación entre FIR e IIR 
 ### Analisis EMG
