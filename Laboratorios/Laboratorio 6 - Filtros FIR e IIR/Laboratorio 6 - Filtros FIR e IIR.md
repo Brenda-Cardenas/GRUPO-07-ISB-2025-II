@@ -1,31 +1,48 @@
-# 🧪 Informe de Laboratorio 6: Filtros FIR e IIR
-
+# Informe de Laboratorio 6: Filtros FIR e IIR
 ---
 
-## 1. 📖 Introducción  
-El análisis de bioseñales como la electromiografía (EMG), la electrocardiografía (ECG) y la electroencefalografía (EEG) constituye un eje central en la práctica clínica y la investigación biomédica, ya que permite obtener información cuantitativa sobre la actividad muscular, cardíaca y cerebral. Sin embargo, estas señales suelen estar afectadas por interferencias y ruidos como la línea eléctrica (50/60 Hz), artefactos de movimiento, ruido muscular de alta frecuencia y la deriva lenta de la línea base causada por fenómenos fisiológicos y técnicos [1], [2]. Estos factores dificultan la interpretación y pueden comprometer el diagnóstico clínico.
+## 1. Introducción
 
-El procesamiento digital de señales (DSP) ofrece soluciones más robustas y flexibles que los métodos analógicos tradicionales. A diferencia de los filtros analógicos, los filtros digitales no dependen de componentes físicos susceptibles a tolerancias o cambios de temperatura, sino que se implementan en software, lo que garantiza estabilidad, reproducibilidad y adaptabilidad [1], [3]. Esta ventaja ha permitido el diseño de algoritmos especializados que optimizan la supresión de ruido manteniendo la información fisiológica de interés.
+Las bioseñales como la electromiografía (EMG), la electrocardiografía (ECG) y la electroencefalografía (EEG) son herramientas fundamentales para el estudio de la actividad muscular, cardíaca y cerebral. Estas señales suelen estar contaminadas por diversos tipos de ruido, como la interferencia de la red eléctrica, los artefactos de movimiento y la deriva de la línea base [1], [2]. Dichas alteraciones dificultan la interpretación y si no se observan de manera  addecuada puden afectar la precisión de un diagnóstico clínico. Para evitarlo, se emplea el **procesamiento digital de señales**, el cual ofrece ventajas frente al procesamiento analógico, ya que permite diseñar filtros precisos, estables y reproducibles [1], [3]. Entre las técnicas más empleadas se encuentran los filtros FIR (Finite Impulse Response) y los IIR (Infinite Impulse Response).
 
-Los filtros FIR (Finite Impulse Response) presentan estabilidad incondicional y pueden diseñarse con fase lineal exacta, lo cual preserva la morfología temporal de la señal. Esto resulta crítico en ECG, donde pequeñas distorsiones en la forma de onda pueden alterar parámetros diagnósticos como el intervalo PR o el complejo QRS [4], [5]. Por otro lado, los filtros IIR (Infinite Impulse Response) son más eficientes en términos computacionales, pues logran pendientes de atenuación pronunciadas con órdenes menores, siendo adecuados para aplicaciones en tiempo real y sistemas embebidos [6]. Sin embargo, presentan fase no lineal y riesgo de inestabilidad si no se diseñan adecuadamente [1], [3].
+Los **filtros FIR** cuentan con estabilidad y la posibilidad de diseñarse con fase lineal, lo que permite preservar la forma original de la señal, aspecto especialmente relevante en ECG, donde la mínima distorsión puede afectar el análisis clínico [4], [5]. Sin embargo, para alcanzar resultados exigentes suelen requerir un mayor número de cálculos y coeficientes. En contraste, los **filtros IIR** son más eficientes, ya que logran buenos resultados con órdenes más bajos, lo que facilita su uso en sistemas portátiles y aplicaciones en tiempo real [6]. Sin embargo, pueden introducir fase no lineal y requieren un diseño cuidadoso para mantener la estabilidad [1], [3].
 
-En el ámbito clínico, múltiples estudios han explorado estrategias de filtrado digital. En ECG, se han propuesto combinaciones de filtros notch, IIR adaptativos y técnicas de sustracción para eliminar la interferencia de 50/60 Hz sin comprometer la morfología [7]. En EMG, el uso de filtrado digital se ha combinado con técnicas de selección de características para mejorar la clasificación de gestos musculares en interfaces hombre-máquina [8]. En EEG, investigaciones recientes han comparado métodos de diseño de filtros FIR aplicados a la eliminación de artefactos oculares y de parpadeo, evaluando su impacto en la preservación de ritmos corticales [9].
+La importancia clínica de estos filtros se ha demostrado en múltiples investigaciones. En ECG, los filtros digitales han permitido eliminar de forma robusta la interferencia de red sin alterar la detección de arritmias [7]. En EMG, se han combinado con métodos de clasificación para mejorar el reconocimiento de gestos musculares y el desarrollo de interfaces hombre-máquina [8]. En EEG, los filtros FIR han resultado útiles en la eliminación de artefactos de parpadeo y movimiento, preservando ritmos cerebrales esenciales como alfa, beta o delta [9].
 
-En este laboratorio se estudiará el diseño, implementación y comparación de filtros FIR e IIR aplicados a EMG, ECG y EEG, evaluando el desempeño cualitativo (observación de las formas de onda) y cuantitativo mediante métricas como la relación señal-ruido (SNR) y la correlación cruzada. Esto permitirá comprender las fortalezas y limitaciones de cada enfoque y su aplicabilidad en contextos biomédicos reales.
+En este laboratorio se propone el diseño, implementación y comparación de filtros FIR e IIR aplicados a EMG, ECG y EEG. El análisis se realizará tanto de forma cualitativa, observando las señales, como de forma cuantitativa. De esta manera, se busca comprender las ventajas, limitaciones y aplicaciones de cada tipo de filtro en el procesamiento de bioseñales.
 
----
+## 2. Objetivos
+### Objetivo general
+- Comprender el uso de la biblioteca PyFDA, los tipos de filtros que ofrece y desarrollar la capacidad de diseñarlos e implementarlos para el procesamiento de señales biomédicas.
 
-## 2. 🎯 Objetivos  
-### ✅ Objetivo general  
-### 🎯 Objetivos específicos  
+### Objetivos específicos
+- Analizar el desempeño de diferentes tipos de filtros diseñados en PyFDA, identificando sus ventajas y limitaciones en el tratamiento de señales biomédicas.
+- Explorar las funcionalidades de la biblioteca PyFDA para el diseño de filtros, destacando su aplicación práctica en el procesamiento y mejora de señales biomédicas.
 
----
+## 3. Materiales
+| Ítem     | Descripción                                                                 | Cantidad |
+|----------|-----------------------------------------------------------------------------|----------|
+| Laptop   | Equipo con capacidad de ejecutar software de procesamiento de señales.      | 1        |
+| Software | Python 3.x y **PyFDA**| - |
+| Datos    | Registros de bioseñales con interferencia controlada de laboratorios pasados | - |
 
-## 3. 💻 Materiales y Herramientas  
-### 🛠️ Software  
-- Python  
-- Google Colab  
-- Librerías: NumPy, SciPy, Matplotlib  
+
+
+## 4. Fundamentos Teóricos
+### 4.1 Filtros digitales: FIR e IIR
+Los filtros digitales son sistemas matemáticos que permiten modificar el espectro de una señal con el fin de eliminar o atenuar el ruido y resaltar las componentes de interés [1].
+
+* Los **filtros FIR** tienen una respuesta al impulso de duración finita, siempre son estables y permiten fase lineal exacta, lo que los hace especialmente útiles en aplicaciones clínicas donde la forma de onda debe conservarse [4].
+* Los **filtros IIR** emplean realimentación y alcanzan buenos resultados con órdenes menores, lo que los hace más eficientes en sistemas de tiempo real. Sin embargo, pueden introducir fase no lineal y requieren un diseño cuidadoso [6].
+
+### 4.2 Transformada de Fourier
+La **Transformada de Fourier**, calculada de forma rápida mediante la FFT, permite observar las señales en el dominio de la frecuencia. Con ella se pueden identificar picos de ruido (como los 50/60 Hz en ECG) o diferenciar ritmos cerebrales en EEG [1], [3], [8]. Este análisis es fundamental para diseñar filtros adecuados.
+
+### 4.3 Relación Señal a Ruido (SNR)
+La SNR expresa la proporción entre la energía de la señal útil y la del ruido. Un filtrado exitoso se traduce en un aumento de esta relación, siempre que no se eliminen componentes fisiológicos relevantes [5], [7].
+
+### 4.4 Correlación cruzada
+La correlación cruzada mide la similitud entre dos señales a lo largo del tiempo. Al aplicarse a una señal original y a su versión filtrada, permite comprobar si el filtrado ha preservado la forma de la señal o ha introducido distorsiones [4], [9], [11].
 
 ### 📊 Datos de señales  
 - EMG  
@@ -83,6 +100,17 @@ En este laboratorio se estudiará el diseño, implementación y comparación de 
 ---
 
 ## 9. 📚 Referencias  
+[1] A. V. Oppenheim and R. W. Schafer, *Discrete-Time Signal Processing*, 3rd ed. Pearson, 2010.
+[2] R. M. Rangayyan, *Biomedical Signal Analysis*, 2nd ed. Wiley–IEEE Press, 2015.
+[3] S. Sörnmo and L. Laguna, *Bioelectrical Signal Processing in Cardiac and Neurological Applications*. Elsevier, 2005.
+[4] S. Mitra, *Digital Signal Processing: A Computer-Based Approach*, 4th ed. McGraw-Hill, 2011.
+[5] A. Phinyomark, P. Phukpattaranont, and C. Limsakul, “Feature reduction and selection for EMG signal classification,” *Expert Systems with Applications*, vol. 39, no. 8, pp. 7420–7431, 2012.
+[6] S. K. Mitra and J. Kaiser, “Handbook for Digital Signal Processing,” Wiley-IEEE Press, 2013.
+[7] S. Sörnmo, “Time-varying digital filtering of ECG signals,” *IEEE Trans. Biomed. Eng.*, vol. 39, no. 7, pp. 700–707, 1992.
+[8] S. De Luca, L. Gil-Cayuela, and R. Bragós, “Reducing noise, artifacts and interference in single-channel EMG signals,” *Sensors*, vol. 23, no. 7, p. 3725, 2023.
+[9] A. Pant, S. Banerjee, and R. Indu, “Comparative exploration on EEG signal filtering using windowing methods,” *Array*, vol. 23, 2024.
+[10] M. D. Addison, *Illustrated Wavelet Transform Handbook*. Taylor & Francis, 2002.
+[11] T. A. L. Wren et al., “Cross-correlation as a method for comparing dynamic electromyography signals during gait,” *J. Biomechanics*, vol. 39, no. 14, pp. 2714–2718, 2006.
 
 ---
 
