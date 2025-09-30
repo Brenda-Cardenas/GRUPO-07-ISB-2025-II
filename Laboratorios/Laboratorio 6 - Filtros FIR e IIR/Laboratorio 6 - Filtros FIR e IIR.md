@@ -82,21 +82,35 @@ La SNR también se utiliza como parámetro comparativo entre filtros: un diseño
    Para cuantificar los resultados obtenidos se realizaron mediciones de la **relación señal-ruido (SNR)** y se aplicó la **correlación cruzada** entre las señales originales y filtradas. Estos análisis facilitaron la comparación objetiva entre los filtros FIR e IIR diseñados.
    
 ## 6. Resultados  
-### 💪 EMG  
-- Reposo  
-- Contracción leve  
-- Contracción fuerte  
+### Resultados de filtrado de EMG
 
-### ❤️ ECG  
-- Estado basal  
-- Respiración controlada  
-- Post ejercicio  
-- Respiración prolongada  
+| Condición          | Señal Cruda                          | Filtro Butterworth                   | Filtro FIR Lineal                    | Filtro FIR Bessel                   | Filtro Notch Butter                 |
+|--------------------|---------------------------------------|---------------------------------------|---------------------------------------|--------------------------------------|--------------------------------------|
+| **Reposo**         | ![Cruda Reposo](ruta_img)            | ![Butter Reposo](ruta_img)            | ![FIR Lineal Reposo](ruta_img)        | ![FIR Bessel Reposo](ruta_img)       | ![Notch Butter Reposo](ruta_img)     |
+| **Movimiento lento** | ![Cruda Movimiento](ruta_img)       | ![Butter Movimiento](ruta_img)        | ![FIR Lineal Movimiento](ruta_img)    | ![FIR Bessel Movimiento](ruta_img)   | ![Notch Butter Movimiento](ruta_img) |
+| **Contracción**    | ![Cruda Contracción](ruta_img)       | ![Butter Contracción](ruta_img)       | ![FIR Lineal Contracción](ruta_img)   | ![FIR Bessel Contracción](ruta_img)  | ![Notch Butter Contracción](ruta_img)|
+  
 
-### 🧠 EEG  
-- Basal  
-- Ojos abiertos/cerrados  
-- Ejercicios mentales simples y complejos  
+### Resultados de filtrado de ECG
+
+| Condición        | Señal Cruda                           | FIR (0.5–40 Hz)                       | Butterworth (0.5–40 Hz)              | Chebyshev II (0.5–40 Hz)             | Notch 50 Hz + Butterworth            |
+|------------------|----------------------------------------|----------------------------------------|---------------------------------------|---------------------------------------|---------------------------------------|
+| **Reposo**       | ![Cruda Reposo](ruta_img)             | ![FIR Reposo](ruta_img)                | ![Butterworth Reposo](ruta_img)       | ![Chebyshev Reposo](ruta_img)         | ![Notch+Butter Reposo](ruta_img)      |
+| **Apnea**        | ![Cruda Apnea](ruta_img)              | ![FIR Apnea](ruta_img)                 | ![Butterworth Apnea](ruta_img)        | ![Chebyshev Apnea](ruta_img)          | ![Notch+Butter Apnea](ruta_img)       |
+| **Post ejercicio** | ![Cruda Post ejercicio](ruta_img)    | ![FIR Post ejercicio](ruta_img)        | ![Butterworth Post ejercicio](ruta_img)| ![Chebyshev Post ejercicio](ruta_img) | ![Notch+Butter Post ejercicio](ruta_img) |
+
+
+### Resultados de filtrado de EEG
+
+| Condición         | Señal Cruda                          | FIR Equiripple                        | FIR Blackman                          | Butterworth 4º                        | Notch 60 Hz                          |
+|-------------------|---------------------------------------|---------------------------------------|---------------------------------------|---------------------------------------|---------------------------------------|
+| **Cruda**         | ![EEG Cruda](ruta_img)               | ![EEG FIR Equiripple Cruda](ruta_img) | ![EEG FIR Blackman Cruda](ruta_img)   | ![EEG Butterworth Cruda](ruta_img)    | ![EEG Notch Cruda](ruta_img)          |
+| **Tarea cognitiva** | ![EEG Tarea Cognitiva](ruta_img)    | ![EEG FIR Equiripple Tarea](ruta_img) | ![EEG FIR Blackman Tarea](ruta_img)   | ![EEG Butterworth Tarea](ruta_img)    | ![EEG Notch Tarea](ruta_img)          |
+| **Parpadeo**      | ![EEG Parpadeo](ruta_img)            | ![EEG FIR Equiripple Parpadeo](ruta_img) | ![EEG FIR Blackman Parpadeo](ruta_img) | ![EEG Butterworth Parpadeo](ruta_img) | ![EEG Notch Parpadeo](ruta_img)       |
+| **Masticar**      | ![EEG Masticar](ruta_img)            | ![EEG FIR Equiripple Masticar](ruta_img) | ![EEG FIR Blackman Masticar](ruta_img) | ![EEG Butterworth Masticar](ruta_img) | ![EEG Notch Masticar](ruta_img)       |
+| **Ojos cerrados** | ![EEG Ojos Cerrados](ruta_img)       | ![EEG FIR Equiripple Ojos](ruta_img)  | ![EEG FIR Blackman Ojos](ruta_img)    | ![EEG Butterworth Ojos](ruta_img)     | ![EEG Notch Ojos](ruta_img)           |
+| **Ondas alfa**    | ![EEG Ondas Alfa](ruta_img)          | ![EEG FIR Equiripple Alfa](ruta_img)  | ![EEG FIR Blackman Alfa](ruta_img)    | ![EEG Butterworth Alfa](ruta_img)     | ![EEG Notch Alfa](ruta_img)           |
+
 
 ## 7. Discusión de resultados  
 ### Comparación entre FIR e IIR  
