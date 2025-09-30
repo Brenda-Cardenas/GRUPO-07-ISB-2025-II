@@ -83,9 +83,10 @@ La SNR también se utiliza como parámetro comparativo entre filtros: un diseño
    
 ## 6. Resultados  
 ### Resultados de filtrado de EMG
+#### Respuesta en frecuencia
+![EMG Magnitud](https://github.com/Brenda-Cardenas/GRUPO-07-ISB-2025-II/blob/main/Laboratorios/Laboratorio%206%20-%20Filtros%20FIR%20e%20IIR/Im%C3%A1genes/EMG%20MAGNITUD.png)
 
-## Resultados de filtrado de EMG
-
+#### Tabla
 | Condición          | Señal Cruda                                                                 | Filtro Butterworth                                                          | Filtro FIR Lineal                                                           | Filtro FIR Bessel                                                           | Filtro Notch Butter                                                         |
 |--------------------|------------------------------------------------------------------------------|------------------------------------------------------------------------------|------------------------------------------------------------------------------|------------------------------------------------------------------------------|------------------------------------------------------------------------------|
 | **Reposo**         | ![1](https://github.com/Brenda-Cardenas/GRUPO-07-ISB-2025-II/blob/main/Laboratorios/Laboratorio%206%20-%20Filtros%20FIR%20e%20IIR/Im%C3%A1genes/1.png) | ![2](https://github.com/Brenda-Cardenas/GRUPO-07-ISB-2025-II/blob/main/Laboratorios/Laboratorio%206%20-%20Filtros%20FIR%20e%20IIR/Im%C3%A1genes/2.png) | ![3](https://github.com/Brenda-Cardenas/GRUPO-07-ISB-2025-II/blob/main/Laboratorios/Laboratorio%206%20-%20Filtros%20FIR%20e%20IIR/Im%C3%A1genes/3.png) | ![4](https://github.com/Brenda-Cardenas/GRUPO-07-ISB-2025-II/blob/main/Laboratorios/Laboratorio%206%20-%20Filtros%20FIR%20e%20IIR/Im%C3%A1genes/4.png) | ![5](https://github.com/Brenda-Cardenas/GRUPO-07-ISB-2025-II/blob/main/Laboratorios/Laboratorio%206%20-%20Filtros%20FIR%20e%20IIR/Im%C3%A1genes/5.png) |
@@ -94,28 +95,16 @@ La SNR también se utiliza como parámetro comparativo entre filtros: un diseño
 
 
 ### Resultados de filtrado de ECG
+#### Respuesta en frecuencia
+![ECG Magnitud](https://github.com/Brenda-Cardenas/GRUPO-07-ISB-2025-II/blob/main/Laboratorios/Laboratorio%206%20-%20Filtros%20FIR%20e%20IIR/Im%C3%A1genes/ECG%20MAGNITUD.png)
 
-## Resultados de filtrado de ECG
+#### Tabla
 
 | Condición          | Señal Cruda                                                                 | FIR (0.5–40 Hz)                                                             | Butterworth (0.5–40 Hz)                                                     | Chebyshev II (0.5–40 Hz)                                                   | Notch 50 Hz + Butterworth                                                   |
 |--------------------|------------------------------------------------------------------------------|------------------------------------------------------------------------------|------------------------------------------------------------------------------|------------------------------------------------------------------------------|------------------------------------------------------------------------------|
 | **Reposo**         | ![16](https://github.com/Brenda-Cardenas/GRUPO-07-ISB-2025-II/blob/main/Laboratorios/Laboratorio%206%20-%20Filtros%20FIR%20e%20IIR/Im%C3%A1genes/16.png) | ![17](https://github.com/Brenda-Cardenas/GRUPO-07-ISB-2025-II/blob/main/Laboratorios/Laboratorio%206%20-%20Filtros%20FIR%20e%20IIR/Im%C3%A1genes/17.png) | ![18](https://github.com/Brenda-Cardenas/GRUPO-07-ISB-2025-II/blob/main/Laboratorios/Laboratorio%206%20-%20Filtros%20FIR%20e%20IIR/Im%C3%A1genes/18.png) | ![19](https://github.com/Brenda-Cardenas/GRUPO-07-ISB-2025-II/blob/main/Laboratorios/Laboratorio%206%20-%20Filtros%20FIR%20e%20IIR/Im%C3%A1genes/19.png) | ![20](https://github.com/Brenda-Cardenas/GRUPO-07-ISB-2025-II/blob/main/Laboratorios/Laboratorio%206%20-%20Filtros%20FIR%20e%20IIR/Im%C3%A1genes/20.png) |
 | **Apnea**          | ![21](https://github.com/Brenda-Cardenas/GRUPO-07-ISB-2025-II/blob/main/Laboratorios/Laboratorio%206%20-%20Filtros%20FIR%20e%20IIR/Im%C3%A1genes/21.png) | ![22](https://github.com/Brenda-Cardenas/GRUPO-07-ISB-2025-II/blob/main/Laboratorios/Laboratorio%206%20-%20Filtros%20FIR%20e%20IIR/Im%C3%A1genes/22.png) | ![23](https://github.com/Brenda-Cardenas/GRUPO-07-ISB-2025-II/blob/main/Laboratorios/Laboratorio%206%20-%20Filtros%20FIR%20e%20IIR/Im%C3%A1genes/23.png) | ![24](https://github.com/Brenda-Cardenas/GRUPO-07-ISB-2025-II/blob/main/Laboratorios/Laboratorio%206%20-%20Filtros%20FIR%20e%20IIR/Im%C3%A1genes/24.png) | ![25](https://github.com/Brenda-Cardenas/GRUPO-07-ISB-2025-II/blob/main/Laboratorios/Laboratorio%206%20-%20Filtros%20FIR%20e%20IIR/Im%C3%A1genes/25.png) |
 | **Post ejercicio** | ![26](https://github.com/Brenda-Cardenas/GRUPO-07-ISB-2025-II/blob/main/Laboratorios/Laboratorio%206%20-%20Filtros%20FIR%20e%20IIR/Im%C3%A1genes/26.png) | ![27](https://github.com/Brenda-Cardenas/GRUPO-07-ISB-2025-II/blob/main/Laboratorios/Laboratorio%206%20-%20Filtros%20FIR%20e%20IIR/Im%C3%A1genes/27.png) | ![28](https://github.com/Brenda-Cardenas/GRUPO-07-ISB-2025-II/blob/main/Laboratorios/Laboratorio%206%20-%20Filtros%20FIR%20e%20IIR/Im%C3%A1genes/28.png) | ![29](https://github.com/Brenda-Cardenas/GRUPO-07-ISB-2025-II/blob/main/Laboratorios/Laboratorio%206%20-%20Filtros%20FIR%20e%20IIR/Im%C3%A1genes/29.png) | ![30](https://github.com/Brenda-Cardenas/GRUPO-07-ISB-2025-II/blob/main/Laboratorios/Laboratorio%206%20-%20Filtros%20FIR%20e%20IIR/Im%C3%A1genes/30.png) |
-
-
-
-### Resultados de filtrado de EEG
-
-| Condición         | Señal Cruda                          | FIR Equiripple                        | FIR Blackman                          | Butterworth 4º                        | Notch 60 Hz                          |
-|-------------------|---------------------------------------|---------------------------------------|---------------------------------------|---------------------------------------|---------------------------------------|
-| **Cruda**         | ![EEG Cruda](ruta_img)               | ![EEG FIR Equiripple Cruda](ruta_img) | ![EEG FIR Blackman Cruda](ruta_img)   | ![EEG Butterworth Cruda](ruta_img)    | ![EEG Notch Cruda](ruta_img)          |
-| **Tarea cognitiva** | ![EEG Tarea Cognitiva](ruta_img)    | ![EEG FIR Equiripple Tarea](ruta_img) | ![EEG FIR Blackman Tarea](ruta_img)   | ![EEG Butterworth Tarea](ruta_img)    | ![EEG Notch Tarea](ruta_img)          |
-| **Parpadeo**      | ![EEG Parpadeo](ruta_img)            | ![EEG FIR Equiripple Parpadeo](ruta_img) | ![EEG FIR Blackman Parpadeo](ruta_img) | ![EEG Butterworth Parpadeo](ruta_img) | ![EEG Notch Parpadeo](ruta_img)       |
-| **Masticar**      | ![EEG Masticar](ruta_img)            | ![EEG FIR Equiripple Masticar](ruta_img) | ![EEG FIR Blackman Masticar](ruta_img) | ![EEG Butterworth Masticar](ruta_img) | ![EEG Notch Masticar](ruta_img)       |
-| **Ojos cerrados** | ![EEG Ojos Cerrados](ruta_img)       | ![EEG FIR Equiripple Ojos](ruta_img)  | ![EEG FIR Blackman Ojos](ruta_img)    | ![EEG Butterworth Ojos](ruta_img)     | ![EEG Notch Ojos](ruta_img)           |
-| **Ondas alfa**    | ![EEG Ondas Alfa](ruta_img)          | ![EEG FIR Equiripple Alfa](ruta_img)  | ![EEG FIR Blackman Alfa](ruta_img)    | ![EEG Butterworth Alfa](ruta_img)     | ![EEG Notch Alfa](ruta_img)           |
-
 
 ## 7. Discusión de resultados  
 ### Comparación entre FIR e IIR  
