@@ -138,12 +138,12 @@ El filtro Chebyshev aplicado a la señal EEG evidencia una atenuación más pron
 En conclusión, el FIR es ideal para estudios que requieran máxima fidelidad temporal y preservación de fase, mientras que el Butterworth se presenta como la mejor opción práctica en entornos clínicos y aplicaciones en tiempo real. El Chebyshev resulta adecuado en escenarios de alto ruido pero puede alterar amplitudes, y el Notch es indispensable para suprimir la interferencia de la red. En conjunto, una combinación de Butterworth y Notch representa la solución más equilibrada para el procesamiento de EEG.
 
 
-### Evaluación de SNR ⭐  
+### Evaluación de SNR  
 
 Los resultados de SNR muestran que en señales **EMG**, el filtro FIR lineal alcanzó el mayor valor (~21 dB), lo que refleja una alta capacidad de preservar la señal útil frente al ruido, lo que resulta especialmente importante en análisis de activación muscular y control de prótesis. Los demás filtros se ubicaron alrededor de ~18 dB, lo que indica un desempeño aceptable, aunque con menor eficiencia en la supresión de artefactos. En el caso del **ECG**, el filtro Chebyshev alcanzó el mejor desempeño con ~15 dB, evidenciando un balance más favorable entre la reducción del ruido y la conservación de la morfología de la onda, mientras que los otros filtros no superaron los 10 dB, lo que puede afectar la interpretación clínica de componentes como el complejo QRS. Finalmente, en el **EEG**, todos los filtros presentaron valores inferiores a 8 dB, lo que sugiere que este tipo de señal es más vulnerable a la interferencia y que, a pesar de la aplicación de técnicas de filtrado, la limpieza no es tan efectiva como en EMG o ECG, reflejando la mayor complejidad de aislar patrones neuronales sin perder información relevante.
 
 
-### Utilidad de la correlación cruzada ⭐  
+### Utilidad de la correlación cruzada
 
 Los valores de correlación cruzada obtenidos, que en su mayoría fueron superiores a **0.89**, indican una fuerte similitud entre la señal original y las señales filtradas. Este resultado sugiere que los filtros aplicados lograron reducir de manera efectiva el ruido sin distorsionar de forma significativa la morfología de las señales, lo cual es fundamental en contextos biomédicos como EMG, ECG y EEG. Una correlación tan alta demuestra que la estructura temporal y las características principales de las ondas se mantienen prácticamente intactas tras el proceso de filtrado, garantizando que la información clínica o experimental derivada de dichas señales no se vea comprometida. En este sentido, los valores reportados validan la eficacia de los métodos de filtrado utilizados, ya que alcanzan un equilibrio adecuado entre limpieza de la señal y preservación de la información relevante.
 
