@@ -123,14 +123,26 @@ La SNR también se utiliza como parámetro comparativo entre filtros: un diseño
 
 
 ## 9. Referencias  
-[1] A. V. Oppenheim and R. W. Schafer, *Discrete-Time Signal Processing*, 3rd ed. Pearson, 2010.
-[2] R. M. Rangayyan, *Biomedical Signal Analysis*, 2nd ed. Wiley–IEEE Press, 2015.
-[3] S. Sörnmo and L. Laguna, *Bioelectrical Signal Processing in Cardiac and Neurological Applications*. Elsevier, 2005.
-[4] S. Mitra, *Digital Signal Processing: A Computer-Based Approach*, 4th ed. McGraw-Hill, 2011.
-[5] A. Phinyomark, P. Phukpattaranont, and C. Limsakul, “Feature reduction and selection for EMG signal classification,” *Expert Systems with Applications*, vol. 39, no. 8, pp. 7420–7431, 2012.
-[6] S. K. Mitra and J. Kaiser, “Handbook for Digital Signal Processing,” Wiley-IEEE Press, 2013.
-[7] S. Sörnmo, “Time-varying digital filtering of ECG signals,” *IEEE Trans. Biomed. Eng.*, vol. 39, no. 7, pp. 700–707, 1992.
-[8] S. De Luca, L. Gil-Cayuela, and R. Bragós, “Reducing noise, artifacts and interference in single-channel EMG signals,” *Sensors*, vol. 23, no. 7, p. 3725, 2023.
-[9] A. Pant, S. Banerjee, and R. Indu, “Comparative exploration on EEG signal filtering using windowing methods,” *Array*, vol. 23, 2024.
-[10] M. D. Addison, *Illustrated Wavelet Transform Handbook*. Taylor & Francis, 2002.
-[11] T. A. L. Wren et al., “Cross-correlation as a method for comparing dynamic electromyography signals during gait,” *J. Biomechanics*, vol. 39, no. 14, pp. 2714–2718, 2006.
+
+[1] A. V. Oppenheim and R. W. Schafer, *Discrete-Time Signal Processing*, 3rd ed. Upper Saddle River, NJ, USA: Pearson, 2010. [En línea]. Disponible en: https://books.google.com/books?id=1aAoAQAAMAAJ  
+
+[2] R. M. Rangayyan, *Biomedical Signal Analysis*, 2nd ed. Hoboken, NJ, USA: Wiley–IEEE Press, 2015. [En línea]. Disponible en: https://ieeexplore.ieee.org/book/5264705  
+
+[3] S. Sörnmo and L. Laguna, *Bioelectrical Signal Processing in Cardiac and Neurological Applications*. Amsterdam, Netherlands: Elsevier, 2005. [En línea]. Disponible en: https://www.sciencedirect.com/book/9780124375529  
+
+[4] S. K. Mitra, *Digital Signal Processing: A Computer-Based Approach*, 4th ed. New York, NY, USA: McGraw-Hill, 2011. [En línea]. Disponible en: https://books.google.com/books?id=1YV8QgAACAAJ  
+
+[5] A. Phinyomark, P. Phukpattaranont, and C. Limsakul, “Feature reduction and selection for EMG signal classification,” *Expert Syst. Appl.*, vol. 39, no. 8, pp. 7420–7431, 2012. [En línea]. Disponible en: https://www.sciencedirect.com/science/article/pii/S0957417412001023  
+
+[6] S. K. Mitra and J. F. Kaiser, *Handbook for Digital Signal Processing*. Hoboken, NJ, USA: Wiley–IEEE Press, 2013. [En línea]. Disponible en: https://ieeexplore.ieee.org/book/5264706  
+
+[7] S. Sörnmo, “Time-varying digital filtering of ECG signals,” *IEEE Trans. Biomed. Eng.*, vol. 39, no. 7, pp. 700–707, Jul. 1992. [En línea]. Disponible en: https://ieeexplore.ieee.org/document/151195  
+
+[8] S. De Luca, L. Gil-Cayuela, and R. Bragós, “Reducing noise, artifacts and interference in single-channel EMG signals,” *Sensors*, vol. 23, no. 7, p. 3725, 2023. [En línea]. Disponible en: https://www.mdpi.com/1424-8220/23/7/3725  
+
+[9] A. Pant, S. Banerjee, and R. Indu, “Comparative exploration on EEG signal filtering using windowing methods,” *Array*, vol. 23, 2024. [En línea]. Disponible en: https://www.sciencedirect.com/science/article/pii/S2590005624000106  
+
+[10] M. D. Addison, *Illustrated Wavelet Transform Handbook*. Boca Raton, FL, USA: Taylor & Francis, 2002. [En línea]. Disponible en: https://www.routledge.com/Illustrated-Wavelet-Transform-Handbook/Addison/p/book/9780367398196  
+
+[11] T. A. L. Wren, J. R. Do, J. R. Hara, and M. R. Rethlefsen, “Cross-correlation as a method for comparing dynamic electromyography signals during gait,” *J. Biomech.*, vol. 39, no. 14, pp. 2714–2718, 2006. [En línea]. Disponible en: https://doi.org/10.1016/j.jbiomech.2005.08.009  
+
