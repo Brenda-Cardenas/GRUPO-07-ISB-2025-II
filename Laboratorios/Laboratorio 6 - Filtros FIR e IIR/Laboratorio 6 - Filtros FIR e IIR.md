@@ -29,35 +29,31 @@ En este laboratorio se propone el diseño, implementación y comparación de fil
 
 
 ## 4. Fundamentos Teóricos
-### 4.1 Filtros digitales: FIR e IIR
-Los filtros digitales son sistemas matemáticos que permiten modificar el espectro de una señal con el fin de eliminar o atenuar el ruido y resaltar las componentes de interés [1].
+### 4.1 Filtros digitales: FIR e IIR  
 
-* Los **filtros FIR** tienen una respuesta al impulso de duración finita, siempre son estables y permiten fase lineal exacta, lo que los hace especialmente útiles en aplicaciones clínicas donde la forma de onda debe conservarse [4].
-* Los **filtros IIR** emplean realimentación y alcanzan buenos resultados con órdenes menores, lo que los hace más eficientes en sistemas de tiempo real. Sin embargo, pueden introducir fase no lineal y requieren un diseño cuidadoso [6].
+Los filtros digitales procesan señales discretas eliminando o reduciciendo componentes no deseadas, como ruidos e interferencias, y resaltar las frecuencias que contienen la información de interés clínico [1].  
 
-### 4.2 Transformada de Fourier
-La **Transformada de Fourier**, calculada de forma rápida mediante la FFT, permite observar las señales en el dominio de la frecuencia. Con ella se pueden identificar picos de ruido (como los 50/60 Hz en ECG) o diferenciar ritmos cerebrales en EEG [1], [3], [8]. Este análisis es fundamental para diseñar filtros adecuados.
+- Los **filtros FIR (Finite Impulse Response)** se caracterizan por tener una respuesta impulsional de duración finita, lo que garantiza su estabilidad en cualquier condición. Una de sus principales ventajas es la posibilidad de diseñarlos con fase lineal exacta, lo que asegura que la forma original de la señal no se deforme, aspecto crucial en bioseñales como el ECG, donde pequeñas variaciones en la morfología pueden alterar el diagnóstico [4]. Además, su diseño permite controlar con precisión la banda de paso y la atenuación de la banda de rechazo, aunque esto suele requerir órdenes más altos y, por lo tanto, un mayor costo computacional.  
 
-### 4.3 Relación Señal a Ruido (SNR)
-La SNR expresa la proporción entre la energía de la señal útil y la del ruido. Un filtrado exitoso se traduce en un aumento de esta relación, siempre que no se eliminen componentes fisiológicos relevantes [5], [7].
+- Los **filtros IIR (Infinite Impulse Response)** utilizan realimentación en su estructura, lo que les permite obtener una respuesta de impulso infinita. Su principal ventaja es que logran un desempeño similar al de los FIR, pero con un número mucho menor de coeficientes, lo que los hace más eficientes para aplicaciones en tiempo real, como dispositivos biomédicos portátiles y sistemas de monitoreo continuo [6]. No obstante, presentan dos limitaciones: pueden generar una fase no lineal, lo que altera la forma de la señal, y requieren un diseño más cuidadoso para evitar problemas de inestabilidad numérica.  
 
-### 4.4 Correlación cruzada
-La correlación cruzada mide la similitud entre dos señales a lo largo del tiempo. Al aplicarse a una señal original y a su versión filtrada, permite comprobar si el filtrado ha preservado la forma de la señal o ha introducido distorsiones [4], [9], [11].
+En el ámbito biomédico, la elección entre FIR e IIR depende de las necesidades del análisis: los filtros FIR son preferidos cuando es indispensable preservar la morfología de la señal (ECG o EEG), mientras que los IIR resultan más útiles en situaciones donde la eficiencia computacional es prioritaria, como en la adquisición de EMG en tiempo real.  
 
-### 📊 Datos de señales  
-- EMG  
-- ECG  
-- EEG  
+### 4.2 Transformada de Fourier  
 
----
+La **Transformada de Fourier** permite descomponer una señal en sus componentes de frecuencia. Su implementación eficiente mediante la **Transformada Rápida de Fourier (FFT)** facilita el análisis espectral de bioseñales en contextos clínicos y experimentales [1], [3].  
 
-## 4. 📚 Fundamentos Teóricos  
-### 🔹 Filtros digitales (FIR e IIR)  
-### 🔹 Transformada de Fourier y análisis en frecuencia  
-### 🔹 Relación señal-ruido (SNR, Signal-to-Noise Ratio) ⭐ *(punto extra)*  
-### 🔹 Correlación cruzada como método de similitud ⭐ *(punto extra)*  
+En ECG, la transformada permite identificar picos específicos en 50/60 Hz, asociados a la interferencia de la red eléctrica, y guiar el diseño de filtros notch para su eliminación. En EEG, posibilita la detección y separación de ritmos cerebrales (delta, theta, alfa, beta y gamma), permitiendo diferenciar entre actividad fisiológica normal y artefactos externos como el parpadeo o el movimiento [8]. En EMG, el análisis espectral ayuda a estudiar el rango de frecuencia de la señal muscular, que suele encontrarse entre 20 y 500 Hz, y a distinguirlo de interferencias ajenas a la contracción muscular.  
 
----
+El análisis en frecuencia no solo permite detectar ruidos, sino también evaluar la efectividad del filtrado aplicado, ya que la reducción de picos indeseados en el espectro refleja la eficiencia del filtro.  
+
+### 4.3 Relación Señal a Ruido (SNR)  
+
+La **Relación Señal a Ruido (SNR)** es una métrica que compara la potencia de la señal útil frente a la del ruido presente en un registro. Se expresa generalmente en decibelios (dB) y constituye un indicador fundamental de la calidad de una señal biomédica [5].  
+
+Un filtrado digital exitoso se refleja en un aumento de la SNR, lo que significa que se ha eliminado parte del ruido sin afectar de manera significativa la información fisiológica. En ECG, por ejemplo, un incremento en la SNR permite que las ondas P-QRS-T se distingan con mayor claridad, mejorando la detección de arritmias [7]. En EEG, una SNR más alta facilita el análisis de ritmos neuronales y su relación con procesos cognitivos o patológicos. En EMG, se traduce en la posibilidad de estudiar con mayor precisión los patrones de activación muscular sin la interferencia de artefactos eléctricos.  
+
+La SNR también se utiliza como parámetro comparativo entre filtros: un diseño que logre incrementar la relación señal-ruido de manera significativa, preservando la forma de onda, se considera más eficiente y clínicamente útil.  
 
 ## 5. Metodología  
 
@@ -83,11 +79,8 @@ La correlación cruzada mide la similitud entre dos señales a lo largo del tiem
    Se graficaron las señales antes y después de la aplicación de cada filtro, lo que permitió observar los cambios logrados en el dominio temporal.  
 
 7. **Análisis de parámetros**  
-   Para cuantificar los resultados obtenidos se realizaron mediciones de la **relación señal-ruido (SNR)** y se aplicó la **correlación cruzada** entre las señales originales y filtradas. Estos análisis facilitaron la comparación objetiva entre los filtros FIR e IIR diseñados.  
- 
-
----
-
+   Para cuantificar los resultados obtenidos se realizaron mediciones de la **relación señal-ruido (SNR)** y se aplicó la **correlación cruzada** entre las señales originales y filtradas. Estos análisis facilitaron la comparación objetiva entre los filtros FIR e IIR diseñados.
+   
 ## 6. Resultados  
 ### 💪 EMG  
 - Reposo  
@@ -104,8 +97,6 @@ La correlación cruzada mide la similitud entre dos señales a lo largo del tiem
 - Basal  
 - Ojos abiertos/cerrados  
 - Ejercicios mentales simples y complejos  
-
----
 
 ## 7. Discusión de resultados  
 ### Comparación entre FIR e IIR  
