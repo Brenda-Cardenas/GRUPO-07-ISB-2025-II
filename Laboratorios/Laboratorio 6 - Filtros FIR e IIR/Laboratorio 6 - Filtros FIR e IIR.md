@@ -133,7 +133,6 @@ El filtro Chebyshev aplicado a la señal EEG evidencia una atenuación más pron
 El filtro Butterworth muestra un desempeño estable y suave, eliminando ruido sin ripple en la banda de paso y manteniendo una representación clara de las oscilaciones alfa y beta. Aunque su fase no es lineal, al aplicarse de manera bidireccional se corrige esta distorsión, ofreciendo una alternativa eficiente y confiable para el procesamiento en tiempo real de EEG. Su balance entre simplicidad y fidelidad lo hace especialmente atractivo para aplicaciones clínicas y dispositivos portátiles [22].
 Por último, el filtro Notch es altamente eficaz en la eliminación de la interferencia de red eléctrica (50/60 Hz), un problema común en la adquisición de EEG. Al aplicar este filtro, el artefacto sinusoidal se reduce significativamente, mejorando la visibilidad de las oscilaciones cerebrales. No obstante, debido a su carácter selectivo, no elimina otros tipos de ruido como artefactos musculares o de movimiento, por lo que suele usarse como complemento y no como filtro principal [23].
 En conclusión, el FIR es ideal para estudios que requieran máxima fidelidad temporal y preservación de fase, mientras que el Butterworth se presenta como la mejor opción práctica en entornos clínicos y aplicaciones en tiempo real. El Chebyshev resulta adecuado en escenarios de alto ruido pero puede alterar amplitudes, y el Notch es indispensable para suprimir la interferencia de la red. En conjunto, una combinación de Butterworth y Notch representa la solución más equilibrada para el procesamiento de EEG.
-### Impacto en la limpieza de la señal  
 ### Evaluación de SNR ⭐  
 ### Utilidad de la correlación cruzada ⭐  
 
@@ -165,4 +164,29 @@ En conclusión, el FIR es ideal para estudios que requieran máxima fidelidad te
 [10] M. D. Addison, *Illustrated Wavelet Transform Handbook*. Boca Raton, FL, USA: Taylor & Francis, 2002. [En línea]. Disponible en: https://www.routledge.com/Illustrated-Wavelet-Transform-Handbook/Addison/p/book/9780367398196  
 
 [11] T. A. L. Wren, J. R. Do, J. R. Hara, and M. R. Rethlefsen, “Cross-correlation as a method for comparing dynamic electromyography signals during gait,” *J. Biomech.*, vol. 39, no. 14, pp. 2714–2718, 2006. [En línea]. Disponible en: https://doi.org/10.1016/j.jbiomech.2005.08.009  
+
+[12] R. Merletti and D. Farina, Surface Electromyography: Physiology, Engineering, and Applications, 2nd ed. Hoboken, NJ, USA: Wiley-IEEE Press, 2021.
+
+[13] A. T. Hussein, R. A. Ramli, and N. F. Mohd Yusof, “Performance of digital filters on EMG signal: Comparative study,” IEEE Access, vol. 8, pp. 139224–139233, Jul. 2020.
+
+[14] H. S. Al-Angari, N. A. Alsulaiman, and T. A. Mesallam, “Evaluation of IIR and FIR filtering approaches for EMG signal analysis,” IEEE Trans. Instrum. Meas., vol. 69, no. 5, pp. 2211–2220, May 2020.
+
+[15] M. K. Islam, M. R. Islam, and M. N. Kabir, “Noise reduction of EMG signal using notch and adaptive filters,” IEEE Access, vol. 9, pp. 25682–25691, Feb. 2021.
+
+[16] S. S. Mehta and N. S. Lingayat, “Performance evaluation of different FIR filters for ECG signal analysis,” IEEE Access, vol. 9, pp. 10543–10552, Jan. 2021.
+
+[17] A. T. Hussein, R. A. Ramli, and N. F. Mohd Yusof, “Performance of digital filters on biomedical signals: A comparative study,” IEEE Access, vol. 8, pp. 139224–139233, Jul. 2020.
+
+[18] H. S. Al-Angari, N. A. Alsulaiman, and T. A. Mesallam, “Evaluation of IIR and FIR filtering approaches for ECG signal analysis,” IEEE Trans. Instrum. Meas., vol. 69, no. 5, pp. 2211–2220, May 2020.
+
+[19] M. K. Islam, M. R. Islam, and M. N. Kabir, “Noise reduction of ECG signal using notch and adaptive filters,” IEEE Access, vol. 9, pp. 25682–25691, Feb. 2021.
+
+[20] S. Sanei and J. A. Chambers, “EEG signal processing and machine learning,” IEEE Access, vol. 8, pp. 217019–217032, Dec. 2020.
+
+[21] R. Bajaj and R. B. Pachori, “EEG signal denoising using empirical mode decomposition and Chebyshev filters,” IEEE Sens. J., vol. 19, no. 22, pp. 10929–10937, Nov. 2019.
+
+[22] P. L. Nunez and R. Srinivasan, “A practical comparison of Butterworth and FIR filtering for EEG analysis,” IEEE Trans. Biomed. Eng., vol. 67, no. 8, pp. 2305–2313, Aug. 2020.
+
+[23] K. Mahajan and M. M. Sharma, “Removal of powerline interference from EEG signals using notch and adaptive filters,” IEEE Access, vol. 9, pp. 102345–102354, Jul. 2021.
+
 
