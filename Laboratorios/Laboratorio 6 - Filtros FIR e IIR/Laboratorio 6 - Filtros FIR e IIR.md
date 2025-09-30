@@ -59,16 +59,36 @@ La correlación cruzada mide la similitud entre dos señales a lo largo del tiem
 
 ---
 
-## 5. 📝 Metodología  
-### ⚡ Diseño y aplicación de filtros para señales EMG  
-### ❤️ Diseño y aplicación de filtros para señales ECG  
-### 🧠 Diseño y aplicación de filtros para señales EEG  
-### 📈 Cálculo de SNR en señales filtradas ⭐ *(punto extra)*  
-### 🔍 Implementación de correlación cruzada ⭐ *(punto extra)*  
+## 5. Metodología  
+
+1. **Selección de señales**  
+   Se emplearon señales de ECG, EMG y EEG adquiridas por el propio grupo en laboratorios anteriores. Estas señales fueron elegidas porque contenían diferentes tipos de interferencias (ruido de red, artefactos de movimiento y variaciones de base), lo cual permitió aplicar y validar los filtros digitales diseñados.  
+
+2. **Instalación y configuración del entorno**  
+   Se instaló el programa **PyFDA** en el entorno virtual de **Anaconda**, asegurando su correcto funcionamiento para el diseño de filtros digitales.  
+
+3. **Diseño de filtros en PyFDA**  
+   Para cada señal biomédica se diseñaron cuatro filtros diferentes, incluyendo opciones de tipo FIR e IIR.  
+   - En ECG, se configuraron filtros con el fin de eliminar la interferencia de la red eléctrica y la deriva de línea base.  
+   - En EMG, se diseñaron filtros para atenuar el ruido de alta frecuencia y los artefactos de movimiento.  
+   - En EEG, se aplicaron configuraciones que permitieran resaltar bandas de interés y reducir interferencias.  
+
+4. **Exportación de filtros**  
+   Los filtros diseñados en PyFDA fueron exportados en formato **.csv**, conteniendo los coeficientes necesarios para su posterior aplicación en Python.  
+
+5. **Implementación en Python**  
+   Los coeficientes de los filtros exportados fueron integrados en scripts de **Python**, creando sistemas de una entrada y una salida. De este modo, se aplicaron los filtros directamente a las señales seleccionadas en el paso inicial.  
+
+6. **Visualización de resultados**  
+   Se graficaron las señales antes y después de la aplicación de cada filtro, lo que permitió observar los cambios logrados en el dominio temporal.  
+
+7. **Análisis de parámetros**  
+   Para cuantificar los resultados obtenidos se realizaron mediciones de la **relación señal-ruido (SNR)** y se aplicó la **correlación cruzada** entre las señales originales y filtradas. Estos análisis facilitaron la comparación objetiva entre los filtros FIR e IIR diseñados.  
+ 
 
 ---
 
-## 6. 📊 Resultados  
+## 6. Resultados  
 ### 💪 EMG  
 - Reposo  
 - Contracción leve  
@@ -87,19 +107,18 @@ La correlación cruzada mide la similitud entre dos señales a lo largo del tiem
 
 ---
 
-## 7. 💭 Discusión de resultados  
-### 🔹 Comparación entre FIR e IIR  
-### 🔹 Impacto en la limpieza de la señal  
-### 🔹 Evaluación de SNR ⭐  
-### 🔹 Utilidad de la correlación cruzada ⭐  
+## 7. Discusión de resultados  
+### Comparación entre FIR e IIR  
+### Impacto en la limpieza de la señal  
+### Evaluación de SNR ⭐  
+### Utilidad de la correlación cruzada ⭐  
 
----
 
-## 8. 🏁 Conclusiones  
 
----
+## 8. Conclusiones  
 
-## 9. 📚 Referencias  
+
+## 9. Referencias  
 [1] A. V. Oppenheim and R. W. Schafer, *Discrete-Time Signal Processing*, 3rd ed. Pearson, 2010.
 [2] R. M. Rangayyan, *Biomedical Signal Analysis*, 2nd ed. Wiley–IEEE Press, 2015.
 [3] S. Sörnmo and L. Laguna, *Bioelectrical Signal Processing in Cardiac and Neurological Applications*. Elsevier, 2005.
@@ -111,8 +130,3 @@ La correlación cruzada mide la similitud entre dos señales a lo largo del tiem
 [9] A. Pant, S. Banerjee, and R. Indu, “Comparative exploration on EEG signal filtering using windowing methods,” *Array*, vol. 23, 2024.
 [10] M. D. Addison, *Illustrated Wavelet Transform Handbook*. Taylor & Francis, 2002.
 [11] T. A. L. Wren et al., “Cross-correlation as a method for comparing dynamic electromyography signals during gait,” *J. Biomechanics*, vol. 39, no. 14, pp. 2714–2718, 2006.
-
----
-
-## 10. 👥 Aporte de los integrantes  
-
