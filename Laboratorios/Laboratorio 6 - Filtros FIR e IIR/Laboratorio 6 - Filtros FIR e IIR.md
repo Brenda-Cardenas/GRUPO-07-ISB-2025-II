@@ -147,6 +147,10 @@ Los valores de correlación cruzada obtenidos, que en su mayoría fueron superio
 
 ## 8. Conclusiones  
 
+A partir del análisis realizado, se puede concluir que el desempeño de los filtros depende del tipo de señal biomédica y de los objetivos de procesamiento. En señales **EMG**, el filtro FIR lineal resultó el más efectivo al alcanzar los mayores valores de SNR (~21 dB), lo que demuestra su capacidad para preservar la actividad muscular relevante y eliminar el ruido. En el caso del **ECG**, el filtro Chebyshev destacó con un SNR de ~15 dB, evidenciando un balance entre atenuación de ruido y conservación de la morfología de la onda, mientras que en el **EEG** los filtros no superaron los 8 dB, lo que confirma la complejidad de este tipo de señal y la necesidad de técnicas más avanzadas para su limpieza.
+
+Los resultados de correlación cruzada, que en su mayoría fueron superiores a 0.89, refuerzan que los filtros aplicados no alteraron significativamente la forma de las señales originales, manteniendo su integridad para aplicaciones clínicas e investigativas. De manera global, se puede afirmar que el filtrado es una herramienta indispensable en el procesamiento de señales biomédicas, y que la elección del tipo de filtro debe realizarse considerando las características específicas de cada señal y los parámetros de interés, de modo que se logre un equilibrio entre supresión de ruido y preservación de información.
+
 
 ## 9. Referencias  
 
