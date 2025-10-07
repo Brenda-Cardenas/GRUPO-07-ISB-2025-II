@@ -1,4 +1,4 @@
-# **Laboratorio 8: Transformada Wavelet**
+# **Laboratorio 7: Transformada Wavelet**
 ## Introducción
 El análisis de señales cuyas características varían en el tiempo es un desafío para el procesamiento digital. Para dichas señales, la transformada de Fourier se ve limitada debido a que esta se usa con señales estacionarias, lo que limita su capacidad para detectar eventos rápidos o transitorios [1]. Es por ello que la transformada wavelet resulta eficaz para analizar este tipo de señales porque permite analizar el tiempo y frecuencia de manera conjunta. 
 
@@ -73,7 +73,7 @@ Las señales EEG tienen amplitudes bajas y se componen de distintas bandas de fr
 | Detalle Nivel 1 (Flexor) | <img src="./Multimedia/028_Detalle-Nivel-i-bandasi-101f-bandasi-111f-Hz.png" width="500"/> |
 | Aproximación muy baja frecuencia (Bíceps) | <img src="./Multimedia/018_Aproximación-muy-baja-frecuencia.png" width="500"/> |
 | Aproximación muy baja frecuencia (Flexor) | <img src="./Multimedia/029_Aproximación-muy-baja-frecuencia.png" width="500"/> |
-| Energía por banda (Bíceps) | <img src="./Multimedia/019_Energía-contenida-en-cada-banda-de-frecuencia.png" width="500"/> |
+| Energía por banda (Bíceps) | <img src="./Multimedia/005_Señal-Original.png" width="500"/> |
 | Energía por banda (Flexor) | <img src="./Multimedia/030_Energía-contenida-en-cada-banda-de-frecuencia.png" width="500"/> |
 
 #### Análisis en frecuencia
