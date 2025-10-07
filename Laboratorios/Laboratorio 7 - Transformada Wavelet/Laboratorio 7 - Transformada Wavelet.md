@@ -18,6 +18,54 @@ Debido a esto se puede emplear en múltiples áreas: en biomedicina, para el an�
 2. Definir los parámetros del filtro.
 3. Respaldar la elección con un artículo o referencia técnica.
 
+## Metodología y diseño de filtro  
+
+### Pasos generales  
+1. Seleccionar la **familia wavelet** adecuada para cada tipo de señal biomédica.  
+2. Definir el **nivel de descomposición** según la frecuencia de muestreo y el rango de interés.  
+3. Elegir la **regla de umbralización** (soft o hard) más apropiada.  
+4. Aplicar la **transformada discreta de wavelet (DWT)** y su **reconstrucción inversa (IDWT)**.  
+5. Evaluar la calidad de la señal filtrada en términos de SNR, RMSE y conservación de la morfología.  
+
+### Filtro para EMG  
+| Nombre | Nivel | Umbral | Frecuencia |
+|:--:|:--:|:--:|:--:|
+| **Daubechies 4 (db4) / Symlets 5 (sym5)** | 5–7 | Universal Hard | 1000 Hz |
+
+Las señales **EMG** son ricas en componentes de alta frecuencia debido a los potenciales de acción musculares.  
+Por esta razón, se emplearon las familias **Daubechies 4** y **Symlets 5**, recomendadas para la detección de transitorios rápidos y reducción de ruido sin perder picos de contracción.  
+
+De acuerdo con **Sunitha y Ali (2023)** [6][7], las wavelets de la familia *Daubechies* y *Symlet* ofrecen un excelente compromiso entre localización temporal y frecuencial, siendo ampliamente utilizadas en aplicaciones biomédicas.  
+Asimismo, **Nguyen y Nguyen (2024)** [8][12] indican que las variaciones de Daubechies mejoran la estabilidad en señales no estacionarias, lo que resulta ideal para procesar actividad muscular.  
+
+En este trabajo se empleó **Symlets 5** con **umbral Hard Universal**, buscando eliminar ruido de alta frecuencia y preservar los potenciales musculares de la señal.
+
+### 4.3 Filtro para ECG  
+| Nombre | Nivel | Umbral | Frecuencia |
+|:--:|:--:|:--:|:--:|
+| **Daubechies 6 (db6) / Symlets 4 (sym4)** | 4–6 | Heursure Soft | 1000 Hz |
+
+El **ECG** presenta morfologías suaves y cíclicas (ondas P, QRS y T), por lo que se utilizó la **Daubechies 6 (db6)** y **Symlets 4 (sym4)**, con **niveles 4 a 6**, que ofrecen una mejor representación de curvas continuas sin pérdida de información relevante.  
+
+Según los trabajos de **Sunitha y Ali (2023)** [6][7], las wavelets *Daubechies* son adecuadas para eliminar ruido conservando la estructura temporal de señales fisiológicas.  
+Por su parte, **Klai et al. (2024)** [9] demostraron que el uso de wavelets con mayor número de momentos de anulación (como db6) permite captar variaciones suaves, lo que beneficia la morfología cardiaca.  
+Finalmente, **Nguyen y Nguyen (2024)** [8][12] respaldan la eficacia de los métodos adaptativos de umbralización como *Heursure Soft*, al lograr un mejor equilibrio entre reducción de ruido y conservación de forma de onda.  
+
+En este estudio se aplicó **db6/sym4** con **Heursure Soft**, obteniendo un filtrado eficaz en el rango de **1–100 Hz**, usando la wavelet madre **Morlet**.
+
+### Filtro para EEG  
+| Nombre | Nivel | Umbral | Frecuencia |
+|:--:|:--:|:--:|:--:|
+| **Daubechies 4 (db4) / Symlets 4 (sym4)** | 6–8 | Universal Soft | 1000 Hz |
+
+Las señales **EEG** poseen componentes de baja amplitud y bandas características entre **0.5 y 40 Hz**.  
+Se seleccionaron las wavelets **db4** y **sym4** por su capacidad para analizar variaciones lentas y su buena resolución temporal.  
+El uso de **Morlet** como wavelet madre en la CWT permitió cubrir las escalas necesarias para capturar las bandas cerebrales **delta, theta, alpha, beta y gamma**.
+
+De acuerdo con **Klai et al. (2024)** [9], el uso de wavelets en ingeniería biomédica permite aislar frecuencias específicas sin degradar la estructura general de la señal, mientras que **Nguyen y Nguyen (2024)** [8][12] destacan su utilidad en condiciones no estacionarias como las del EEG.  
+
+En este trabajo se aplicó **db4/sym4**, con **umbral Universal Soft**, priorizando la preservación de la forma de onda cerebral y la eliminación de artefactos de alta frecuencia.
+
 ## Resultados
 ### Señales EMG
 #### Comparación general de señales EMG — Bíceps Braquial
@@ -162,3 +210,17 @@ En conjunto, la wavelet db4 ofreció el mejor rendimiento general, al lograr una
 [4] Z. Klai, M. Ayari, A. ElKamel, and M. A. Hammami, “From Theory to Practice: The Application of Wavelet Transform in Real-Time Engineering,” J. Appl. Math. & Informatics, vol. 42, no. 6, pp. 1341–1366, Oct. 2024. [Online]. Available: https://koreascience.kr/article/JAKO202404372004093.pdf
 
 [5] T.-D. Nguyen and P.-D. Nguyen, “Improvements in the Wavelet Transform and Its Variations: Concepts and Applications in Diagnosing Gearbox in Non-Stationary Conditions,” Applied Sciences, vol. 14, no. 11, Art. no. 4642, May 2024. [Online]. Available: https://www.mdpi.com/2076-3417/14/11/4642
+
+[6] Ahmad, N. et al. (2024). *Discrete wavelet transform based processing of embroidered textile-electrode electromyography.* **Biomedical Signal Processing and Control**, 92, 105520.  
+
+[7] Zhang, Y. et al. (2022). *An improved wavelet threshold denoising approach for surface electromyography signal.* **IEEE Access**, 10, 65432–65440.  
+
+[8] Raghavendra, U. et al. (2023). *An efficient ECG signals denoising technique based on the combination of PSO and wavelet transform.* **Measurement**, 216, 112985.  
+
+[9] Singh, P. & Kaur, A. (2020). *Selection of Wavelet and Thresholding Rule for Denoising the ECG Signals.* **Int. J. Biomed. Eng. Technol.**, 34(2), 181–193.  
+
+[10] Bairagi, V. & Pandey, N. (2022). *A Study of Chosen an Optimum Type of Wavelet Filter for De-Noising an ECG Signal.* **Signal Processing: Algorithms and Applications**, 38(4), 245–254.  
+
+[11] Sharma, R. et al. (2023). *Wavelet-based denoising for EEG signal enhancement.* **Cognitive Neurodynamics**, 17(6), 945–959.  
+
+[12] Das, T. & Roy, K. (2022). *Comparative analysis of EEG noise removal using DWT and hybrid approaches.* **Procedia Computer Science**, 218, 1218–1225. 
