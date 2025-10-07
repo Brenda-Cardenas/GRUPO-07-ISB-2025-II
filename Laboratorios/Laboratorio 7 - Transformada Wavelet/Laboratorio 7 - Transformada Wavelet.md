@@ -67,14 +67,14 @@ Las señales EEG tienen amplitudes bajas y se componen de distintas bandas de fr
 #### Transformada y descomposición Wavelet
 | Análisis | Imagen |
 |:--:|:--:|
-| Transformada de Wavelet Continua (Bíceps) | <img src="./Multimedia/003_Transformada-de-Wavelet-Continua.png" width="500"/> |
-| Transformada de Wavelet Continua (Flexor) | <img src="./Multimedia/025_Transformada-de-Wavelet-Continua.png" width="500"/> |
+| Transformada de Wavelet Continua (Bíceps) | <img src="./Multimedia/018_Aproximación-muy-baja-frecuencia.png" width="500"/> |
+| Transformada de Wavelet Continua (Flexor) | <img src="./Multimedia/029_Aproximación-muy-baja-frecuencia.png" width="500"/> |
 | Scalograma de potencia (Bíceps) | <img src="./Multimedia/004_Scalograma-potencia-pcolormesh.png" width="500"/> |
 | Scalograma de potencia (Flexor) | <img src="./Multimedia/026_Scalograma-potencia-pcolormesh.png" width="500"/> |
 | Detalle Nivel 1 (Bíceps) | <img src="./Multimedia/006_Detalle-Nivel-i-bandasi-101f-bandasi-111f-Hz.png" width="500"/> |
 | Detalle Nivel 1 (Flexor) | <img src="./Multimedia/028_Detalle-Nivel-i-bandasi-101f-bandasi-111f-Hz.png" width="500"/> |
-| Aproximación muy baja frecuencia (Bíceps) | <img src="./Multimedia/018_Aproximación-muy-baja-frecuencia.png" width="500"/> |
-| Aproximación muy baja frecuencia (Flexor) | <img src="./Multimedia/029_Aproximación-muy-baja-frecuencia.png" width="500"/> |
+| Aproximación muy baja frecuencia (Bíceps) | <img src="./Multimedia/003_Transformada-de-Wavelet-Continua.png" width="500"/> |
+| Aproximación muy baja frecuencia (Flexor) | <img src="./Multimedia/025_Transformada-de-Wavelet-Continua.png" width="500"/> |
 | Energía por banda (Bíceps) | <img src="./Multimedia/005_Señal-Original.png" width="500"/> |
 | Energía por banda (Flexor) | <img src="./Multimedia/030_Energía-contenida-en-cada-banda-de-frecuencia.png" width="500"/> |
 
