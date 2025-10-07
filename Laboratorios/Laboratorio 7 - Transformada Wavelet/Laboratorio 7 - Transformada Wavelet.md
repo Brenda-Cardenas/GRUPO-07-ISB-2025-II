@@ -153,6 +153,29 @@ La Symlet 4 (sym4), derivada de Daubechies pero con mayor simetría, redujo la d
 
 En conjunto, la wavelet db4 ofreció el mejor rendimiento general, al lograr una supresión de ruido efectiva y preservar la forma original del ECG. Esto coincide con múltiples investigaciones recientes que la señalan como la más apropiada para el procesamiento y detección de características del ECG [6], [8].
 
+
+
+### Señales EMG
+Al aplicar las transformadas wavelet Daubechies 4 (db4) y Symlet 5 (sym5) a las señales EMG registradas, se evidenció que ambas permitieron una reducción significativa del ruido y una mejor visualización de los patrones musculares, aunque con diferencias en la preservación de detalles de alta frecuencia y suavidad del trazo. Recordemos que las señales EMG en sí no presentan un patrón definido como algunas derivadas de las señales ECG, es por esta razón que lo principal es reducir el ruido y poder apreciar la amplitud de la señal durante algunas actividades.
+
+La Daubechies 4 (db4) mostró una excelente capacidad de filtrado, eliminando eficazmente las componentes de alta frecuencia asociadas al ruido eléctrico y las interferencias de red. En el dominio temporal, la señal resultante presentó una forma más limpia y una mejor delimitación de los picos de activación muscular, sin pérdida considerable de la información morfológica [15].
+En particular, su ventana corta permite capturar de forma efectiva las transiciones rápidas típicas de la señal EMG, lo que la hace especialmente útil para segmentación o identificación de actividad muscular.
+
+Por otro lado, la Symlet 5 (sym5) proporcionó un filtrado más suave y simétrico, reduciendo la distorsión temporal y el retardo de fase, lo que mejoró la continuidad del trazo. La señal reconstruida presentó una menor fluctuación en las regiones de reposo muscular, manteniendo sin embargo la forma general de los impulsos de activación.
+
+En conjunto, aunque ambas transformadas lograron una mejora en la calidad de la señal EMG, la Daubechies 4 (db4) ofreció una mejor preservación de la información relevante para análisis temporal y de activación muscular, mientras que la Symlet 5 (sym5) resultó más apropiada para tareas que requieren suavidad y mínima distorsión de fase. Por tanto, la elección óptima depende del objetivo: db4 para análisis de actividad rápida y sym5 para análisis de tendencia o suavización prolongada.
+
+
+
+### Señales EEG
+El uso de transformada wavelet en EEG nos permite extraer características de las EEG para poder tambien apreciar de ser necesario las bandaas delta, theta, etc [16].
+La Daubechies 4 (db4) presentó una excelente capacidad para aislar las bandas de frecuencia cerebral sin perder información morfológica. En el dominio temporal, se observó que los picos de actividad cortical —especialmente en las bandas alfa y beta— se mantuvieron con buena definición, mientras que el ruido de alta frecuencia y los artefactos musculares fueron eliminados. 
+Además, su forma asimétrica se adapta adecuadamente a la naturaleza no estacionaria del EEG, facilitando el análisis multibanda sin distorsionar la fase.
+
+Por su parte, la Symlet 4 (sym4) ofreció una reconstrucción más suave y con menor distorsión de fase, gracias a su mayor simetría. En la señal filtrada, se observó una reducción más efectiva del ruido de baja frecuencia (movimientos o artefactos oculares), conservando las oscilaciones lentas (δ y θ) con una morfología más estable.
+En conjunto, ambas wavelets resultaron eficaces para el procesamiento de EEG, aunque con distintos enfoques: la db4 es más apropiada cuando se busca una delimitación precisa de eventos corticales rápidos y detección de picos, mientras que la sym4 ofrece ventajas cuando se requiere una señal suavizada, continua y con mínima distorsión de fase.
+
+
 ## Bibliografía
 [1] V. Sunitha and S. S. Ali, “Wavelet Transform in Depth Study and Its Application,” Int. J. Creative Research Thoughts (IJCRT), vol. 11, no. 9, pp. 1–12, Sep. 2023. [Online]. Available: https://ijcrt.org/papers/IJCRT2309449.pdf
 
@@ -177,3 +200,12 @@ En conjunto, la wavelet db4 ofreció el mejor rendimiento general, al lograr una
 [11] Sharma, R. et al. (2023). *Wavelet-based denoising for EEG signal enhancement.* **Cognitive Neurodynamics**, 17(6), 945–959.  
 
 [12] Das, T. & Roy, K. (2022). *Comparative analysis of EEG noise removal using DWT and hybrid approaches.* **Procedia Computer Science**, 218, 1218–1225. 
+
+[13] X. Li, Y. Li, and J. Li, “A Wavelet-Based ECG Delineation and Automated Diagnosis Framework Using Adaptive Thresholding,” BMC Medical Informatics and Decision Making, vol. 20, no. 298, pp. 1–12, 2020.
+
+[14] T. Rózsa and E. Moser, “Comparing Different Wavelet Transforms on Removing Electrocardiogram Baseline Wanders and Special Trends,” EAI Endorsed Transactions on Bioengineering and Bioinformatics, vol. 6, no. 20, 2019.
+
+[15]	C. Ouyang, L. Cai, B. Liu, and T. Zhang, “An improved wavelet threshold denoising approach for surface electromyography signal,” EURASIP J. Adv. Signal Process., vol. 2023, no. 1, 2023.
+
+[16]	J. London, “Biomedical signal processing: EEG and ECG classification with discrete wavelet transforms, energy distribution, and convolutional neural networks,” arXiv, 2025.
+
