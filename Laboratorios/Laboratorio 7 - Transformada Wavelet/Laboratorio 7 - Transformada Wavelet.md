@@ -51,18 +51,7 @@ Las señales EEG tienen amplitudes bajas y se componen de distintas bandas de fr
 ## Resultados
 ### Señales EMG
 - 📓 [**Codigo_EMG.ipynb**](./Codigo_EMG.ipynb)  
-  Notebook de procesamiento y análisis Wavelet de señales EMG (músculo bíceps y flexor).  
-#### Comparación general de señales EMG — Bíceps Braquial
-| Condición | Señal Cruda | Señal Filtrada (Wavelet Daubechies 4) |
-|:--:|:--:|:--:|
-| **Reposo** | <img src="./Multimedia/000_Bíceps-Braquial---Reposo.png" width="400"/> | <img src="./Multimedia/021_EMG-Filtrada-con-Wavelet-Daubechies-4-Umbral-por-Banda.png" width="400"/> |
-| **Contracción isométrica máxima** | <img src="./Multimedia/011_Bíceps-Braquial---Contracción-isométrica-máxima.png" width="400"/> | <img src="./Multimedia/010_Señal-EMG-Original.png" width="400"/> |
-
-#### Comparación general de señales EMG — Flexor
-| Condición | Señal Cruda | Señal Filtrada (Wavelet Daubechies 4) |
-|:--:|:--:|:--:|
-| **Reposo** | <img src="./Multimedia/022_Flexor---Reposo.png" width="400"/> | <img src="./Multimedia/018_Aproximación-muy-baja-frecuencia.png" width="400"/> |
-| **Contracción isométrica máxima** | <img src="./Multimedia/033_Flexor---Contracción-isométrica-máxima.png" width="400"/> | <img src="./Multimedia/029_Aproximación-muy-baja-frecuencia.png" width="400"/> |
+  Notebook de procesamiento y análisis Wavelet de señales EMG (músculo bíceps y flexor).
 
 #### Transformada y descomposición Wavelet
 | Análisis | Imagen |
@@ -90,13 +79,6 @@ Las señales EEG tienen amplitudes bajas y se componen de distintas bandas de fr
 - 📓 [**Codigo_ECG (1).ipynb**](./Codigo_ECG%20(1).ipynb)  
   Notebook de procesamiento de señales ECG mediante Wavelet Daubechies 6 y Symlet 4, con comparaciones temporales y en frecuencia.
   
-#### Comparación general (señal temporal)
-| Registro | Señal ECG Cruda | Señal ECG Filtrada (Wavelet Daubechies 4) |
-|:--:|:--:|:--:|
-| **A** | <img src="./Multimedia/022_ECG-Original.png" width="400"/> | <img src="./Multimedia/023_ECG-Filtrado-con-Wavelet-Daubechies-4-Umbral-por-Banda.png" width="400"/> |
-| **B** | <img src="./Multimedia/033_ECG-Original.png" width="400"/> | <img src="./Multimedia/034_ECG-Filtrado-con-Wavelet-Daubechies-4-Umbral-por-Banda.png" width="400"/> |
-| **C** | <img src="./Multimedia/007_ECG-Original.png" width="400"/> | — |
-
 #### Transformada y descomposición Wavelet
 | Análisis | Gráfico |
 |:--:|:--:|
@@ -122,12 +104,6 @@ Las señales EEG tienen amplitudes bajas y se componen de distintas bandas de fr
 ### Análisis de señales EEG
 - 📓 [**Codigo_EEG.ipynb**](./Codigo_EEG.ipynb)  
   Notebook de análisis de señales EEG, incluyendo descomposición, scalogramas y energía por bandas.  
-
-#### Comparación general (Cruda vs Filtrada)
-| Condición | Señal EEG Cruda | Señal EEG Filtrada (Wavelet Daubechies 4 – Umbral por banda) | Comentarios |
-|:--|:--:|:--:|:--:|
-| **Ensayo 1** | <img src="./Multimedia/031_EEG-Original.png" width="420"/> | <img src="./Multimedia/032_EEG-Filtrada-con-Wavelet-Daubechies-4-Umbrales-por-banda.png" width="420"/> | Reducción de ruido de alta frecuencia con preservación morfológica. |
-| **Ensayo 2** | <img src="./Multimedia/020_EEG-Original.png" width="420"/> | <img src="./Multimedia/021_EEG-Filtrada-con-Wavelet-Daubechies-4-Umbrales-por-banda.png" width="420"/> | Eliminación de artefactos musculares manteniendo componentes alfa. |
 
 #### Análisis en frecuencia (PSD / FFT)
 | Análisis | Imagen |
@@ -164,18 +140,6 @@ Las señales EEG tienen amplitudes bajas y se componen de distintas bandas de fr
 | Energía contenida por banda (Ensayo 1) | <img src="./Multimedia/019_Energia-contenida-en-cada-banda-de-frecuencia.png" width="500"/> |
 | Energía contenida por banda (Ensayo 2) | <img src="./Multimedia/030_Energia-contenida-en-cada-banda-de-frecuencia.png" width="500"/> |
 
-#### Señales originales y específicas
-| Tipo / Ensayo | Imagen |
-|:--|:--:|
-| Señal EEG original (Ensayo 1) | <img src="./Multimedia/005_Senal-Original.png" width="520"/> |
-| Señal EEG original (Ensayo 2) | <img src="./Multimedia/016_Senal-Original.png" width="520"/> |
-| Señal EEG original (Ensayo 3) | <img src="./Multimedia/027_Senal-Original.png" width="520"/> |
-| Señal EEG original (canal adicional) | <img src="./Multimedia/008_Senal-EEG-Original.png" width="520"/> |
-| Señal EEG adicional | <img src="./Multimedia/010_Senal-EEG-Original.png" width="520"/> |
-| EEG — Ojos cerrados | <img src="./Multimedia/011_Ojos-cerrados.png" width="520"/> |
-| EEG — Tarea cognitiva | <img src="./Multimedia/022_Tarea-cognitiva.png" width="520"/> |
-| EEG — Figura inicial | <img src="./Multimedia/000_EEG-Figura-1.png" width="520"/> |
-| EEG — Original adicional | <img src="./Multimedia/009_EEG-Original.png" width="520"/> |
 
 ## Discusión
 ### Señales ECG
