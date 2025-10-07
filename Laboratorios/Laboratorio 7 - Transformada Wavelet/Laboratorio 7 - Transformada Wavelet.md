@@ -32,39 +32,21 @@ Debido a esto se puede emplear en múltiples áreas: en biomedicina, para el an�
 |:--:|:--:|:--:|:--:|
 | **Daubechies 4 (db4) / Symlets 5 (sym5)** | 5–7 | Universal Hard | 1000 Hz |
 
-Las señales **EMG** son ricas en componentes de alta frecuencia debido a los potenciales de acción musculares.  
-Por esta razón, se emplearon las familias **Daubechies 4** y **Symlets 5**, recomendadas para la detección de transitorios rápidos y reducción de ruido sin perder picos de contracción.  
-
-De acuerdo con **Sunitha y Ali (2023)** [6][7], las wavelets de la familia *Daubechies* y *Symlet* ofrecen un excelente compromiso entre localización temporal y frecuencial, siendo ampliamente utilizadas en aplicaciones biomédicas.  
-Asimismo, **Nguyen y Nguyen (2024)** [8][12] indican que las variaciones de Daubechies mejoran la estabilidad en señales no estacionarias, lo que resulta ideal para procesar actividad muscular.  
-
-En este trabajo se empleó **Symlets 5** con **umbral Hard Universal**, buscando eliminar ruido de alta frecuencia y preservar los potenciales musculares de la señal.
+Las señales EMG presentan una alta concentración de componentes de frecuencia debido a los potenciales de acción generados por las fibras musculares. Para su procesamiento se seleccionaron las familias Daubechies 4 y Symlet 5, ya que tienen una resolución temporal y frecuencial, lo que facilita la detección de transitorios rápidos y la reducción del ruido sin afectar la forma de los picos de contracción. Estas familias han sido empleadas de forma consistente en estudios sobre transformadas wavelet en aplicaciones biomédicas, destacando su equilibrio entre estabilidad y capacidad de localización [6][7][8][12]. 
 
 ### 4.3 Filtro para ECG  
 | Nombre | Nivel | Umbral | Frecuencia |
 |:--:|:--:|:--:|:--:|
 | **Daubechies 6 (db6) / Symlets 4 (sym4)** | 4–6 | Heursure Soft | 1000 Hz |
 
-El **ECG** presenta morfologías suaves y cíclicas (ondas P, QRS y T), por lo que se utilizó la **Daubechies 6 (db6)** y **Symlets 4 (sym4)**, con **niveles 4 a 6**, que ofrecen una mejor representación de curvas continuas sin pérdida de información relevante.  
-
-Según los trabajos de **Sunitha y Ali (2023)** [6][7], las wavelets *Daubechies* son adecuadas para eliminar ruido conservando la estructura temporal de señales fisiológicas.  
-Por su parte, **Klai et al. (2024)** [9] demostraron que el uso de wavelets con mayor número de momentos de anulación (como db6) permite captar variaciones suaves, lo que beneficia la morfología cardiaca.  
-Finalmente, **Nguyen y Nguyen (2024)** [8][12] respaldan la eficacia de los métodos adaptativos de umbralización como *Heursure Soft*, al lograr un mejor equilibrio entre reducción de ruido y conservación de forma de onda.  
-
-En este estudio se aplicó **db6/sym4** con **Heursure Soft**, obteniendo un filtrado eficaz en el rango de **1–100 Hz**, usando la wavelet madre **Morlet**.
+La señal ECG tiene una forma repetitiva y esta compuesta por las ondas P, QRS y T. Para su procesamiento se usaron las wavelets Daubechies 6 y Symlet 4 con niveles de descomposición entre 4 y 6, lo que permitió representar mejor los ciclos del corazón sin perder detalles importantes. Estas wavelets se utilizan con frecuencia en el análisis de señales fisiológicas por su capacidad para reducir el ruido sin alterar la forma original [6][7][8][12]. Se ha comprobado que un mayor número de momentos de anulación, como en la db6, ayuda a captar mejor las variaciones suaves del ECG y mejora su definición [9]. 
 
 ### Filtro para EEG  
 | Nombre | Nivel | Umbral | Frecuencia |
 |:--:|:--:|:--:|:--:|
 | **Daubechies 4 (db4) / Symlets 4 (sym4)** | 6–8 | Universal Soft | 1000 Hz |
 
-Las señales **EEG** poseen componentes de baja amplitud y bandas características entre **0.5 y 40 Hz**.  
-Se seleccionaron las wavelets **db4** y **sym4** por su capacidad para analizar variaciones lentas y su buena resolución temporal.  
-El uso de **Morlet** como wavelet madre en la CWT permitió cubrir las escalas necesarias para capturar las bandas cerebrales **delta, theta, alpha, beta y gamma**.
-
-De acuerdo con **Klai et al. (2024)** [9], el uso de wavelets en ingeniería biomédica permite aislar frecuencias específicas sin degradar la estructura general de la señal, mientras que **Nguyen y Nguyen (2024)** [8][12] destacan su utilidad en condiciones no estacionarias como las del EEG.  
-
-En este trabajo se aplicó **db4/sym4**, con **umbral Universal Soft**, priorizando la preservación de la forma de onda cerebral y la eliminación de artefactos de alta frecuencia.
+Las señales EEG tienen amplitudes bajas y se componen de distintas bandas de frecuencia entre 0.5 y 40 Hz. Para su análisis se usaron las wavelets Daubechies 4 y Symlet 4, ya que permiten estudiar variaciones lentas con buena precisión en el tiempo. Además, se utilizó la wavelet Morlet como base en la transformada continua para abarcar las escalas asociadas a las bandas cerebrales delta, theta, alpha, beta y gamma. Estas wavelets son adecuadas para separar frecuencias específicas sin alterar la forma general de la señal y resultan especialmente útiles en registros cerebrales, que son de naturaleza no estacionaria [8][9][12]. 
 
 ## Resultados
 ### Señales EMG
