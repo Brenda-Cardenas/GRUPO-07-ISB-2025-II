@@ -17,8 +17,43 @@ Debido a esto se puede emplear en múltiples áreas: en biomedicina, para el an�
 1. Elegir la familia de wavelet y justificar su elección.
 2. Definir los parámetros del filtro.
 3. Respaldar la elección con un artículo o referencia técnica.
+
 ## Resultados
-1. Verificar la efectividad del filtrado y la reconstrucción
+### Señales EMG
+#### Comparación general de señales EMG — Bíceps Braquial
+| Condición | Señal Cruda | Señal Filtrada (Wavelet Daubechies 4) |
+|:--:|:--:|:--:|
+| **Reposo** | <img src="./Multimedia/000_Bíceps-Braquial---Reposo.png" width="400"/> | <img src="./Multimedia/021_EMG-Filtrada-con-Wavelet-Daubechies-4-Umbral-por-Banda.png" width="400"/> |
+| **Contracción isométrica máxima** | <img src="./Multimedia/011_Bíceps-Braquial---Contracción-isométrica-máxima.png" width="400"/> | <img src="./Multimedia/010_Señal-EMG-Original.png" width="400"/> |
+
+#### Comparación general de señales EMG — Flexor
+| Condición | Señal Cruda | Señal Filtrada (Wavelet Daubechies 4) |
+|:--:|:--:|:--:|
+| **Reposo** | <img src="./Multimedia/022_Flexor---Reposo.png" width="400"/> | <img src="./Multimedia/032_EMG-Filtrada-con-Wavelet-Daubechies-4-Umbral-por-Banda.png" width="400"/> |
+| **Contracción isométrica máxima** | <img src="./Multimedia/033_Flexor---Contracción-isométrica-máxima.png" width="400"/> | <img src="./Multimedia/043_EMG-Filtrada-con-Wavelet-Daubechies-4-Umbral-por-Banda.png" width="400"/> |
+
+#### Transformada y descomposición Wavelet
+| Análisis | Imagen |
+|:--:|:--:|
+| Transformada de Wavelet Continua (Bíceps) | <img src="./Multimedia/003_Transformada-de-Wavelet-Continua.png" width="500"/> |
+| Transformada de Wavelet Continua (Flexor) | <img src="./Multimedia/025_Transformada-de-Wavelet-Continua.png" width="500"/> |
+| Scalograma de potencia (Bíceps) | <img src="./Multimedia/004_Scalograma-potencia-pcolormesh.png" width="500"/> |
+| Scalograma de potencia (Flexor) | <img src="./Multimedia/026_Scalograma-potencia-pcolormesh.png" width="500"/> |
+| Detalle Nivel 1 (Bíceps) | <img src="./Multimedia/006_Detalle-Nivel-i-bandasi-101f-bandasi-111f-Hz.png" width="500"/> |
+| Detalle Nivel 1 (Flexor) | <img src="./Multimedia/028_Detalle-Nivel-i-bandasi-101f-bandasi-111f-Hz.png" width="500"/> |
+| Aproximación muy baja frecuencia (Bíceps) | <img src="./Multimedia/018_Aproximación-muy-baja-frecuencia.png" width="500"/> |
+| Aproximación muy baja frecuencia (Flexor) | <img src="./Multimedia/029_Aproximación-muy-baja-frecuencia.png" width="500"/> |
+| Energía por banda (Bíceps) | <img src="./Multimedia/019_Energía-contenida-en-cada-banda-de-frecuencia.png" width="500"/> |
+| Energía por banda (Flexor) | <img src="./Multimedia/030_Energía-contenida-en-cada-banda-de-frecuencia.png" width="500"/> |
+
+#### Análisis en frecuencia
+| Representación | Imagen |
+|:--:|:--:|
+| Espectro de frecuencias (Bíceps) | <img src="./Multimedia/001_Espectro-de-frecuencias.png" width="500"/> |
+| STFT de la señal (Bíceps) | <img src="./Multimedia/002_STFT-de-la-señal.png" width="500"/> |
+| Espectro de frecuencias (Flexor) | <img src="./Multimedia/023_Espectro-de-frecuencias.png" width="500"/> |
+| STFT de la señal (Flexor) | <img src="./Multimedia/024_STFT-de-la-señal.png" width="500"/> |
+
 ## Discusión
 1. Discutir los resultados.
 
