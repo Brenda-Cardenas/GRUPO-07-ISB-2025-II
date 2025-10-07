@@ -65,7 +65,7 @@ Las señales EEG tienen amplitudes bajas y se componen de distintas bandas de fr
 | Aproximación muy baja frecuencia (Bíceps) | <img src="./Multimedia/032_EMG-Filtrada-con-Wavelet-Daubechies-4-Umbral-por-Banda.png" width="500"/> |
 | Aproximación muy baja frecuencia (Flexor) | <img src="./Multimedia/043_EMG-Filtrada-con-Wavelet-Daubechies-4-Umbral-por-Banda.png" width="500"/> |
 | Energía por banda (Bíceps) | <img src="./Multimedia/005_Señal-Original.png" width="500"/> |
-| Energía por banda (Flexor) | <img src="./Multimedia/030_Energía-contenida-en-cada-banda-de-frecuencia.png" width="500"/> |
+| Energía por banda (Flexor) | <img src="./Multimedia/016_Señal-Original.png" width="500"/> |
 
 #### Análisis en frecuencia
 | Representación | Imagen |
