@@ -61,8 +61,8 @@ Las señales EEG tienen amplitudes bajas y se componen de distintas bandas de fr
 #### Comparación general de señales EMG — Flexor
 | Condición | Señal Cruda | Señal Filtrada (Wavelet Daubechies 4) |
 |:--:|:--:|:--:|
-| **Reposo** | <img src="./Multimedia/022_Flexor---Reposo.png" width="400"/> | <img src="./Multimedia/032_EMG-Filtrada-con-Wavelet-Daubechies-4-Umbral-por-Banda.png" width="400"/> |
-| **Contracción isométrica máxima** | <img src="./Multimedia/033_Flexor---Contracción-isométrica-máxima.png" width="400"/> | <img src="./Multimedia/043_EMG-Filtrada-con-Wavelet-Daubechies-4-Umbral-por-Banda.png" width="400"/> |
+| **Reposo** | <img src="./Multimedia/022_Flexor---Reposo.png" width="400"/> | <img src="./Multimedia/018_Aproximación-muy-baja-frecuencia.png" width="400"/> |
+| **Contracción isométrica máxima** | <img src="./Multimedia/033_Flexor---Contracción-isométrica-máxima.png" width="400"/> | <img src="./Multimedia/029_Aproximación-muy-baja-frecuencia.png" width="400"/> |
 
 #### Transformada y descomposición Wavelet
 | Análisis | Imagen |
@@ -73,8 +73,8 @@ Las señales EEG tienen amplitudes bajas y se componen de distintas bandas de fr
 | Scalograma de potencia (Flexor) | <img src="./Multimedia/026_Scalograma-potencia-pcolormesh.png" width="500"/> |
 | Detalle Nivel 1 (Bíceps) | <img src="./Multimedia/006_Detalle-Nivel-i-bandasi-101f-bandasi-111f-Hz.png" width="500"/> |
 | Detalle Nivel 1 (Flexor) | <img src="./Multimedia/028_Detalle-Nivel-i-bandasi-101f-bandasi-111f-Hz.png" width="500"/> |
-| Aproximación muy baja frecuencia (Bíceps) | <img src="./Multimedia/018_Aproximación-muy-baja-frecuencia.png" width="500"/> |
-| Aproximación muy baja frecuencia (Flexor) | <img src="./Multimedia/029_Aproximación-muy-baja-frecuencia.png" width="500"/> |
+| Aproximación muy baja frecuencia (Bíceps) | <img src="./Multimedia/032_EMG-Filtrada-con-Wavelet-Daubechies-4-Umbral-por-Banda.png" width="500"/> |
+| Aproximación muy baja frecuencia (Flexor) | <img src="./Multimedia/043_EMG-Filtrada-con-Wavelet-Daubechies-4-Umbral-por-Banda.png" width="500"/> |
 | Energía por banda (Bíceps) | <img src="./Multimedia/005_Señal-Original.png" width="500"/> |
 | Energía por banda (Flexor) | <img src="./Multimedia/030_Energía-contenida-en-cada-banda-de-frecuencia.png" width="500"/> |
 
