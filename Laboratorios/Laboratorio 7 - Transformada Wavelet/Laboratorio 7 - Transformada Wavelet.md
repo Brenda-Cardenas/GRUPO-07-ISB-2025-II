@@ -54,6 +54,51 @@ Debido a esto se puede emplear en múltiples áreas: en biomedicina, para el an�
 | Espectro de frecuencias (Flexor) | <img src="./Multimedia/023_Espectro-de-frecuencias.png" width="500"/> |
 | STFT de la señal (Flexor) | <img src="./Multimedia/024_STFT-de-la-señal.png" width="500"/> |
 
+#### Comparación general de señales — Bíceps Braquial (EMG) y ECG
+
+| Condición | Señal EMG (Cruda) | Señal ECG (Cruda) | Señal EMG (Filtrada Wavelet Daubechies 4) | Señal ECG (Filtrada) |
+|:--:|:--:|:--:|:--:|:--:|
+| **Reposo** | <img src="./Multimedia/000_Bíceps-Braquial---Reposo.png" width="320"/> | <img src="./Multimedia/000_ECG-Reposo.png" width="320"/> | <img src="./Multimedia/021_EMG-Filtrada-con-Wavelet-Daubechies-4-Umbral-por-Banda.png" width="320"/> | <img src="./Multimedia/001_ECG-Filtrada.png" width="320"/> |
+| **Contracción isométrica máxima** | <img src="./Multimedia/011_Bíceps-Braquial---Contracción-isométrica-máxima.png" width="320"/> | <img src="./Multimedia/002_ECG-Contracción.png" width="320"/> | <img src="./Multimedia/010_Señal-EMG-Original.png" width="320"/> | <img src="./Multimedia/003_ECG-Filtrada.png" width="320"/> |
+
+> 💬 *Ambas señales muestran sincronía temporal en picos de activación muscular (EMG) y ritmo cardiaco (ECG). El filtrado Wavelet reduce artefactos sin perder morfología.*
+
+---
+
+#### Comparación general de señales — Flexor (EMG) y ECG
+
+| Condición | Señal EMG (Cruda) | Señal ECG (Cruda) | Señal EMG (Filtrada Wavelet Daubechies 4) | Señal ECG (Filtrada) |
+|:--:|:--:|:--:|:--:|:--:|
+| **Reposo** | <img src="./Multimedia/022_Flexor---Reposo.png" width="320"/> | <img src="./Multimedia/004_ECG-Reposo.png" width="320"/> | <img src="./Multimedia/032_EMG-Filtrada-con-Wavelet-Daubechies-4-Umbral-por-Banda.png" width="320"/> | <img src="./Multimedia/005_ECG-Filtrada.png" width="320"/> |
+| **Contracción isométrica máxima** | <img src="./Multimedia/033_Flexor---Contracción-isométrica-máxima.png" width="320"/> | <img src="./Multimedia/006_ECG-Contracción.png" width="320"/> | <img src="./Multimedia/043_EMG-Filtrada-con-Wavelet-Daubechies-4-Umbral-por-Banda.png" width="320"/> | <img src="./Multimedia/007_ECG-Filtrada.png" width="320"/> |
+
+> 💬 *Durante la contracción máxima, se observa aumento de la amplitud EMG y leve variación en frecuencia del ECG, compatible con respuesta simpática transitoria.*
+
+---
+
+#### Transformada y descomposición Wavelet (EMG y ECG)
+
+| Análisis | EMG | ECG |
+|:--:|:--:|:--:|
+| Transformada Wavelet Continua (Bíceps) | <img src="./Multimedia/003_Transformada-de-Wavelet-Continua.png" width="450"/> | <img src="./Multimedia/010_Transformada-de-Wavelet-Continua-ECG.png" width="450"/> |
+| Transformada Wavelet Continua (Flexor) | <img src="./Multimedia/025_Transformada-de-Wavelet-Continua.png" width="450"/> | <img src="./Multimedia/011_Transformada-de-Wavelet-Continua-ECG.png" width="450"/> |
+| Scalograma (Bíceps) | <img src="./Multimedia/004_Scalograma-potencia-pcolormesh.png" width="450"/> | <img src="./Multimedia/012_Scalograma-potencia-ECG.png" width="450"/> |
+| Scalograma (Flexor) | <img src="./Multimedia/026_Scalograma-potencia-pcolormesh.png" width="450"/> | <img src="./Multimedia/013_Scalograma-potencia-ECG.png" width="450"/> |
+| Detalle Nivel 1 (10–25 Hz) | <img src="./Multimedia/006_Detalle-Nivel-i-bandasi-101f-bandasi-111f-Hz.png" width="450"/> | <img src="./Multimedia/014_Detalle-Nivel-ECG.png" width="450"/> |
+| Aproximación (muy baja frecuencia) | <img src="./Multimedia/018_Aproximación-muy-baja-frecuencia.png" width="450"/> | <img src="./Multimedia/015_Aproximación-ECG.png" width="450"/> |
+| Energía por banda | <img src="./Multimedia/019_Energía-contenida-en-cada-banda-de-frecuencia.png" width="450"/> | <img src="./Multimedia/016_Energía-contenida-en-cada-banda-de-frecuencia-ECG.png" width="450"/> |
+
+---
+
+#### Análisis en frecuencia (FFT y STFT)
+
+| Representación | EMG | ECG |
+|:--:|:--:|:--:|
+| Espectro de frecuencias (Bíceps) | <img src="./Multimedia/001_Espectro-de-frecuencias.png" width="450"/> | <img src="./Multimedia/017_Espectro-de-frecuencias-ECG.png" width="450"/> |
+| STFT de la señal (Bíceps) | <img src="./Multimedia/002_STFT-de-la-señal.png" width="450"/> | <img src="./Multimedia/018_STFT-ECG.png" width="450"/> |
+| Espectro de frecuencias (Flexor) | <img src="./Multimedia/023_Espectro-de-frecuencias.png" width="450"/> | <img src="./Multimedia/019_Espectro-ECG.png" width="450"/> |
+| STFT de la señal (Flexor) | <img src="./Multimedia/024_STFT-de-la-señal.png" width="450"/> | <img src="./Multimedia/020_STFT-ECG.png" width="450"/> |
+
 ## Discusión
 1. Discutir los resultados.
 
