@@ -50,6 +50,8 @@ Las señales EEG tienen amplitudes bajas y se componen de distintas bandas de fr
 
 ## Resultados
 ### Señales EMG
+- 📓 [**Codigo_EMG.ipynb**](./Codigo_EMG.ipynb)  
+  Notebook de procesamiento y análisis Wavelet de señales EMG (músculo bíceps y flexor).  
 #### Comparación general de señales EMG — Bíceps Braquial
 | Condición | Señal Cruda | Señal Filtrada (Wavelet Daubechies 4) |
 |:--:|:--:|:--:|
@@ -85,6 +87,9 @@ Las señales EEG tienen amplitudes bajas y se componen de distintas bandas de fr
 | STFT de la señal (Flexor) | <img src="./Multimedia/024_STFT-de-la-señal.png" width="500"/> |
 
 ### Análisis de Señales ECG
+- 📓 [**Codigo_ECG (1).ipynb**](./Codigo_ECG%20(1).ipynb)  
+  Notebook de procesamiento de señales ECG mediante Wavelet Daubechies 6 y Symlet 4, con comparaciones temporales y en frecuencia.
+  
 #### Comparación general (señal temporal)
 | Registro | Señal ECG Cruda | Señal ECG Filtrada (Wavelet Daubechies 4) |
 |:--:|:--:|:--:|
@@ -115,6 +120,8 @@ Las señales EEG tienen amplitudes bajas y se componen de distintas bandas de fr
 | Post-ejercicio (Derivada II) | <img src="./Multimedia/024_Post-ejercicio---derivada-2.png" width="500"/> |
 
 ### Análisis de señales EEG
+- 📓 [**Codigo_EEG.ipynb**](./Codigo_EEG.ipynb)  
+  Notebook de análisis de señales EEG, incluyendo descomposición, scalogramas y energía por bandas.  
 
 #### Comparación general (Cruda vs Filtrada)
 | Condición | Señal EEG Cruda | Señal EEG Filtrada (Wavelet Daubechies 4 – Umbral por banda) | Comentarios |
