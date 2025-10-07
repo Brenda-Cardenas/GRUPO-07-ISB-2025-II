@@ -141,7 +141,16 @@ Debido a esto se puede emplear en múltiples áreas: en biomedicina, para el an�
 | EEG — Original adicional | <img src="./Multimedia/009_EEG-Original.png" width="520"/> |
 
 ## Discusión
-1. Discutir los resultados.
+### Señales ECG
+Al aplicar las wavelets Daubechies 4 (db4), Daubechies 6 (db6) y Symlet 4 (sym4) a la señal ECG, se observan diferencias en la claridad del complejo QRS y en la eliminación del ruido de baja frecuencia, que también se puede apreciar en los últimos niveles donde se descompone la onda original. Cada transformada presenta características específicas que influyen en la calidad del filtrado y la preservación morfológica de la señal.
+
+La Daubechies 4 (db4) mostró el mejor equilibrio entre resolución temporal y frecuencial, eliminando el ruido sin distorsionar los complejos QRS. Su función base se asemeja al patrón típico del ECG, lo que favorece una delineación más precisa de los picos R [6], [7]. Diversos estudios recientes respaldan su eficacia para la detección automática y el filtrado adaptativo en señales biomédicas, destacándola como una de las más empleadas en la práctica [8].
+
+Por otro lado, la Daubechies 6 (db6) permitió una reducción más notoria del baseline wander debido a su mejor resolución frecuencial. No obstante, su soporte más largo genera un leve suavizado en los picos QRS, reduciendo la exactitud temporal [6], [9]. Esto la hace apropiada para casos con ruido de baja frecuencia elevado, pero menos adecuada para aplicaciones donde se requiere precisión en la morfología.
+
+La Symlet 4 (sym4), derivada de Daubechies pero con mayor simetría, redujo la distorsión temporal y mejoró la reconstrucción del ECG filtrado. Esta wavelet mantuvo la forma de las ondas P, QRS y T con menor retardo de fase, lo que la convierte en una alternativa eficaz para análisis morfológico [7], [10]. Su comportamiento estable la hace útil cuando se busca conservar la estructura del pulso cardíaco.
+
+En conjunto, la wavelet db4 ofreció el mejor rendimiento general, al lograr una supresión de ruido efectiva y preservar la forma original del ECG. Esto coincide con múltiples investigaciones recientes que la señalan como la más apropiada para el procesamiento y detección de características del ECG [6], [8].
 
 ## Bibliografía
 [1] V. Sunitha and S. S. Ali, “Wavelet Transform in Depth Study and Its Application,” Int. J. Creative Research Thoughts (IJCRT), vol. 11, no. 9, pp. 1–12, Sep. 2023. [Online]. Available: https://ijcrt.org/papers/IJCRT2309449.pdf
