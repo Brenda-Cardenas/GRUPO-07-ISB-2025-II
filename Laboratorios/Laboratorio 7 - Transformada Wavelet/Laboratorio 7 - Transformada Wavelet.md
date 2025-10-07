@@ -54,50 +54,91 @@ Debido a esto se puede emplear en múltiples áreas: en biomedicina, para el an�
 | Espectro de frecuencias (Flexor) | <img src="./Multimedia/023_Espectro-de-frecuencias.png" width="500"/> |
 | STFT de la señal (Flexor) | <img src="./Multimedia/024_STFT-de-la-señal.png" width="500"/> |
 
-#### Comparación general de señales — Bíceps Braquial (EMG) y ECG
-
-| Condición | Señal EMG (Cruda) | Señal ECG (Cruda) | Señal EMG (Filtrada Wavelet Daubechies 4) | Señal ECG (Filtrada) |
-|:--:|:--:|:--:|:--:|:--:|
-| **Reposo** | <img src="./Multimedia/000_Bíceps-Braquial---Reposo.png" width="320"/> | <img src="./Multimedia/000_ECG-Reposo.png" width="320"/> | <img src="./Multimedia/021_EMG-Filtrada-con-Wavelet-Daubechies-4-Umbral-por-Banda.png" width="320"/> | <img src="./Multimedia/001_ECG-Filtrada.png" width="320"/> |
-| **Contracción isométrica máxima** | <img src="./Multimedia/011_Bíceps-Braquial---Contracción-isométrica-máxima.png" width="320"/> | <img src="./Multimedia/002_ECG-Contracción.png" width="320"/> | <img src="./Multimedia/010_Señal-EMG-Original.png" width="320"/> | <img src="./Multimedia/003_ECG-Filtrada.png" width="320"/> |
-
-> 💬 *Ambas señales muestran sincronía temporal en picos de activación muscular (EMG) y ritmo cardiaco (ECG). El filtrado Wavelet reduce artefactos sin perder morfología.*
-
----
-
-#### Comparación general de señales — Flexor (EMG) y ECG
-
-| Condición | Señal EMG (Cruda) | Señal ECG (Cruda) | Señal EMG (Filtrada Wavelet Daubechies 4) | Señal ECG (Filtrada) |
-|:--:|:--:|:--:|:--:|:--:|
-| **Reposo** | <img src="./Multimedia/022_Flexor---Reposo.png" width="320"/> | <img src="./Multimedia/004_ECG-Reposo.png" width="320"/> | <img src="./Multimedia/032_EMG-Filtrada-con-Wavelet-Daubechies-4-Umbral-por-Banda.png" width="320"/> | <img src="./Multimedia/005_ECG-Filtrada.png" width="320"/> |
-| **Contracción isométrica máxima** | <img src="./Multimedia/033_Flexor---Contracción-isométrica-máxima.png" width="320"/> | <img src="./Multimedia/006_ECG-Contracción.png" width="320"/> | <img src="./Multimedia/043_EMG-Filtrada-con-Wavelet-Daubechies-4-Umbral-por-Banda.png" width="320"/> | <img src="./Multimedia/007_ECG-Filtrada.png" width="320"/> |
-
-> 💬 *Durante la contracción máxima, se observa aumento de la amplitud EMG y leve variación en frecuencia del ECG, compatible con respuesta simpática transitoria.*
-
----
-
-#### Transformada y descomposición Wavelet (EMG y ECG)
-
-| Análisis | EMG | ECG |
+### Análisis de Señales ECG
+#### Comparación general (señal temporal)
+| Registro | Señal ECG Cruda | Señal ECG Filtrada (Wavelet Daubechies 4) |
 |:--:|:--:|:--:|
-| Transformada Wavelet Continua (Bíceps) | <img src="./Multimedia/003_Transformada-de-Wavelet-Continua.png" width="450"/> | <img src="./Multimedia/010_Transformada-de-Wavelet-Continua-ECG.png" width="450"/> |
-| Transformada Wavelet Continua (Flexor) | <img src="./Multimedia/025_Transformada-de-Wavelet-Continua.png" width="450"/> | <img src="./Multimedia/011_Transformada-de-Wavelet-Continua-ECG.png" width="450"/> |
-| Scalograma (Bíceps) | <img src="./Multimedia/004_Scalograma-potencia-pcolormesh.png" width="450"/> | <img src="./Multimedia/012_Scalograma-potencia-ECG.png" width="450"/> |
-| Scalograma (Flexor) | <img src="./Multimedia/026_Scalograma-potencia-pcolormesh.png" width="450"/> | <img src="./Multimedia/013_Scalograma-potencia-ECG.png" width="450"/> |
-| Detalle Nivel 1 (10–25 Hz) | <img src="./Multimedia/006_Detalle-Nivel-i-bandasi-101f-bandasi-111f-Hz.png" width="450"/> | <img src="./Multimedia/014_Detalle-Nivel-ECG.png" width="450"/> |
-| Aproximación (muy baja frecuencia) | <img src="./Multimedia/018_Aproximación-muy-baja-frecuencia.png" width="450"/> | <img src="./Multimedia/015_Aproximación-ECG.png" width="450"/> |
-| Energía por banda | <img src="./Multimedia/019_Energía-contenida-en-cada-banda-de-frecuencia.png" width="450"/> | <img src="./Multimedia/016_Energía-contenida-en-cada-banda-de-frecuencia-ECG.png" width="450"/> |
+| **A** | <img src="./Multimedia/022_ECG-Original.png" width="400"/> | <img src="./Multimedia/023_ECG-Filtrado-con-Wavelet-Daubechies-4-Umbral-por-Banda.png" width="400"/> |
+| **B** | <img src="./Multimedia/033_ECG-Original.png" width="400"/> | <img src="./Multimedia/034_ECG-Filtrado-con-Wavelet-Daubechies-4-Umbral-por-Banda.png" width="400"/> |
+| **C** | <img src="./Multimedia/007_ECG-Original.png" width="400"/> | — |
 
----
+#### Transformada y descomposición Wavelet
+| Análisis | Gráfico |
+|:--:|:--:|
+| Transformada Wavelet Continua | <img src="./Multimedia/016_Transformada-de-Wavelet-Continua.png" width="500"/> |
+| Scalograma de Potencia | <img src="./Multimedia/017_Scalograma-potencia-pcolormesh.png" width="500"/> |
+| Detalle Nivel 1 (≈10–11 Hz) | <img src="./Multimedia/019_Detalle-Nivel-i-bandasi-101f-bandasi-111f-Hz.png" width="500"/> |
+| Aproximación (muy baja frecuencia) | <img src="./Multimedia/020_Aproximación-muy-baja-frecuencia.png" width="500"/> |
+| Energía por banda | <img src="./Multimedia/021_Energía-contenida-en-cada-banda-de-frecuencia.png" width="500"/> |
 
-#### Análisis en frecuencia (FFT y STFT)
+#### Análisis en frecuencia (FFT / STFT)
+| Representación | Gráfico |
+|:--:|:--:|
+| Espectro de frecuencias (FFT) | <img src="./Multimedia/014_Espectro-de-frecuencias.png" width="500"/> |
+| STFT / Espectrograma | <img src="./Multimedia/015_STFT-de-la-señal.png" width="500"/> |
 
-| Representación | EMG | ECG |
-|:--:|:--:|:--:|
-| Espectro de frecuencias (Bíceps) | <img src="./Multimedia/001_Espectro-de-frecuencias.png" width="450"/> | <img src="./Multimedia/017_Espectro-de-frecuencias-ECG.png" width="450"/> |
-| STFT de la señal (Bíceps) | <img src="./Multimedia/002_STFT-de-la-señal.png" width="450"/> | <img src="./Multimedia/018_STFT-ECG.png" width="450"/> |
-| Espectro de frecuencias (Flexor) | <img src="./Multimedia/023_Espectro-de-frecuencias.png" width="450"/> | <img src="./Multimedia/019_Espectro-ECG.png" width="450"/> |
-| STFT de la señal (Flexor) | <img src="./Multimedia/024_STFT-de-la-señal.png" width="450"/> | <img src="./Multimedia/020_STFT-ECG.png" width="450"/> |
+#### Ensayos fisiológicos (Derivada II)
+| Condición | Gráfico |
+|:--:|:--:|
+| Reposo (Derivada II) | <img src="./Multimedia/000_Reposo---derivada-2.png" width="500"/> |
+| Apnea respiratoria (Derivada II) | <img src="./Multimedia/013_Apnea-respiratoria---derivada-2.png" width="500"/> |
+| Post-ejercicio (Derivada II) | <img src="./Multimedia/024_Post-ejercicio---derivada-2.png" width="500"/> |
+
+### Análisis de señales EEG
+
+#### Comparación general (Cruda vs Filtrada)
+| Condición | Señal EEG Cruda | Señal EEG Filtrada (Wavelet Daubechies 4 – Umbral por banda) | Comentarios |
+|:--|:--:|:--:|:--:|
+| **Ensayo 1** | <img src="./Multimedia/031_EEG-Original.png" width="420"/> | <img src="./Multimedia/032_EEG-Filtrada-con-Wavelet-Daubechies-4-Umbrales-por-banda.png" width="420"/> | Reducción de ruido de alta frecuencia con preservación morfológica. |
+| **Ensayo 2** | <img src="./Multimedia/020_EEG-Original.png" width="420"/> | <img src="./Multimedia/021_EEG-Filtrada-con-Wavelet-Daubechies-4-Umbrales-por-banda.png" width="420"/> | Eliminación de artefactos musculares manteniendo componentes alfa. |
+
+#### Análisis en frecuencia (PSD / FFT)
+| Análisis | Imagen |
+|:--|:--:|
+| Espectro de frecuencias (Ensayo 1) | <img src="./Multimedia/001_Espectro-de-frecuencias.png" width="520"/> |
+| Espectro de frecuencias (Ensayo 2) | <img src="./Multimedia/012_Espectro-de-frecuencias.png" width="520"/> |
+| Espectro de frecuencias (Ensayo 3) | <img src="./Multimedia/023_Espectro-de-frecuencias.png" width="520"/> |
+
+#### ETFT / Espectrogramas
+| Análisis | Imagen |
+|:--|:--:|
+| STFT de la señal (Ensayo 1) | <img src="./Multimedia/002_STFT-de-la-senal.png" width="520"/> |
+| STFT de la señal (Ensayo 2) | <img src="./Multimedia/013_STFT-de-la-senal.png" width="520"/> |
+| STFT de la señal (Ensayo 3) | <img src="./Multimedia/024_STFT-de-la-senal.png" width="520"/> |
+
+#### Transformada Wavelet y Scalograma
+| Tipo de análisis | Imagen |
+|:--|:--:|
+| Transformada de Wavelet Continua (Ensayo 1) | <img src="./Multimedia/003_Transformada-de-Wavelet-Continua.png" width="520"/> |
+| Transformada de Wavelet Continua (Ensayo 2) | <img src="./Multimedia/014_Transformada-de-Wavelet-Continua.png" width="520"/> |
+| Transformada de Wavelet Continua (Ensayo 3) | <img src="./Multimedia/025_Transformada-de-Wavelet-Continua.png" width="520"/> |
+| Scalograma de potencia (Ensayo 1) | <img src="./Multimedia/004_Scalograma-potencia-pcolormesh.png" width="520"/> |
+| Scalograma de potencia (Ensayo 2) | <img src="./Multimedia/015_Scalograma-potencia-pcolormesh.png" width="520"/> |
+| Scalograma de potencia (Ensayo 3) | <img src="./Multimedia/026_Scalograma-potencia-pcolormesh.png" width="520"/> |
+
+#### Descomposición y energía por bandas
+| Nivel / Análisis | Imagen |
+|:--|:--:|
+| Detalle Nivel 1 (Ensayo 1) | <img src="./Multimedia/006_Detalle-Nivel-i-bandasi-101f-bandasi-111f-Hz.png" width="500"/> |
+| Detalle Nivel 1 (Ensayo 2) | <img src="./Multimedia/017_Detalle-Nivel-i-bandasi-101f-bandasi-111f-Hz.png" width="500"/> |
+| Detalle Nivel 1 (Ensayo 3) | <img src="./Multimedia/028_Detalle-Nivel-i-bandasi-101f-bandasi-111f-Hz.png" width="500"/> |
+| Aproximación (baja frecuencia) | <img src="./Multimedia/018_Aproximacion-muy-baja-frecuencia.png" width="500"/> |
+| Aproximación (Ensayo 3) | <img src="./Multimedia/029_Aproximacion-muy-baja-frecuencia.png" width="500"/> |
+| Energía contenida por banda (Ensayo 1) | <img src="./Multimedia/019_Energia-contenida-en-cada-banda-de-frecuencia.png" width="500"/> |
+| Energía contenida por banda (Ensayo 2) | <img src="./Multimedia/030_Energia-contenida-en-cada-banda-de-frecuencia.png" width="500"/> |
+
+#### Señales originales y específicas
+| Tipo / Ensayo | Imagen |
+|:--|:--:|
+| Señal EEG original (Ensayo 1) | <img src="./Multimedia/005_Senal-Original.png" width="520"/> |
+| Señal EEG original (Ensayo 2) | <img src="./Multimedia/016_Senal-Original.png" width="520"/> |
+| Señal EEG original (Ensayo 3) | <img src="./Multimedia/027_Senal-Original.png" width="520"/> |
+| Señal EEG original (canal adicional) | <img src="./Multimedia/008_Senal-EEG-Original.png" width="520"/> |
+| Señal EEG adicional | <img src="./Multimedia/010_Senal-EEG-Original.png" width="520"/> |
+| EEG — Ojos cerrados | <img src="./Multimedia/011_Ojos-cerrados.png" width="520"/> |
+| EEG — Tarea cognitiva | <img src="./Multimedia/022_Tarea-cognitiva.png" width="520"/> |
+| EEG — Figura inicial | <img src="./Multimedia/000_EEG-Figura-1.png" width="520"/> |
+| EEG — Original adicional | <img src="./Multimedia/009_EEG-Original.png" width="520"/> |
 
 ## Discusión
 1. Discutir los resultados.
