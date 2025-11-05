@@ -6,7 +6,7 @@ El Análisis de Componentes Independientes (ICA) es una técnica que realiza una
 
 ICA COMPONENTS.jpg
 
-![](Multimedia/ICA COMPONENTS.jpg)  
+!["ICA Components"](Multimedia/"ICA COMPONENTS.jpg")
 Figura 1: Las áreas de Brodmann y el sistema de colocación de electrodos 10-10. [1]
 
 Matemáticamente, ICA se basa en la estimación de una matriz de separación que maximiza la independencia entre componentes, comúnmente optimizada mediante criterios como la kurtosis o la no-gaussianidad [3]. En la práctica, esto permite reconstruir la señal EEG excluyendo las fuentes contaminantes. Actualmente, el uso de ICA se ha consolidado tanto en entornos experimentales como clínicos, siendo fundamental en estudios de conectividad funcional, neuroergonomía y diagnóstico de trastornos como epilepsia, TDAH o demencia [4,5]. Además, su integración con librerías especializadas como MNE-Python ha hecho posible su aplicación automatizada y reproducible en investigaciones con grandes volúmenes de datos [1].
