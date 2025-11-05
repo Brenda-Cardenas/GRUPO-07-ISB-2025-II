@@ -66,21 +66,15 @@ Matemáticamente, ICA se basa en la estimación de una matriz de separación que
 ## **5. Resultados**
 📘 [Acceso al código realizado](https://github.com/Brenda-Cardenas/GRUPO-07-ISB-2025-II/tree/main/Laboratorios/Laboratorio%20%2010%20-%20MNE%20EEG)
 
-Tras aplicar ICA, la señal EEG mostró una notable reducción en los picos relacionados con parpadeos y contracciones musculares. La figura siguiente ilustra la diferencia entre la señal cruda y la señal filtrada:
-
-| **Señal sin filtrar** | **Señal filtrada con ICA** |
-|------------------------|-----------------------------|
-| ![EEG cruda](imagenes/figura_1.png) | ![EEG filtrada](imagenes/figura_2.png) |
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Brenda-Cardenas/GRUPO-07-ISB-2025-II/main/Laboratorios/Laboratorio%20%2010%20-%20MNE%20EEG/Multimedia/ICA%20Component%20Scores.jpg" alt="ICA Component Scores" width="800">
+  <br>
+  <em>Figura 2. Puntuaciones de los componentes ICA, mostrando la contribución relativa de cada componente en el registro EEG.</em>
+</p>
 
 El resultado evidencia que el método ICA permite separar la actividad cerebral de artefactos no deseados, obteniendo una señal más limpia y adecuada para las etapas siguientes de **preprocesamiento y extracción de características**.
 
-## **6. Conclusiones**
-
-- El método ICA es eficaz para eliminar artefactos fisiológicos y eléctricos en señales EEG.  
-- Su implementación requiere un filtrado previo (pasa banda + notch) para garantizar estabilidad numérica.  
-- La señal limpia obtenida es fundamental para asegurar la validez de las características extraídas en el análisis posterior (por ejemplo, Wavelet o PSD).
-
-## **7. Referencias**
+## **6. Referencias**
 
 [1] Dimigen O, Kliegl R. Shared EEG–eye-tracking data and online ICA artifact removal using MNE-Python. Behav Res Methods. 2021;53(2):713–730. doi:10.3758/s13428-020-01329-5.
 
