@@ -4,9 +4,11 @@
 
 El Análisis de Componentes Independientes (ICA) es una técnica que realiza una separación ciega de fuentes. Es una herramienta útil para el procesamiento de señales electroencefalográficas (EEG). En registros multicanal, las señales EEG representan mezclas lineales de múltiples fuentes neuronales y no neuronales, muchas de las cuales son artefactos fisiológicos como movimientos oculares, actividad muscular o interferencia eléctrica [1]. ICA permite descomponer estas señales en componentes independientes, facilitando de esta manera la identificación y eliminación de dichos artefactos sin afectar las señales cerebrales de interés [2]. 
 
-!["ICA Components"](Multimedia/"ICA_COMPONENTS.jpg")
-
-Figura 1: 15 componentes ICA del registro EEG [3]
+<p align="center">
+  <img src="https://github.com/Brenda-Cardenas/GRUPO-07-ISB-2025-II/blob/main/Laboratorios/Laboratorio%20%2010%20-%20MNE%20EEG/Multimedia/ICA%20COMPONENTS.jpg" alt="ICA Components" width="800">
+  <br>
+  <em>Figura 1. Componentes independientes (ICA) del registro EEG [3].</em>
+</p>
 
 Matemáticamente, ICA se basa en la estimación de una matriz de separación que maximiza la independencia entre componentes, comúnmente optimizada mediante criterios como la kurtosis o la no-gaussianidad [4]. En la práctica, esto permite reconstruir la señal EEG excluyendo las fuentes contaminantes. Actualmente, el uso de ICA se ha consolidado tanto en entornos experimentales como clínicos, siendo fundamental en estudios de conectividad funcional, neuroergonomía y diagnóstico de trastornos como epilepsia, TDAH o demencia [5,6]. Además, su integración con librerías especializadas como MNE-Python ha hecho posible su aplicación automatizada y reproducible en investigaciones con grandes volúmenes de datos [1].
 
@@ -33,24 +35,33 @@ Matemáticamente, ICA se basa en la estimación de una matriz de separación que
 
 ## **4. Metodología**
 
-1. **Obtención y carga de datos EEG:**  
-   Los datos electroencefalográficos (EEG) fueron obtenidos utilizando el equipo **Ultra Cortex Mark IV**, que cuenta con **16 electrodos secos** de base de **plata clorada** y una **frecuencia de muestreo de 125 Hz**. Para la carga de los registros EEG crudos se emplearon las funciones de la librería **MNE-Python**, específicamente:  
-  - `mne.io.read_raw_edf()`: para leer archivos en formato `.edf`.  
-  - `mne.datasets.eegbci.load_data()`: para acceder directamente a los registros del **conjunto de datos EEG BCI**, ampliamente utilizado en investigaciones sobre **interfaces cerebro-computadora (BCI)** y otros estudios neurocientíficos.  
+1. **Obtención y carga de datos EEG**  
+   - Los registros electroencefalográficos (EEG) se obtuvieron utilizando el equipo **Ultra Cortex Mark IV**, un dispositivo no invasivo con **16 electrodos secos** de base de **plata clorada**, operando a una **frecuencia de muestreo de 125 Hz**.  
+   - Los archivos generados por el equipo fueron exportados en formato `.txt` y cargados mediante las funciones del paquete **MNE-Python**, ampliamente utilizado en neurociencia para el procesamiento y análisis de EEG.  
+   - Se utilizaron las siguientes funciones:  
+     - `mne.io.read_raw_edf()`: para la lectura de archivos `.edf` y conversión a objetos Raw de MNE.  
+     - `mne.datasets.eegbci.load_data()`: para acceder al **dataset EEG BCI**, una base de datos de referencia en estudios de **interfaces cerebro-computadora (BCI)**.  
+   - Este procedimiento permitió integrar los registros en un flujo de trabajo reproducible y compatible con las herramientas de visualización y análisis espectral de MNE.
 
-  Esta función facilita la descarga y carga de los datos EEG de la competencia BCI, integrándose de forma eficiente al flujo de análisis en MNE.  
+2. **Preprocesamiento y filtrado de la señal**  
+   - Con el fin de mejorar la calidad de la señal y eliminar ruido ambiental, se aplicaron filtros digitales implementados en MNE:  
+     - **Filtro pasa banda (5–50 Hz):** permitió atenuar componentes de baja frecuencia (movimientos oculares, respiración) y de alta frecuencia (ruido eléctrico o muscular).  
+     - **Filtro notch (60 Hz):** diseñado para eliminar interferencias provenientes de la red eléctrica de corriente alterna.  
+   - Adicionalmente, se inspeccionó visualmente el registro EEG para verificar la estabilidad del ritmo basal y la presencia de posibles artefactos de origen fisiológico (como parpadeos o tensión muscular).  
+   - Se segmentaron los datos en **épocas** de duración uniforme para facilitar el análisis independiente de cada bloque temporal y preparar el dataset para la aplicación del método ICA.
 
-2. **Filtrado de la señal:**  
-   - **Filtro pasa banda (5–50 Hz):** Se aplicó para eliminar componentes de baja frecuencia (movimientos oculares, respiración) y de alta frecuencia (ruido eléctrico).  
-   - **Filtro notch (60 Hz):** Se utilizó para eliminar la interferencia proveniente del sistema eléctrico.
+3. **Aplicación del Análisis de Componentes Independientes (ICA)**  
+   - Se implementó el modelo ICA mediante la función `mne.preprocessing.ICA()`, especificando el número de componentes y el método de descomposición (por ejemplo, **FastICA** o **Infomax**, según la configuración).  
+   - El procedimiento consistió en:  
+     - Ajustar el modelo ICA sobre los datos preprocesados mediante `ica.fit(raw)`.  
+     - Identificar componentes asociados a artefactos oculares (picos frontales sincronizados con el parpadeo) y musculares (alta frecuencia y baja amplitud).  
+     - Excluir estos componentes utilizando `ica.exclude` y reconstruir la señal limpia con `ica.apply(raw)`.  
+   - Este paso permitió separar la actividad cerebral verdadera de las señales contaminantes, mejorando la precisión del análisis posterior.
 
-3. **Aplicación de ICA:**  
-   - Se ajustó un modelo ICA con `mne.preprocessing.ICA()`.  
-   - Se identificaron los componentes correspondientes a artefactos oculares y musculares.  
-   - Dichos componentes fueron excluidos de la reconstrucción de la señal limpia mediante `ica.apply()`.
-
-4. **Verificación del filtrado:**  
-   Se graficaron los datos antes y después del filtrado para evaluar la eliminación de artefactos.
+4. **Verificación y evaluación del filtrado ICA**  
+   - Se compararon las trazas de EEG **antes y después del filtrado**, evaluando visualmente la reducción de artefactos.  
+   - Se generaron gráficos de los **componentes independientes** y de la señal reconstruida para confirmar la correcta eliminación de interferencias sin pérdida de información neuronal relevante.  
+   - Finalmente, se documentaron los resultados visuales y cuantitativos, observando una mayor estabilidad en la línea base y una mejora en la claridad de los ritmos alfa y beta, indicativos de un filtrado exitoso.
 
 ## **5. Resultados**
 
@@ -74,8 +85,10 @@ El resultado evidencia que el método ICA permite separar la actividad cerebral 
 
 [2] Tamburro G, Astolfi L. ICA-based artifact removal and source localization in high-density EEG: validation on simulated and real data. Biomed Signal Process Control. 2020;60:101951. doi:10.1016/j.bspc.2020.101951.
 
-[3] Klug M, Gramann K. Identifying key factors for improving ICA-based decomposition of EEG data in mobile and stationary experiments. Eur J Neurosci. 2021;54(12):8406–8420. doi:10.1111/ejn.15435.
+[3] Kiss Á, Huszár OM, Bodosi B, Kelemen A, et al. Automated preprocessing of 64-channel electroencephalograms recorded by Biosemi instruments. MethodsX. 2023;11(4–5):102378. doi:10.1016/j.mex.2023.102378
 
-[4] Jorge J, van der Zwaag W, Figueiredo P. EEG–fMRI integration for the study of human brain function. NeuroImage. 2022;252:119027. doi:10.1016/j.neuroimage.2022.119027.
+[4] Klug M, Gramann K. Identifying key factors for improving ICA-based decomposition of EEG data in mobile and stationary experiments. Eur J Neurosci. 2021;54(12):8406–8420. doi:10.1111/ejn.15435.
 
-[5] Fahimi F, Saeed S, Rahman MA, Fiok K, Aslani N, Menon C. A review on machine learning models for the characterization of EEG in Parkinson’s disease. Biomed Signal Process Control. 2022;73:103459. doi:10.1016/j.bspc.2021.103459.
+[5] Jorge J, van der Zwaag W, Figueiredo P. EEG–fMRI integration for the study of human brain function. NeuroImage. 2022;252:119027. doi:10.1016/j.neuroimage.2022.119027.
+
+[6] Fahimi F, Saeed S, Rahman MA, Fiok K, Aslani N, Menon C. A review on machine learning models for the characterization of EEG in Parkinson’s disease. Biomed Signal Process Control. 2022;73:103459. doi:10.1016/j.bspc.2021.103459.
