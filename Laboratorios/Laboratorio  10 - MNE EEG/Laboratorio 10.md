@@ -67,7 +67,11 @@ El resultado evidencia que el método ICA permite separar la actividad cerebral 
 ## **7. Referencias**
 
 [1] Dimigen O, Kliegl R. Shared EEG–eye-tracking data and online ICA artifact removal using MNE-Python. Behav Res Methods. 2021;53(2):713–730. doi:10.3758/s13428-020-01329-5.
+
 [2] Tamburro G, Astolfi L. ICA-based artifact removal and source localization in high-density EEG: validation on simulated and real data. Biomed Signal Process Control. 2020;60:101951. doi:10.1016/j.bspc.2020.101951.
+
 [3] Klug M, Gramann K. Identifying key factors for improving ICA-based decomposition of EEG data in mobile and stationary experiments. Eur J Neurosci. 2021;54(12):8406–8420. doi:10.1111/ejn.15435.
+
 [4] Jorge J, van der Zwaag W, Figueiredo P. EEG–fMRI integration for the study of human brain function. NeuroImage. 2022;252:119027. doi:10.1016/j.neuroimage.2022.119027.
+
 [5] Fahimi F, Saeed S, Rahman MA, Fiok K, Aslani N, Menon C. A review on machine learning models for the characterization of EEG in Parkinson’s disease. Biomed Signal Process Control. 2022;73:103459. doi:10.1016/j.bspc.2021.103459.
