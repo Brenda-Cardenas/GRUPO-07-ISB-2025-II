@@ -68,7 +68,7 @@ Matemáticamente, ICA se basa en la estimación de una matriz de separación que
 
 
 <p align="center">
-  <img src="https://github.com/Brenda-Cardenas/GRUPO-07-ISB-2025-II/blob/main/Laboratorios/Laboratorio%20%2010%20-%20MNE%20EEG/Multimedia/ICA%20Component%20Scores.jpg" width="800">
+  <img src="https://github.com/Brenda-Cardenas/GRUPO-07-ISB-2025-II/blob/main/Laboratorios/Laboratorio%20%2010%20-%20MNE%20EEG/Multimedia/ICAScores.jpg" width="800">
   <br>
   <em>Figura 2. Puntuaciones de los componentes ICA, mostrando la contribución relativa de cada componente en el registro EEG.</em>
 </p>
