@@ -4,12 +4,11 @@
 
 El Análisis de Componentes Independientes (ICA) es una técnica que realiza una separación ciega de fuentes. Es una herramienta útil para el procesamiento de señales electroencefalográficas (EEG). En registros multicanal, las señales EEG representan mezclas lineales de múltiples fuentes neuronales y no neuronales, muchas de las cuales son artefactos fisiológicos como movimientos oculares, actividad muscular o interferencia eléctrica [1]. ICA permite descomponer estas señales en componentes independientes, facilitando de esta manera la identificación y eliminación de dichos artefactos sin afectar las señales cerebrales de interés [2]. 
 
-ICA COMPONENTS.jpg
+!["ICA Components"](Multimedia/"ICA_COMPONENTS.jpg")
 
-!["ICA Components"](Multimedia/"ICA COMPONENTS.jpg")
-Figura 1: Las áreas de Brodmann y el sistema de colocación de electrodos 10-10. [1]
+Figura 1: 15 componentes ICA del registro EEG [3]
 
-Matemáticamente, ICA se basa en la estimación de una matriz de separación que maximiza la independencia entre componentes, comúnmente optimizada mediante criterios como la kurtosis o la no-gaussianidad [3]. En la práctica, esto permite reconstruir la señal EEG excluyendo las fuentes contaminantes. Actualmente, el uso de ICA se ha consolidado tanto en entornos experimentales como clínicos, siendo fundamental en estudios de conectividad funcional, neuroergonomía y diagnóstico de trastornos como epilepsia, TDAH o demencia [4,5]. Además, su integración con librerías especializadas como MNE-Python ha hecho posible su aplicación automatizada y reproducible en investigaciones con grandes volúmenes de datos [1].
+Matemáticamente, ICA se basa en la estimación de una matriz de separación que maximiza la independencia entre componentes, comúnmente optimizada mediante criterios como la kurtosis o la no-gaussianidad [4]. En la práctica, esto permite reconstruir la señal EEG excluyendo las fuentes contaminantes. Actualmente, el uso de ICA se ha consolidado tanto en entornos experimentales como clínicos, siendo fundamental en estudios de conectividad funcional, neuroergonomía y diagnóstico de trastornos como epilepsia, TDAH o demencia [5,6]. Además, su integración con librerías especializadas como MNE-Python ha hecho posible su aplicación automatizada y reproducible en investigaciones con grandes volúmenes de datos [1].
 
 ## **2. Objetivos**
 
