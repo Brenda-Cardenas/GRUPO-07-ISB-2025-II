@@ -22,7 +22,7 @@ Matemáticamente, ICA se basa en la estimación de una matriz de separación que
 | **Elemento** | **Descripción / Uso** |
 |---------------|-----------------------|
 | **Laptop personal** | Se utilizó para ejecutar el código y procesar las señales EEG. |
-| **Python 3.10** | Lenguaje de programación utilizado para aplicar los filtros y el método ICA. |
+| **Python 3.13** | Lenguaje de programación utilizado para aplicar los filtros y el método ICA. |
 | **Archivo `.txt` del Ultracortex** | Contiene los registros crudos de la señal EEG capturados por el dispositivo Ultra Cortex Mark IV. |
 | **MNE-Python** | Librería empleada para el procesamiento, visualización y limpieza de señales EEG. |
 | **Filtros digitales (pasa banda y notch)** | Implementados para eliminar ruido de baja frecuencia y la interferencia de 60 Hz. |
