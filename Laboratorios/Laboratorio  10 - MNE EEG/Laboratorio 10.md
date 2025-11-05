@@ -64,6 +64,7 @@ Matemáticamente, ICA se basa en la estimación de una matriz de separación que
    - Finalmente, se documentaron los resultados visuales y cuantitativos, observando una mayor estabilidad en la línea base y una mejora en la claridad de los ritmos alfa y beta, indicativos de un filtrado exitoso.
 
 ## **5. Resultados**
+📘 [Acceso al código realizado](https://github.com/Brenda-Cardenas/GRUPO-07-ISB-2025-II/tree/main/Laboratorios/Laboratorio%20%2010%20-%20MNE%20EEG)
 
 Tras aplicar ICA, la señal EEG mostró una notable reducción en los picos relacionados con parpadeos y contracciones musculares. La figura siguiente ilustra la diferencia entre la señal cruda y la señal filtrada:
 
