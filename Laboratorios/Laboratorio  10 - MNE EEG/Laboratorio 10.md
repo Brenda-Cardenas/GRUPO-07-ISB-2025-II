@@ -64,7 +64,7 @@ Matemáticamente, ICA se basa en la estimación de una matriz de separación que
    - Finalmente, se documentaron los resultados visuales y cuantitativos, observando una mayor estabilidad en la línea base y una mejora en la claridad de los ritmos alfa y beta, indicativos de un filtrado exitoso.
 
 ## **5. Resultados**
-📘 [Acceso al código realizado](https://github.com/Brenda-Cardenas/GRUPO-07-ISB-2025-II/tree/main/Laboratorios/Laboratorio%20%2010%20-%20MNE%20EEG)
+📘 [Acceso al código realizado](https://github.com/Brenda-Cardenas/GRUPO-07-ISB-2025-II/blob/main/Laboratorios/Laboratorio%20%2010%20-%20MNE%20EEG/muscle_ica.ipynb)
 
 
 <p align="center">
