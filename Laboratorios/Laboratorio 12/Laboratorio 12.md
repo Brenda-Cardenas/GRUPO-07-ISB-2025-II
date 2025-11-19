@@ -121,17 +121,14 @@ Además:
 - Dropout para evitar overfitting  
 
 #### 🌟 5. Análisis de correlación cruzada (clave del paper)  
-Una parte central de la metodología consiste en evaluar la relación entre las características temporales tradicionales y los mapas de activación generados por la CNN. Para ello, los autores utilizan la **correlación cruzada normalizada**, una medida estadística que permite cuantificar la similitud entre dos señales o vectores.
+Para comparar las características temporales tradicionales con las características aprendidas por la CNN, los autores utilizan la correlación cruzada normalizada, que permite medir qué tan parecidas son dos señales.
 
-La correlación cruzada se calcula mediante la expresión:
+La fórmula empleada es: ρ = cov(X, Y) / (σ_X · σ_Y)
 
-\[
-\rho = \frac{cov(X,Y)}{\sigma_X \sigma_Y}
-\]
+Aquí, **X** es la característica temporal calculada del ECG y **Y** es el mapa de activación de un filtro de la CNN.  
+El valor de ρ va de -1 a 1: valores cercanos a 1 indican alta similitud y valores cercanos a 0 indican poca relación.
 
-donde \(X\) representa la característica temporal extraída de la señal y \(Y\) corresponde al mapa de activación producido por un filtro específico de la CNN.
-
-El valor de \(\rho\) varía entre -1 y 1 e indica el grado de similitud estadística entre ambas representaciones. Un valor cercano a 1 sugiere una correlación directa alta, mientras que un valor cercano a -1 indica una relación inversa. Cuando la correlación es elevada, significa que el filtro de la CNN está capturando un patrón equivalente o muy cercano al descrito por la característica temporal tradicional. Este análisis permite determinar si las primeras capas de la CNN reproducen de forma automática propiedades que usualmente se calculan mediante *feature engineering*, aportando así mayor interpretabilidad al comportamiento interno del modelo.
+Este análisis permite identificar si la CNN está aprendiendo patrones similares a los que se obtienen mediante métodos clásicos de *feature engineering*, ayudando a entender mejor cómo procesa la red la señal ECG.
 
 #### 🌟 6. Resultados principales del paper
 ##### **6.1 Las primeras capas aprenden características temporales humanas**
@@ -161,46 +158,9 @@ la red genera características **propias** no triviales.
 Esto confirma que:
 1. Las características temporales son relevantes.  
 2. La CNN las usa, pero las mejora.  
----
 
+---
 ## 📘 **Paper 2: A Simple Time-Domain Algorithm for the Detection of Ventricular Fibrillation in ECG**  
 
 ---
 # III. Repositorio de GitHub relacionado (incluye Notebook)
-
-🎯 **Repositorio recomendado (cumple exactamente con lo solicitado):**  
-🔗 https://github.com/mondejar/ecg-classification
-
-Este repositorio:
-
-✔ Trabaja específicamente con características temporales  
-✔ Usa ECG MIT-BIH  
-✔ Incluye notebooks en Python  
-✔ Implementa extracción de:  
-- RMS  
-- Varianza  
-- Media  
-- Picos  
-- Skewness  
-- Kurtosis  
-
-✔ Contiene clasificadores (MLP, CNN)
-
-Notebook sugerido:  
-`notebooks/ecg_signal_features.ipynb`  
-→ Calcula características temporales y entrena modelos.
-
-Este repositorio es ideal para cumplir el apartado solicitado por el profesor.
-
----
-
-# IV. Conclusiones Generales
-
-Las características temporales del ECG:
-
-- Siguen siendo fundamentales en el análisis de arritmias.  
-- Permiten construir clasificadores interpretables, de bajo costo computacional y adecuados para dispositivos médicos portátiles.  
-- Son la base sobre la que redes profundas construyen características más complejas.  
-
-El análisis del primer paper muestra que las CNN **efectivamente reutilizan y mejoran** estos descriptores, lo cual aporta una visión más transparente sobre cómo operan los modelos modernos en señales biomédicas.
-
