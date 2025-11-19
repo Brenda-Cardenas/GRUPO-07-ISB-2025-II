@@ -58,6 +58,10 @@ Se destacan dos grupos de características:
   - *Asimetría (Skewness):* Evalúa el grado de simetría de la distribución de datos respecto a la media.
   - *Curtosis:* Mide el grado de apuntamiento o concentración de los datos. En el ECG, este parámetro es particularmente relevante debido a la naturaleza impulsiva de los complejos QRS frente a la línea isoeléctrica.
 
+<img src="https://github.com/Brenda-Cardenas/GRUPO-07-ISB-2025-II/blob/main/Laboratorios/Caracteristicas_ECG_IA/figura3_skewness_kurtosis.png" alt="Distribuciones de Skewness y Kurtosis" width="600">
+
+*Figura 3. Representación de distribuciones con diferentes valores de Skewness (asimetría) y Kurtosis, mostrando distribuciones con sesgo negativo, simétrica y sesgo positivo.*
+
 **Dataset empleado:** Se utilizaron sistemas de adquisición tipo Holter y bases de datos estandarizadas como MIT-BIH para validación clínica. Para el enfoque biométrico, se trabajó con un vector inicial de 18 características estadísticas.
 
 **Resultados Obtenidos:**
