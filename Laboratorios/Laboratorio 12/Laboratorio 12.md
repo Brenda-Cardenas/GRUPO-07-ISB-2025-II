@@ -6,13 +6,13 @@
 
 Las características temporales y estadísticas del electrocardiograma (ECG) constituyen descriptores cuantitativos fundamentales para caracterizar la actividad eléctrica del corazón a lo largo del tiempo. Estos parámetros representan la base del análisis automatizado de señales cardíacas mediante técnicas de inteligencia artificial, capturando tanto las propiedades morfológicas como las variaciones dinámicas de la señal.
 
-<img src="https://github.com/Brenda-Cardenas/GRUPO-07-ISB-2025-II/blob/main/Laboratorios/Caracteristicas_ECG_IA/figura1_forma_onda_ecg.jpg" alt="Forma de onda ECG típica" width="600">
+<img src="https://github.com/Brenda-Cardenas/GRUPO-07-ISB-2025-II/blob/main/Laboratorios/Laboratorio%2012/Multimedia/figura1_forma_onda_ecg.jpg" alt="Forma de onda ECG típica" width="600">
 
 *Figura 1. Forma de onda de un latido cardíaco único con intervalos clave: PR, QT y segmento ST [1].*
 
 En el dominio temporal, las características principales incluyen los intervalos RR, la duración del complejo QRS, los segmentos ST, y los intervalos PR y QT, los cuales reflejan diferentes fases del ciclo cardíaco. La variabilidad de estos intervalos proporciona información valiosa sobre el tono autonómico y la función cardiovascular. Las características estadísticas abarcan medidas como la media, desviación estándar, curtosis, asimetría, valores máximos y mínimos, así como percentiles de la señal, que permiten cuantificar la distribución y comportamiento general de los datos [2].
 
-<img src="https://github.com/Brenda-Cardenas/GRUPO-07-ISB-2025-II/blob/main/Laboratorios/Caracteristicas_ECG_IA/figura2_arritmias.jpg" alt="Tipos de arritmias" width="600">
+<img src="https://github.com/Brenda-Cardenas/GRUPO-07-ISB-2025-II/blob/main/Laboratorios/Laboratorio%2012/Multimedia/figura2_arritmias.jpg" alt="Tipos de arritmias" width="600">
 
 *Figura 2. Ejemplos de señales de latidos cardíacos con diferentes tipos de arritmias [1].*
 
@@ -58,7 +58,7 @@ Se destacan dos grupos de características:
   - *Asimetría (Skewness):* Evalúa el grado de simetría de la distribución de datos respecto a la media.
   - *Curtosis:* Mide el grado de apuntamiento o concentración de los datos. En el ECG, este parámetro es particularmente relevante debido a la naturaleza impulsiva de los complejos QRS frente a la línea isoeléctrica.
 
-<img src="https://github.com/Brenda-Cardenas/GRUPO-07-ISB-2025-II/blob/main/Laboratorios/Caracteristicas_ECG_IA/figura3_skewness_kurtosis.png" alt="Distribuciones de Skewness y Kurtosis" width="600">
+<img src="https://github.com/Brenda-Cardenas/GRUPO-07-ISB-2025-II/blob/main/Laboratorios/Laboratorio%2012/Multimedia/figura3.png" alt="Distribuciones de Skewness y Kurtosis" width="600">
 
 *Figura 3. Representación de distribuciones con diferentes valores de Skewness (asimetría) y Kurtosis, mostrando distribuciones con sesgo negativo, simétrica y sesgo positivo.*
 
