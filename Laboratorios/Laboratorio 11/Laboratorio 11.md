@@ -2,9 +2,11 @@
 
 ## 1. Introducción
 
-El análisis de señales electrocardiográficas (EKG) permite identificar eventos eléctricos fundamentales del ciclo cardíaco, tales como la onda **P**, el complejo **QRS** y la onda **T**. La detección automática de estas ondas es clave para el diagnóstico de arritmias, el monitoreo cardiaco y el procesamiento digital de señales biomédicas.
+## 1. Introducción
 
-En este laboratorio se utilizó una base de datos real de señales EKG proporcionada por el docente en formato **pickle (`.pkl`)**, la cual contiene 17 clases de ritmos cardíacos (por ejemplo: `NSR`, `PVC`, `AFIB`, `Trigeminy`, entre otros). El objetivo principal fue seleccionar una señal real de una de estas clases y aplicar un algoritmo que permita identificar las ondas **P**, **QRS (R)** y **T**, para luego visualizarlas y analizarlas.
+El análisis automatizado de señales electrocardiográficas (ECG) es fundamental para el diagnóstico clínico moderno, ya que permite la detección precisa y eficiente de alteraciones cardíacas en grandes volúmenes de datos. En contextos como el monitoreo ambulatorio o la telemedicina, donde las señales suelen contener ruido y artefactos, los algoritmos automáticos ofrecen una alternativa confiable al análisis manual, reduciendo errores humanos y mejorando la reproducibilidad [1]. La identificación de las principales ondas del ECG P, QRS y T es clave para la evaluación del ritmo y la conducción eléctrica del corazón, y su correcta delimitación puede facilitar el diagnóstico de arritmias, bloqueos y otras condiciones clínicas [2].
+
+En este laboratorio se emplea la librería NeuroKit2, una herramienta de código abierto desarrollada en Python, diseñada específicamente para el procesamiento y análisis de señales fisiológicas, incluyendo el ECG [3]. NeuroKit2 ha sido validada en múltiples estudios por su capacidad para detectar de forma robusta y eficiente las ondas P, QRS y T mediante técnicas basadas en filtrado, transformadas wavelet y reglas heurísticas [4]. Estudios recientes han demostrado que su algoritmo de detección de latidos (“nk”) presenta un desempeño superior en precisión y velocidad comparado con otros métodos abiertos [1], lo que respalda su uso académico y clínico. Por estas razones, NeuroKit2 representa una solución adecuada para cumplir con los objetivos de este laboratorio.
 
 ## 2. Algoritmo NeuroKit2
 
@@ -54,11 +56,8 @@ De esta forma, NeuroKit2 permite:
 | Librería `NeuroKit2`         | Librería de Python para análisis y delineación de señales EKG.             |
 | Librerías `NumPy` y `Matplotlib` | Para manejo de arreglos numéricos y generación de gráficas.         |
 
----
 
 ### 3.2 Pasos de implementación en código
-
-A continuación se resumen los pasos principales realizados en el notebook.
 
 #### 3.2.1 Instalación y carga de librerías
 
@@ -77,7 +76,6 @@ import neurokit2 as nk
 with open("dataset_ekg.pkl", "rb") as f:
     dataset = pickle.load(f)
 
-# Visualizar las clases disponibles en el dataset
 print(dataset.keys())
 ```
 
@@ -91,10 +89,10 @@ fila = 0
 # Señal ECG real de la clase y fila seleccionadas
 ecg_signal = dataset[clase][fila, :]
 
-# Frecuencia de muestreo (Hz), según la base de datos
+# Frecuencia de muestreo (Hz)
 fs = 360
 
-# Vector de tiempo asociado a la señal
+# Vector de tiempo
 t = np.arange(ecg_signal.size) / fs
 
 print("Clase seleccionada:", clase)
@@ -206,6 +204,16 @@ El hecho de que haya menos ondas T que R es **consistente clínicamente** con el
 - La base de datos `dataset_ekg.pkl` permitió trabajar con señales reales y ritmos cardíacos variados, incluyendo arritmias.  
 - El algoritmo proporcionado por el docente es útil para aprender a detectar QRS, pero **no detecta ondas P ni T**, por lo que no basta para completar el laboratorio.  
 - **NeuroKit2** permitió realizar una **delineación completa del ECG**, identificando P, QRS (R) y T de manera automatizada.  
-- La señal de la clase **Trigeminy** mostró alteraciones morfológicas coherentes con una arritmia ventricular, afectando especialmente la onda T.  
+- La señal de la clase **Trigeminy** mostró alteraciones morfológicas coherentes con una arritmia ventricular, afectando especialmente la onda T. 
 - El procesamiento implementado cumplió correctamente con los objetivos del laboratorio, permitiendo obtener una visualización clara de las ondas y comprender su relación con el ritmo cardiaco patológico.  
 - Las diferencias en la detección (10 R vs. 8 T) son explicables en función del comportamiento real del corazón bajo un patrón trigeminal.
+
+## 7. Referencias
+
+[1] Kristof F, Kapsecker M, Nissen L, Brimicombe J, Cowie MR, Ding Z, et al. QRS detection in single-lead, telehealth electrocardiogram signals: Benchmarking open-source algorithms. PLOS Digit Health. 2024;3(8):e0000538.  
+
+[2] Vollmer M, Giraldo JA. Efficiency of different heartbeat detection methods by using alternative noise reduction algorithms. Comput Cardiol. 2022;49:1-4.  
+
+[3] Makowski D, Pham T, Lau ZJ, Brammer JC, Lespinasse F, Pham H, et al. NeuroKit2: A Python toolbox for neurophysiological signal processing. Behav Res Methods. 2021;53(4):1689–96.  
+
+[4] Frasch MG. Comprehensive HRV estimation pipeline in Python using NeuroKit2: Application to sleep physiology. MethodsX. 2022;9:101782.
