@@ -46,13 +46,12 @@ De esta forma, NeuroKit2 permite:
 
 | Recurso / Herramienta        | Descripción                                                                 |
 |------------------------------|-----------------------------------------------------------------------------|
-| Laptop personal              | Equipo de cómputo con procesador Intel i5/i7 (o similar) y 8–16 GB de RAM. |
+| Laptop                       | Equipo de cómputo con procesador Intel i5/i7 (o similar) y 8–16 GB de RAM. |
 | Google Colab                 | Entorno de ejecución en la nube para Python.                               |
-| Python 3.x                   | Lenguaje de programación utilizado en el laboratorio.                      |
+| Python 3.14                   | Lenguaje de programación utilizado en el laboratorio.                      |
 | `dataset_ekg.pkl`            | Base de datos de señales EKG reales en formato pickle.                     |
-| `ecg_processing.ipynb`       | Notebook proporcionado por el docente como guía base del laboratorio.      |
+| `ecg_processing.ipynb`       | Notebook proporcionado       |
 | Librería `NeuroKit2`         | Librería de Python para análisis y delineación de señales EKG.             |
-| Librerías `NumPy` y `Matplotlib` | Para manejo de arreglos numéricos y generación de gráficas.         |
 
 
 ### 3.2 Pasos de implementación en código
@@ -149,11 +148,13 @@ plt.show()
 
 ## 4. Resultados
 Tras procesar la señal correspondiente a la clase **Trigeminy** (fila 0) del archivo `dataset_ekg.pkl`, se obtuvieron los siguientes resultados:
+![Señal ECG](https://raw.githubusercontent.com/Brenda-Cardenas/GRUPO-07-ISB-2025-II/main/Laboratorios/Laboratorio%2011/Multimedia/se%C3%B1alECG.png)
 - **Nº de ondas P detectadas:** 10  
 - **Nº de complejos QRS (picos R) detectados:** 10  
-- **Nº de ondas T detectadas:** 8  
+- **Nº de ondas T detectadas:** 8
 
-La diferencia entre la cantidad de ondas detectadas refleja la complejidad morfológica de esta arritmia.  
+La diferencia entre la cantidad de ondas detectadas refleja la complejidad morfológica de esta arritmia. 
+![Detección ECG](https://raw.githubusercontent.com/Brenda-Cardenas/GRUPO-07-ISB-2025-II/main/Laboratorios/Laboratorio%2011/Multimedia/deteccionECG.png)
 En la gráfica generada se observa:
 - La **señal ECG original** (trazo azul).  
 - Los **picos R** marcados con círculos rojos.  
