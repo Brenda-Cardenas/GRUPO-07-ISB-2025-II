@@ -148,16 +148,13 @@ plt.show()
 ```
 
 ## 4. Resultados
-
 Tras procesar la señal correspondiente a la clase **Trigeminy** (fila 0) del archivo `dataset_ekg.pkl`, se obtuvieron los siguientes resultados:
-
 - **Nº de ondas P detectadas:** 10  
 - **Nº de complejos QRS (picos R) detectados:** 10  
 - **Nº de ondas T detectadas:** 8  
 
 La diferencia entre la cantidad de ondas detectadas refleja la complejidad morfológica de esta arritmia.  
 En la gráfica generada se observa:
-
 - La **señal ECG original** (trazo azul).  
 - Los **picos R** marcados con círculos rojos.  
 - Las **ondas P** marcadas con triángulos verdes.  
@@ -165,7 +162,6 @@ En la gráfica generada se observa:
 
 El patrón trigeminal se manifiesta con latidos ventriculares prematuros (PVC) cada tres latidos.  
 Estos latidos alterados presentan:
-
 - Complejos QRS más anchos.  
 - Variaciones en la amplitud.  
 - Ondas T que pueden aparecer distorsionadas o fusionadas.  
@@ -175,36 +171,26 @@ Esto explica por qué algunas ondas T no son detectadas con claridad por el algo
 ## 5. Discusión
 
 El análisis de señales EKG reales enfrenta desafíos debido a:
-
-- **Ruido** y variabilidad fisiológica.  
-- **Artefactos** generados por movimiento o interferencia.  
-- **Arritmias**, como Trigeminy, que modifican la morfología típica del ciclo cardiaco.
+- Ruido y variabilidad fisiológica.  
+- Artefactos generados por movimiento o interferencia.  
+- Arritmias, como Trigeminy, que modifican la morfología típica del ciclo cardiaco.
 
 En la señal analizada, los latidos normales y los latidos prematuros muestran diferencias claras:
+- Los complejos QRS de los latidos prematuros son más anchos e irregulares.  
+- Algunas ondas P pueden verse ocultas o desplazadas por la actividad ventricular prematura.  
+- Las ondas T pueden aparecer disminuidas, invertidas o fusionadas, lo que explica que solo se detectaran 8.
 
-- Los **complejos QRS** de los latidos prematuros son más anchos e irregulares.  
-- Algunas **ondas P** pueden verse ocultas o desplazadas por la actividad ventricular prematura.  
-- Las **ondas T** pueden aparecer disminuidas, invertidas o fusionadas, lo que explica que solo se detectaran 8.
-
-El algoritmo simple del notebook docente permite **detectar QRS**, pero no P ni T.  
-En cambio, **NeuroKit2** agrega:
-
+NeuroKit2 agrega:
 - Filtrado avanzado  
 - Detección robusta de R-peaks  
 - Detección completa de ondas P/T mediante técnicas basadas en transformadas y heurísticas clínicas  
 
-Gracias a ello fue posible delinear la señal completa, incluso en presencia de arritmias complejas.
-
-El hecho de que haya menos ondas T que R es **consistente clínicamente** con el Trigeminy, ya que la repolarización ventricular se ve alterada en los latidos prematuros.
+Gracias a ello fue posible delinear la señal completa, incluso en presencia de arritmias complejas. El hecho de que haya menos ondas T que R es consistente clínicamente con el Trigeminy, ya que la repolarización ventricular se ve alterada en los latidos prematuros.
 
 ## 6. Conclusiones
+La base de datos dataset_ekg.pkl permitió trabajar con señales EKG reales que incluyen arritmias, lo cual facilitó analizar la variabilidad morfológica del ciclo cardíaco en un contexto auténtico. La señal de la clase Trigeminy mostró alteraciones propias de una arritmia ventricular, especialmente en la repolarización, lo que explica que algunas ondas T no fueran detectadas.
 
-- La base de datos `dataset_ekg.pkl` permitió trabajar con señales reales y ritmos cardíacos variados, incluyendo arritmias.  
-- El algoritmo proporcionado por el docente es útil para aprender a detectar QRS, pero **no detecta ondas P ni T**, por lo que no basta para completar el laboratorio.  
-- **NeuroKit2** permitió realizar una **delineación completa del ECG**, identificando P, QRS (R) y T de manera automatizada.  
-- La señal de la clase **Trigeminy** mostró alteraciones morfológicas coherentes con una arritmia ventricular, afectando especialmente la onda T. 
-- El procesamiento implementado cumplió correctamente con los objetivos del laboratorio, permitiendo obtener una visualización clara de las ondas y comprender su relación con el ritmo cardiaco patológico.  
-- Las diferencias en la detección (10 R vs. 8 T) son explicables en función del comportamiento real del corazón bajo un patrón trigeminal.
+El uso de la librería NeuroKit2 permitió realizar una delineación completa del ECG, identificando automáticamente las ondas P, QRS y T de manera eficiente. Esto permitió obtener una visualización clara de la actividad eléctrica del corazón y cumplir con los objetivos del laboratorio, relacionando adecuadamente la morfología de las ondas con el comportamiento patológico observado en la señal analizada.
 
 ## 7. Referencias
 
