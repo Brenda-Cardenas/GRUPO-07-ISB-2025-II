@@ -1,4 +1,4 @@
-# Laboratorio: Detección de ondas P, QRS y T en señales EKG reales
+# Laboratorio 11: Detección de ondas P, QRS y T en señales EKG reales
 
 ## 1. Introducción
 
@@ -42,7 +42,7 @@ De esta forma, NeuroKit2 permite:
 
 ## 3. Metodología
 
-### 3.1 Materiales y recursos
+### 3.1 Materiales y métodos
 
 | Recurso / Herramienta        | Descripción                                                                 |
 |------------------------------|-----------------------------------------------------------------------------|
@@ -54,7 +54,8 @@ De esta forma, NeuroKit2 permite:
 | Librería `NeuroKit2`         | Librería de Python para análisis y delineación de señales EKG.             |
 
 
-### 3.2 Pasos de implementación en código
+### 3.2 Código
+[📓 Abrir notebook Laboratorio_11.ipynb](https://github.com/Brenda-Cardenas/GRUPO-07-ISB-2025-II/blob/main/Laboratorios/Laboratorio%2011/Laboratorio_11.ipynb)
 
 #### 3.2.1 Instalación y carga de librerías
 
