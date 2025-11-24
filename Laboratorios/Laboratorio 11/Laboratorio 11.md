@@ -2,8 +2,6 @@
 
 ## 1. Introducción
 
-## 1. Introducción
-
 El análisis automatizado de señales electrocardiográficas (ECG) es fundamental para el diagnóstico clínico moderno, ya que permite la detección precisa y eficiente de alteraciones cardíacas en grandes volúmenes de datos. En contextos como el monitoreo ambulatorio o la telemedicina, donde las señales suelen contener ruido y artefactos, los algoritmos automáticos ofrecen una alternativa confiable al análisis manual, reduciendo errores humanos y mejorando la reproducibilidad [1]. La identificación de las principales ondas del ECG P, QRS y T es clave para la evaluación del ritmo y la conducción eléctrica del corazón, y su correcta delimitación puede facilitar el diagnóstico de arritmias, bloqueos y otras condiciones clínicas [2].
 
 En este laboratorio se emplea la librería NeuroKit2, una herramienta de código abierto desarrollada en Python, diseñada específicamente para el procesamiento y análisis de señales fisiológicas, incluyendo el ECG [3]. NeuroKit2 ha sido validada en múltiples estudios por su capacidad para detectar de forma robusta y eficiente las ondas P, QRS y T mediante técnicas basadas en filtrado, transformadas wavelet y reglas heurísticas [4]. Estudios recientes han demostrado que su algoritmo de detección de latidos (“nk”) presenta un desempeño superior en precisión y velocidad comparado con otros métodos abiertos [1], lo que respalda su uso académico y clínico. Por estas razones, NeuroKit2 representa una solución adecuada para cumplir con los objetivos de este laboratorio.
